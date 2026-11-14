@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madbuns — Burgers in Mina, Tripoli</title>
+<meta name="description" content="Madbuns. Hamburger restaurant in Mina, Tripoli, Lebanon. Rated 4.9 on Google. Order on WhatsApp.">
+<meta name="theme-color" content="#FFC81A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Permanent+Marker&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--yel:#FFC81A;--red:#EE3A1B;--ink:#16100B;--cream:#FFF3DA;--pink:#FF9EB7;--grn:#58B947;--pad:clamp(18px,4vw,56px);--bo:3px solid var(--ink);--sh:6px 6px 0 var(--ink);--ease:cubic-bezier(.2,.8,.2,1);--boing:cubic-bezier(.34,1.56,.64,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{background:var(--yel);color:var(--ink);font-family:"Rubik",system-ui,sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}ul{list-style:none}svg{display:block}
+.d{font-family:"Bowlby One","Arial Black",Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+.mk{font-family:"Permanent Marker","Comic Sans MS",cursive;font-weight:400}
+
+/* header */
+.hdr{position:fixed;top:12px;left:var(--pad);right:var(--pad);z-index:30;display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 18px;border:var(--bo);border-color:transparent;border-radius:999px;transition:background-color .35s,border-color .35s,box-shadow .35s,transform .45s var(--ease)}
+.hdr.scrolled{background:var(--cream);border-color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.logo{font-family:"Bowlby One","Arial Black",sans-serif;font-size:1.35rem;text-transform:uppercase;display:flex;align-items:center;gap:2px;letter-spacing:-.01em}
+.logo b{font-weight:400;color:var(--red)}
+.open .logo b{color:var(--yel)}
+.nav{display:flex;align-items:center;gap:6px;font-weight:700;text-transform:uppercase;font-size:.82rem;letter-spacing:.04em}
+.nav a.l{padding:10px 14px;border-radius:999px;transition:background-color .25s,color .25s,transform .3s var(--boing)}
+.nav a.l:hover{background:var(--ink);color:var(--yel);transform:rotate(-3deg)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:"Bowlby One","Arial Black",sans-serif;text-transform:uppercase;font-size:1rem;letter-spacing:.01em;background:var(--red);color:var(--cream);padding:16px 26px;border:var(--bo);border-radius:999px;box-shadow:var(--sh);transition:transform .25s var(--boing),box-shadow .25s var(--ease);will-change:transform}
+.btn:hover{box-shadow:9px 9px 0 var(--ink)}
+.btn:active{transform:translate(4px,4px)!important;box-shadow:2px 2px 0 var(--ink)}
+.btn svg{width:20px;height:20px}
+.btn.sm{font-size:.8rem;padding:10px 16px;box-shadow:3px 3px 0 var(--ink)}
+.btn.blk{background:var(--ink);color:var(--yel)}
+.btn.yel{background:var(--yel);color:var(--ink)}
+.burger{display:none;width:44px;height:44px;border:var(--bo);border-radius:50%;background:var(--ink);cursor:pointer;position:relative}
+.burger span{position:absolute;left:11px;right:11px;height:3px;border-radius:3px;background:var(--yel);transition:transform .35s var(--boing),opacity .2s}
+.burger span:nth-child(1){top:12px}.burger span:nth-child(2){top:18.5px}.burger span:nth-child(3){top:25px}
+.open .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.open .burger span:nth-child(2){opacity:0}
+.open .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:25;background:var(--red);color:var(--cream);display:flex;flex-direction:column;justify-content:center;gap:4px;padding:90px var(--pad) 40px;transform:translateY(-102%);transition:transform .55s var(--ease);visibility:hidden}
+.open .mnav{transform:none;visibility:visible}
+.mnav a{font-family:"Bowlby One","Arial Black",sans-serif;text-transform:uppercase;font-size:14vw;line-height:1.05;-webkit-text-stroke:2px var(--ink);text-shadow:4px 4px 0 var(--ink)}
+.mnav a:nth-child(even){color:var(--yel)}
+.mnav p{margin-top:22px;font-weight:700}
+
+/* hero */
+.hero{position:relative;padding:118px var(--pad) 40px;min-height:100vh;min-height:100svh;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:24px;align-items:center;overflow:hidden;background:
+ radial-gradient(circle at 1px 1px,rgba(22,16,11,.16) 2px,transparent 2.6px) 0 0/22px 22px,
+ radial-gradient(120% 90% at 85% 40%,#FFE169 0%,var(--yel) 55%)}
+.kick{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--yel);padding:8px 14px;border-radius:999px;font-weight:700;text-transform:uppercase;font-size:.76rem;letter-spacing:.08em;transform:rotate(-2deg);animation:in .7s .1s var(--boing) both}
+.kick i{width:8px;height:8px;border-radius:50%;background:var(--red);display:block;animation:blink 1.2s steps(2) infinite}
+.hero h1{font-size:clamp(2.7rem,12.6vw,5rem);margin:22px 0 22px}
+.hero h1 .ln{display:block;overflow:hidden;padding:.06em .1em .1em 0}
+.hero h1 .ln>span{display:inline-block;animation:up .9s var(--ease) both}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.12s}.hero h1 .ln:nth-child(3)>span{animation-delay:.24s}
+.mad{color:var(--red);-webkit-text-stroke:2px var(--ink);text-shadow:5px 5px 0 var(--ink);padding-right:.08em}
+.hero p.lead{font-size:clamp(1.05rem,1.6vw,1.3rem);max-width:34ch;font-weight:500;animation:in .8s .5s var(--ease) both}
+.hero-cta{display:flex;flex-wrap:wrap;gap:16px 22px;align-items:center;margin-top:28px;animation:in .8s .65s var(--ease) both}
+.tel{font-weight:700;border-bottom:3px solid var(--ink)}
+.stage{position:relative;display:grid;place-items:center;min-height:380px}
+.bgr{width:min(100%,460px);overflow:visible}
+.bgr .ly{will-change:transform}
+.bgr .drop{animation:drop .8s var(--boing) both}
+.bgr .ly:nth-child(1) .drop{animation-delay:.25s}.bgr .ly:nth-child(2) .drop{animation-delay:.4s}.bgr .ly:nth-child(3) .drop{animation-delay:.55s}.bgr .ly:nth-child(4) .drop{animation-delay:.7s}.bgr .ly:nth-child(5) .drop{animation-delay:.85s}.bgr .ly:nth-child(6) .drop{animation-delay:1s}
+.bgr [stroke]{stroke-linejoin:round;stroke-linecap:round}
+.badge{position:absolute;right:-6px;top:0;width:clamp(120px,15vw,170px);animation:in .7s 1.2s var(--boing) both}
+.badge .spin{animation:spin 16s linear infinite;transform-origin:50% 50%}
+.badge text{font-family:"Rubik",sans-serif;font-weight:700;font-size:13.4px;letter-spacing:.14em;fill:var(--cream)}
+.badge .n{font-family:"Bowlby One","Arial Black",sans-serif;font-size:38px;letter-spacing:0;fill:var(--yel)}
+.scr{position:absolute;left:2%;bottom:6%;font-size:1.35rem;transform:rotate(-8deg);color:var(--ink);animation:in .7s 1.4s var(--boing) both;display:flex;align-items:center;gap:6px}
+.scr svg{width:46px;height:30px}
+@keyframes up{from{transform:translateY(110%) rotate(4deg)}to{transform:none}}
+@keyframes in{from{opacity:0;transform:translateY(20px) scale(.92)}to{opacity:1}}
+@keyframes drop{from{opacity:0;transform:translateY(-260px) rotate(-8deg)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes blink{50%{opacity:.2}}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* marquee strips */
+.strips{position:relative;overflow:hidden;padding:26px 0;margin-top:-14px;z-index:2}
+.strip{white-space:nowrap;border-top:var(--bo);border-bottom:var(--bo);padding:12px 0;width:110%;margin-left:-5%}
+.strip.a{background:var(--ink);color:var(--yel);transform:rotate(-2deg)}
+.strip.b{background:var(--red);color:var(--cream);transform:rotate(1.5deg);margin-top:-10px}
+.strip div{display:inline-flex;animation:mq 22s linear infinite;will-change:transform}
+.strip.b div{animation-direction:reverse;animation-duration:28s}
+.strip span{display:inline-flex;align-items:center;gap:22px;padding-right:22px;font-family:"Bowlby One","Arial Black",sans-serif;text-transform:uppercase;font-size:clamp(1.1rem,2.4vw,1.9rem)}
+.strip svg{width:.9em;height:.9em;flex:none}
+
+/* menu */
+.sec{padding:clamp(64px,9vw,130px) var(--pad)}
+.cream{background:var(--cream)}
+.sh{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(30px,5vw,60px)}
+.sh h2{font-size:clamp(2.3rem,8.4vw,6.4rem)}
+.sh h2 em{font-style:normal;color:var(--red);-webkit-text-stroke:2px var(--ink);text-shadow:4px 4px 0 var(--ink)}
+.sh p{max-width:34ch;font-weight:500}
+.sh .mk{font-size:1.25rem;color:var(--red);display:block;transform:rotate(-2deg);margin-bottom:6px}
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;perspective:1200px}
+.card{position:relative;border:var(--bo);border-radius:28px;box-shadow:var(--sh);padding:26px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:250px;transition:transform .35s var(--ease),box-shadow .35s var(--ease);will-change:transform;transform-style:preserve-3d}
+.card:hover{box-shadow:12px 12px 0 var(--ink)}
+.card h3{font-family:"Bowlby One","Arial Black",sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(2rem,4.6vw,3.6rem);line-height:.92}
+.card p{max-width:30ch;font-weight:500;margin-top:10px}
+.card .tag{align-self:flex-start;background:var(--ink);color:var(--cream);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:22px}
+.card .art{position:absolute;right:-14px;bottom:-14px;width:46%;max-width:240px;transition:transform .5s var(--boing)}
+.card:hover .art{transform:translate(-8px,-10px) rotate(-8deg) scale(1.06)}
+.card .art [stroke]{stroke-linejoin:round;stroke-linecap:round}
+.c1{grid-column:span 7;grid-row:span 2;background:var(--red);color:var(--cream);min-height:520px}
+.c1 .art{width:62%;max-width:380px;right:-20px;bottom:-10px}
+.c1 .tag{background:var(--yel);color:var(--ink)}
+.c2 p,.c3 p{max-width:56%}
+.c2{grid-column:span 5;background:var(--yel)}
+.c3{grid-column:span 5;background:#fff}
+.c4{grid-column:span 12;background:var(--ink);color:var(--cream);min-height:230px}
+.c4 .tag{background:var(--pink);color:var(--ink)}
+.c4 .art{width:22%;max-width:170px;right:5%;bottom:-18px}
+.c4 h3{color:var(--pink)}
+.after{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center;justify-content:space-between;margin-top:34px}
+.after p{font-weight:500;max-width:44ch}
+
+/* drip */
+.drip{display:block;width:100%;height:clamp(40px,7vw,90px);margin-bottom:-1px}
+
+/* rules */
+.blk{background:var(--ink);color:var(--cream);position:relative}
+.blk .sh h2{color:var(--yel)}
+.blk .sh h2 em{color:var(--red);-webkit-text-stroke:0;text-shadow:none}
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.rule{border:3px solid var(--cream);border-radius:26px;padding:26px;position:relative;transition:transform .4s var(--boing),background-color .3s,color .3s}
+.rule:nth-child(1){transform:rotate(-1.5deg)}.rule:nth-child(2){transform:rotate(1deg) translateY(18px)}.rule:nth-child(3){transform:rotate(-.6deg)}
+.rule:hover{transform:rotate(0) translateY(-8px);background:var(--yel);color:var(--ink);border-color:var(--yel)}
+.rule .mk{font-size:1.2rem;color:var(--red)}
+.rule h3{font-family:"Bowlby One","Arial Black",sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1;margin:10px 0 12px}
+.rule p{opacity:.85}
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,70px);align-items:center;margin-top:clamp(56px,8vw,110px)}
+.story .big{font-family:"Bowlby One","Arial Black",sans-serif;text-transform:uppercase;font-size:clamp(1.9rem,4.6vw,3.6rem);line-height:1}
+.story .big span{color:var(--yel)}
+.story p{font-size:1.1rem;opacity:.86;max-width:44ch}
+.story p+p{margin-top:14px}
+
+/* rating */
+.rate{background:var(--red);color:var(--cream);padding:clamp(60px,8vw,110px) var(--pad);display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,5vw,70px);align-items:center;position:relative;overflow:hidden;border-top:var(--bo);border-bottom:var(--bo);background-image:radial-gradient(circle at 1px 1px,rgba(22,16,11,.2) 2px,transparent 2.6px);background-size:20px 20px}
+.rate .n{font-family:"Bowlby One","Arial Black",sans-serif;font-size:clamp(7rem,27vw,20rem);line-height:.8;color:var(--yel);-webkit-text-stroke:3px var(--ink);text-shadow:8px 8px 0 var(--ink);font-variant-numeric:tabular-nums}
+.stars{position:relative;width:clamp(170px,22vw,280px);margin-bottom:16px}
+.stars svg{width:100%;height:auto}
+.stars .on{position:absolute;inset:0;clip-path:inset(0 100% 0 0);transition:clip-path 1.4s .3s var(--ease)}
+.in .stars .on{clip-path:inset(0 2% 0 0)}
+.rate h2{font-size:clamp(1.7rem,4.6vw,3.6rem)}
+.rate p{margin-top:12px;font-weight:500;font-size:1.1rem;max-width:36ch}
+
+/* location */
+.loc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,60px);align-items:stretch}
+.loc h2{font-size:clamp(2.3rem,7vw,5.4rem);margin-bottom:20px}
+.loc ul li{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:var(--bo);font-weight:500;font-size:1.08rem}
+.loc ul svg{width:26px;height:26px;flex:none;margin-top:2px}
+.loc .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.map{position:relative;border:var(--bo);border-radius:28px;box-shadow:var(--sh);overflow:hidden;min-height:340px;background:#BFE6F2}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .pin{transform-origin:50% 100%;transform-box:fill-box;animation:hop 1.6s var(--ease) infinite}
+.map .lbl{position:absolute;left:14px;bottom:14px;background:var(--cream);border:var(--bo);border-radius:999px;padding:6px 14px;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.map .lbl2{position:absolute;right:14px;top:14px;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.6}
+@keyframes hop{0%,100%{transform:none}50%{transform:translateY(-14px)}}
+
+/* final */
+.fin{background:var(--yel);padding:clamp(70px,10vw,140px) var(--pad);text-align:center;position:relative;overflow:hidden;background-image:radial-gradient(circle at 1px 1px,rgba(22,16,11,.16) 2px,transparent 2.6px);background-size:22px 22px}
+.fin h2{font-size:clamp(2.8rem,13vw,10rem)}
+.fin h2 em{font-style:normal;color:var(--red);-webkit-text-stroke:2px var(--ink);text-shadow:6px 6px 0 var(--ink);display:inline-block;transform:rotate(-3deg)}
+.fin p{font-size:1.15rem;font-weight:500;margin:22px auto 30px;max-width:34ch}
+.fin .tel2{display:block;margin-top:26px;font-family:"Bowlby One","Arial Black",sans-serif;font-size:clamp(1.3rem,3vw,2rem)}
+.ft{background:var(--ink);color:var(--cream);padding:26px var(--pad) 80px;display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between;font-size:.9rem}
+.ft b{font-family:"Bowlby One","Arial Black",sans-serif;font-weight:400;text-transform:uppercase;color:var(--yel)}
+.pill{position:fixed;left:14px;bottom:14px;z-index:45;background:var(--ink);color:var(--cream);padding:7px 13px;border-radius:999px;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:7px;border:2px solid var(--cream)}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--yel)}
+
+.js .rv{opacity:0;transform:translateY(40px) rotate(1.5deg);transition:opacity .7s var(--ease),transform .8s var(--boing);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .rule.rv.in:nth-child(1){transform:rotate(-1.5deg)}.js .rule.rv.in:nth-child(2){transform:rotate(1deg) translateY(18px)}.js .rule.rv.in:nth-child(3){transform:rotate(-.6deg)}
+.js .rule.rv.in:hover{transform:rotate(0) translateY(-8px)}
+
+@media (min-width:901px){.hero h1{font-size:clamp(3.6rem,7vw,7.4rem)}}
+@media (max-width:900px){
+.nav{display:none}.burger{display:block}
+.hdr{padding:6px 6px 6px 16px;top:10px}
+.hero{grid-template-columns:1fr;padding-top:96px;gap:0}
+.stage{min-height:0;margin-top:26px;padding:20px 0 10px}
+.bgr{width:min(78%,340px)}
+.badge{right:-4px;top:-6px;width:112px}
+.scr{left:0;bottom:0;font-size:1.1rem}
+.c1,.c2,.c3,.c4{grid-column:span 12}
+.c1{min-height:400px}
+.c4 .art{width:30%}
+.c2 p,.c3 p,.c4 p{max-width:60%}
+.c2 .art,.c3 .art{width:38%}
+.rules,.story,.loc{grid-template-columns:1fr}
+.rule:nth-child(2),.js .rule.rv.in:nth-child(2){transform:rotate(1deg)}
+.rate{grid-template-columns:1fr}
+.rate .n{text-shadow:5px 5px 0 var(--ink)}
+.map{min-height:280px}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.js .rv{opacity:1;transform:none}
+.stars .on{clip-path:inset(0 2% 0 0)}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <path id="st" d="M12 2.2l3 6.2 6.8.9-5 4.7 1.3 6.7L12 17.5l-6.1 3.2 1.3-6.7-5-4.7 6.8-.9z"/>
+  <symbol id="bolt" viewBox="0 0 24 24"><path d="M14 1 4 14h6l-1 9 11-14h-7z" fill="currentColor"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.500 6.500 6.500" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<header class="hdr" id="hdr">
+  <a href="#top" class="logo" aria-label="Madbuns home">Mad<b>buns</b></a>
+  <nav class="nav" aria-label="Primary">
+    <a class="l" href="#menu">The goods</a>
+    <a class="l" href="#rules">House rules</a>
+    <a class="l" href="#find">Find us</a>
+    <a class="btn sm" href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20I'd%20like%20to%20place%20an%20order"><svg><use href="#wa"/></svg>Order</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="mnav" id="mnav">
+  <a href="#menu">The goods</a>
+  <a href="#rules">House rules</a>
+  <a href="#find">Find us</a>
+  <a href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20I'd%20like%20to%20place%20an%20order">Order now</a>
+  <p>+961 76 112 708 · Mina, Tripoli</p>
+</div>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div>
+    <span class="kick"><i></i>Burger joint · Mina, Tripoli</span>
+    <h1 class="d"><span class="ln"><span>Go a little</span></span><span class="ln"><span class="mad">Mad</span></span><span class="ln"><span>for buns.</span></span></h1>
+    <p class="lead">Stacked burgers, salty fries, sauces you will think about tomorrow and shakes thick enough to fight the straw.</p>
+    <div class="hero-cta">
+      <a class="btn" data-mag href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20I'd%20like%20to%20place%20an%20order"><svg><use href="#wa"/></svg>Order on WhatsApp</a>
+      <a class="tel" href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20I'd%20like%20to%20place%20an%20order">+961 76 112 708</a>
+    </div>
+  </div>
+  <div class="stage" aria-hidden="true">
+    <svg class="bgr" id="bgr" viewBox="0 0 400 420">
+      <g class="ly" data-s="46"><g class="drop"><path d="M48 312h304q10 0 10 12 0 50-52 50H90q-52 0-52-50 0-12 10-12z" fill="#E9942F" stroke="#16100B" stroke-width="7"/></g></g>
+      <g class="ly" data-s="22"><g class="drop"><rect x="42" y="256" width="316" height="48" rx="24" fill="#5B2C14" stroke="#16100B" stroke-width="7"/><path d="M80 272h30M150 288h40M240 270h26M300 286h22" stroke="#3A1A0A" stroke-width="5"/></g></g>
+      <g class="ly" data-s="4"><g class="drop"><path d="M36 230h328v18h-40l-30 34-30-34h-70l-22 22-22-22H36z" fill="#FFC81A" stroke="#16100B" stroke-width="7"/></g></g>
+      <g class="ly" data-s="-14"><g class="drop"><rect x="52" y="204" width="296" height="24" rx="12" fill="#EE3A1B" stroke="#16100B" stroke-width="7"/></g></g>
+      <g class="ly" data-s="-32"><g class="drop"><path d="M30 190q21-24 42 0t42 0 42 0 42 0 42 0 42 0 42 0 42 0v12H30z" fill="#58B947" stroke="#16100B" stroke-width="7"/></g></g>
+      <g class="ly" data-s="-56"><g class="drop"><path d="M40 150Q40 38 200 38t160 112q0 16-20 16H60q-20 0-20-16z" fill="#E9942F" stroke="#16100B" stroke-width="7"/><path d="M78 118q20-44 74-56" fill="none" stroke="#FFD08A" stroke-width="8"/><g fill="#FFF3DA" stroke="#16100B" stroke-width="3"><ellipse cx="170" cy="82" rx="9" ry="5" transform="rotate(-20 170 82)"/><ellipse cx="226" cy="74" rx="9" ry="5" transform="rotate(14 226 74)"/><ellipse cx="270" cy="104" rx="9" ry="5" transform="rotate(30 270 104)"/><ellipse cx="204" cy="118" rx="9" ry="5"/><ellipse cx="130" cy="120" rx="9" ry="5" transform="rotate(-30 130 120)"/><ellipse cx="310" cy="134" rx="9" ry="5" transform="rotate(20 310 134)"/></g></g></g>
+    </svg>
+    <svg class="badge" viewBox="0 0 160 160">
+      <circle cx="80" cy="80" r="77" fill="#16100B"/>
+      <g class="spin"><defs><path id="circ" d="M80 80m-60 0a60 60 0 1 1 120 0a60 60 0 1 1-120 0"/></defs><text><textPath href="#circ" textLength="368" lengthAdjust="spacing">RATED ON GOOGLE ★ 247 REVIEWS ★ </textPath></text></g>
+      <text class="n" x="80" y="94" text-anchor="middle">4.9</text>
+    </svg>
+    <span class="scr mk"><svg viewBox="0 0 46 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M3 24C12 6 26 4 41 10M41 10l-9-6M41 10l-7 8"/></svg>scroll to unstack</span>
+  </div>
+</section>
+
+<div class="strips" aria-hidden="true">
+  <div class="strip a"><div>
+    <span>Smashed<svg><use href="#bolt"/></svg>Stacked<svg><use href="#bolt"/></svg>Sauced<svg><use href="#bolt"/></svg>Salted<svg><use href="#bolt"/></svg>Shaken<svg><use href="#bolt"/></svg>Smashed<svg><use href="#bolt"/></svg>Stacked<svg><use href="#bolt"/></svg>Sauced<svg><use href="#bolt"/></svg>Salted<svg><use href="#bolt"/></svg>Shaken<svg><use href="#bolt"/></svg></span>
+    <span>Smashed<svg><use href="#bolt"/></svg>Stacked<svg><use href="#bolt"/></svg>Sauced<svg><use href="#bolt"/></svg>Salted<svg><use href="#bolt"/></svg>Shaken<svg><use href="#bolt"/></svg>Smashed<svg><use href="#bolt"/></svg>Stacked<svg><use href="#bolt"/></svg>Sauced<svg><use href="#bolt"/></svg>Salted<svg><use href="#bolt"/></svg>Shaken<svg><use href="#bolt"/></svg></span>
+  </div></div>
+  <div class="strip b"><div>
+    <span>Mina, Tripoli<svg><use href="#bolt"/></svg>Two hands required<svg><use href="#bolt"/></svg>Napkins recommended<svg><use href="#bolt"/></svg>Mina, Tripoli<svg><use href="#bolt"/></svg>Two hands required<svg><use href="#bolt"/></svg>Napkins recommended<svg><use href="#bolt"/></svg></span>
+    <span>Mina, Tripoli<svg><use href="#bolt"/></svg>Two hands required<svg><use href="#bolt"/></svg>Napkins recommended<svg><use href="#bolt"/></svg>Mina, Tripoli<svg><use href="#bolt"/></svg>Two hands required<svg><use href="#bolt"/></svg>Napkins recommended<svg><use href="#bolt"/></svg></span>
+  </div></div>
+</div>
+
+<section class="sec cream" id="menu">
+  <div class="sh">
+    <div class="rv"><span class="mk">from the kitchen</span><h2 class="d">The <em>goods</em></h2></div>
+    <p class="rv" style="--d:.1s">Four food groups. That is the whole pyramid. Message us for today's full menu and we will send it straight over.</p>
+  </div>
+  <div class="bento">
+    <article class="card c1 rv" data-tilt>
+      <div><span class="tag">The main event</span><h3>Burgers</h3><p>Soft buns, juicy patties, melted cheese and the kind of stack that needs both hands and your full attention.</p></div>
+      <svg class="art" viewBox="0 0 200 190"><path d="M24 150h152q6 0 6 6 0 24-26 24H44q-26 0-26-24 0-6 6-6z" fill="#E9942F" stroke="#16100B" stroke-width="6"/><rect x="20" y="118" width="160" height="26" rx="13" fill="#5B2C14" stroke="#16100B" stroke-width="6"/><path d="M16 104h168v10h-22l-16 18-16-18H16z" fill="#FFC81A" stroke="#16100B" stroke-width="6"/><path d="M14 96q11-13 22 0t22 0 22 0 22 0 22 0 22 0 22 0 18 0v6H14z" fill="#58B947" stroke="#16100B" stroke-width="6"/><path d="M20 76Q20 18 100 18t80 58q0 8-10 8H30q-10 0-10-8z" fill="#E9942F" stroke="#16100B" stroke-width="6"/><g fill="#FFF3DA" stroke="#16100B" stroke-width="2"><ellipse cx="80" cy="42" rx="6" ry="3.500"/><ellipse cx="116" cy="38" rx="6" ry="3.500"/><ellipse cx="140" cy="56" rx="6" ry="3.500"/><ellipse cx="100" cy="60" rx="6" ry="3.500"/></g></svg>
+    </article>
+    <article class="card c2 rv" data-tilt style="--d:.08s">
+      <div><span class="tag">On the side</span><h3>Fries</h3><p>Hot, golden, properly salted. Order extra, someone will steal yours.</p></div>
+      <svg class="art" viewBox="0 0 160 170"><g fill="#FFE169" stroke="#16100B" stroke-width="5"><rect x="38" y="20" width="16" height="90" rx="4" transform="rotate(-10 46 65)"/><rect x="60" y="8" width="16" height="100" rx="4"/><rect x="82" y="14" width="16" height="96" rx="4" transform="rotate(6 90 62)"/><rect x="104" y="26" width="16" height="84" rx="4" transform="rotate(14 112 68)"/></g><path d="M28 76q52 22 104 0l-12 84H40z" fill="#EE3A1B" stroke="#16100B" stroke-width="6"/><path d="M62 112h36" stroke="#FFF3DA" stroke-width="8"/></svg>
+    </article>
+    <article class="card c3 rv" data-tilt style="--d:.16s">
+      <div><span class="tag">The secret</span><h3>Sauces</h3><p>For dipping, dunking, drizzling and occasionally wearing.</p></div>
+      <svg class="art" viewBox="0 0 160 180"><rect x="62" y="8" width="20" height="22" rx="4" fill="#16100B"/><path d="M50 52q0-22 22-22t22 22v110q0 10-10 10H60q-10 0-10-10z" fill="#EE3A1B" stroke="#16100B" stroke-width="6"/><rect x="50" y="86" width="44" height="40" fill="#FFF3DA" stroke="#16100B" stroke-width="5"/><path d="M104 62q0-18 18-18t18 18v100q0 10-10 10h-16q-10 0-10-10z" fill="#FFC81A" stroke="#16100B" stroke-width="6"/><rect x="114" y="26" width="16" height="18" rx="4" fill="#16100B"/></svg>
+    </article>
+    <article class="card c4 rv" data-tilt style="--d:.1s">
+      <div><span class="tag">To wash it down</span><h3>Shakes</h3><p>Thick, cold and unapologetically sweet. Dessert you can drink.</p></div>
+      <svg class="art" viewBox="0 0 130 190"><path d="M84 6 70 62" stroke="#EE3A1B" stroke-width="9"/><path d="M26 66q0-22 20-22 4-18 22-16 18-4 22 14 20 0 20 24z" fill="#FFF3DA" stroke="#FFF3DA" stroke-width="5"/><path d="M22 66h90l-12 112H34z" fill="#FF9EB7" stroke="#FFF3DA" stroke-width="6"/><path d="M26 102h82" stroke="#FFF3DA" stroke-width="5"/><circle cx="62" cy="34" r="9" fill="#EE3A1B"/></svg>
+    </article>
+  </div>
+  <div class="after rv">
+    <p>Feeding a crew or planning a get-together? Tell us how many mouths and we will sort the rest.</p>
+    <a class="btn blk" data-mag href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20can%20you%20send%20me%20the%20menu%3F"><svg><use href="#wa"/></svg>Send me the menu</a>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="background:var(--ink)"><path fill="#FFF3DA" d="M0 0h1440v26c-50 0-50 52-100 52s-44-52-100-52-50 30-100 30-44-30-120-30-50 60-100 60-44-60-120-60-90 0-140 0-44 42-90 42-44-42-120-42-60 0-100 0-44 56-90 56-44-56-100-56S60 26 0 26z"/></svg>
+
+<section class="sec blk" id="rules">
+  <div class="sh">
+    <div class="rv"><span class="mk">read before eating</span><h2 class="d">House <em>rules</em></h2></div>
+  </div>
+  <ul class="rules">
+    <li class="rule rv"><span class="mk">rule no. 1</span><h3>Two hands, minimum</h3><p>Put the phone down. This burger deserves a firm grip and zero distractions.</p></li>
+    <li class="rule rv" style="--d:.1s"><span class="mk">rule no. 2</span><h3>Sauce is not optional</h3><p>Dip the fries. Dip the burger. Dip the fries in the burger. We do not judge.</p></li>
+    <li class="rule rv" style="--d:.2s"><span class="mk">rule no. 3</span><h3>Always save room</h3><p>There is a shake with your name on it, and it would be rude to leave it waiting.</p></li>
+  </ul>
+  <div class="story">
+    <p class="big rv">No white tablecloths. No tiny portions. <span>Just buns done loud.</span></p>
+    <div class="rv" style="--d:.12s">
+      <p>Madbuns is a burger joint in Mina, Tripoli, built around one simple idea: a burger should be messy, generous and gone in minutes.</p>
+      <p>Come hungry, bring friends, and leave planning your next visit.</p>
+    </div>
+  </div>
+</section>
+
+<section class="rate" id="rating">
+  <div class="n rv"><span data-count="4.9" data-dec="1">4.9</span></div>
+  <div class="rv" style="--d:.15s">
+    <div class="stars" aria-label="4.9 out of 5 stars">
+      <svg viewBox="0 0 120 24" fill="none" stroke="#16100B" stroke-width="1.6" stroke-linejoin="round"><use href="#st"/><use href="#st" x="24"/><use href="#st" x="48"/><use href="#st" x="72"/><use href="#st" x="96"/></svg>
+      <svg class="on" viewBox="0 0 120 24" fill="#FFC81A" stroke="#16100B" stroke-width="1.6" stroke-linejoin="round"><use href="#st"/><use href="#st" x="24"/><use href="#st" x="48"/><use href="#st" x="72"/><use href="#st" x="96"/></svg>
+    </div>
+    <h2 class="d">out of 5 on Google</h2>
+    <p>That is the average across <b><span data-count="247">247</span> Google reviews</b>. Tripoli has spoken, and Tripoli was hungry.</p>
+  </div>
+</section>
+
+<section class="sec cream" id="find">
+  <div class="loc">
+    <div>
+      <h2 class="d rv">Find the buns</h2>
+      <ul class="rv">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.500"/></svg><span>Mina, Tripoli, Lebanon</span></li>
+        <li><svg><use href="#wa"/></svg><span><a class="tel" href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20I'd%20like%20to%20place%20an%20order">+961 76 112 708</a> on WhatsApp</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Message us to check we are open and to order ahead.</span></li>
+      </ul>
+      <div class="acts rv">
+        <a class="btn" data-mag href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20I'd%20like%20to%20place%20an%20order"><svg><use href="#wa"/></svg>Order now</a>
+        <a class="btn yel" href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20can%20you%20send%20me%20your%20location%20pin%3F">Get the pin</a>
+      </div>
+    </div>
+    <div class="map rv" aria-hidden="true">
+      <svg viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice">
+        <path d="M-10 470V180q80-50 170-20t170-30 160 10 120-40v370z" fill="#FFE8B0" stroke="#16100B" stroke-width="4"/>
+        <g fill="none" stroke="#16100B" stroke-width="3" stroke-linecap="round" opacity=".5"><path d="M40 70q20-14 40 0t40 0"/><path d="M300 50q20-14 40 0t40 0"/><path d="M470 80q20-14 40 0t40 0"/><path d="M170 110q20-14 40 0t40 0"/></g>
+        <g stroke="#16100B" stroke-width="12" stroke-linecap="round" fill="none"><path d="M-10 300 610 250"/><path d="M180 470 240 180"/><path d="M420 470 400 160"/><path d="M-10 400 610 380"/></g>
+        <g stroke="#FFF3DA" stroke-width="6" stroke-linecap="round" fill="none"><path d="M-10 300 610 250"/><path d="M180 470 240 180"/><path d="M420 470 400 160"/><path d="M-10 400 610 380"/></g>
+        <g class="pin"><path d="M320 276s-34-34-34-60a34 34 0 0 1 68 0c0 26-34 60-34 60z" fill="#EE3A1B" stroke="#16100B" stroke-width="5" stroke-linejoin="round"/><circle cx="320" cy="216" r="11" fill="#FFC81A" stroke="#16100B" stroke-width="4"/></g>
+      </svg>
+      <span class="lbl">Madbuns · Mina</span><span class="lbl2">Illustrative map</span>
+    </div>
+  </div>
+</section>
+
+<section class="fin" id="order">
+  <h2 class="d rv">Hungry? <em>Say it.</em></h2>
+  <p class="rv">One message is all it takes. Tell us what you are craving and we will take it from there.</p>
+  <a class="btn rv" data-mag href="https://wa.me/96176112708?text=Hi%20Madbuns%2C%20I'd%20like%20to%20place%20an%20order"><svg><use href="#wa"/></svg>Order on WhatsApp</a>
+  <span class="tel2 rv">+961 76 112 708</span>
+</section>
+</main>
+
+<footer class="ft">
+  <span><b>Madbuns</b> · Hamburger restaurant · Mina, Tripoli, Lebanon</span>
+  <span>+961 76 112 708</span>
+  <span>Preview concept, not the official website</span>
+</footer>
+<div class="pill"><i></i>Preview concept</div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var hdr=document.getElementById('hdr'),burger=document.getElementById('burger');
+  burger.addEventListener('click',function(){var o=document.body.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+  document.querySelectorAll('#mnav a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('open');burger.setAttribute('aria-expanded',false);});});
+
+  function count(el){
+    if(reduce||el._c)return;el._c=1;
+    var end=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),t0=null,dur=1500;
+    function f(v){return dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US');}
+    function tick(t){if(t0===null)t0=t;var p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);el.textContent=f(end*e);if(p<1)requestAnimationFrame(tick);}
+    el.textContent=f(0);requestAnimationFrame(tick);
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(count);io.unobserve(e.target);}});},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+  // exploded burger on scroll
+  var layers=[].slice.call(document.querySelectorAll('#bgr .ly')),hero=document.getElementById('hero'),ticking=false;
+  function frame(){
+    ticking=false;
+    var y=window.scrollY||0;
+    hdr.classList.toggle('scrolled',y>30);
+    if(reduce)return;
+    var h=hero.offsetHeight,p=Math.min(1,y/(h*.6));
+    if(y<h*1.1)layers.forEach(function(l,i){
+      var s=+l.dataset.s;
+      l.style.transform='translate('+(p*(i%2?10:-10))+'px,'+(s*p*1.5)+'px) rotate('+(p*(i%2?3:-3))+'deg)';
+    });
+  }
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(frame);}}
+  window.addEventListener('scroll',req,{passive:true});
+  layers.forEach(function(l){l.style.transformOrigin='200px 210px';});
+  frame();
+
+  if(fine&&!reduce){
+    document.querySelectorAll('[data-tilt]').forEach(function(c){
+      c.addEventListener('pointermove',function(e){
+        var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+        c.style.transform='perspective(1000px) rotateX('+(-y*7)+'deg) rotateY('+(x*9)+'deg) translateY(-6px)';
+      });
+      c.addEventListener('pointerleave',function(){c.style.transform='';});
+    });
+    document.querySelectorAll('[data-mag]').forEach(function(b){
+      b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.22)+'px,'+((e.clientY-r.top-r.height/2)*.3)+'px) rotate(-2deg)';});
+      b.addEventListener('pointerleave',function(){b.style.transform='';});
+    });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stories Lagos — Restaurant &amp; Lounge, Lekki Phase 1</title>
+<meta name="description" content="Stories Lagos. Restaurant and lounge at 19 Da-Silva St, Lekki Phase 1. Nigerian, Asian and Italian plates, cocktails and shisha. Rated 4.2 on Google.">
+<meta name="theme-color" content="#0C0A0B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0C0A0B;--coal:#151112;--ember:#E8842C;--ember2:#F4B15A;--wine:#6E1730;--sand:#EAD9C0;--mute:#8E8176;--line:rgba(234,217,192,.16);--pad:clamp(20px,5vw,80px);--ease:cubic-bezier(.19,.8,.15,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{background:var(--night);color:var(--sand);font-family:"Manrope",system-ui,sans-serif;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}ul{list-style:none}svg{display:block}
+h1,h2,h3,.bd{font-family:"Bodoni Moda","Didot","Bodoni MT",Georgia,serif;font-weight:400;line-height:1;letter-spacing:-.015em}
+em{font-style:italic}
+.cap{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--ember)}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.glowc{position:fixed;left:0;top:0;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;pointer-events:none;z-index:1;background:radial-gradient(closest-side,rgba(232,132,44,.16),rgba(232,132,44,.05) 50%,transparent);opacity:0;transition:opacity .6s;will-change:transform}
+.glowc.on{opacity:1}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:22px var(--pad);transition:padding .45s var(--ease),background-color .45s,border-color .45s;border-bottom:1px solid transparent}
+.hdr.scrolled{padding-top:12px;padding-bottom:12px;background:rgba(12,10,11,.78);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:var(--line)}
+.logo{font-family:"Bodoni Moda",serif;font-size:1.5rem;font-style:italic;letter-spacing:-.01em;display:flex;align-items:baseline;gap:8px}
+.logo small{font-family:"Manrope",sans-serif;font-style:normal;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ember);font-weight:700}
+.nav{display:flex;align-items:center;gap:30px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500}
+.nav a.l{position:relative;padding:6px 0;opacity:.8;transition:opacity .3s}
+.nav a.l:hover{opacity:1}
+.nav a.l::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ember);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav a.l:hover::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border-radius:999px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;background:var(--ember);color:var(--night);position:relative;overflow:hidden;isolation:isolate;transition:transform .35s var(--ease),box-shadow .5s var(--ease);box-shadow:0 0 0 0 rgba(232,132,44,0);will-change:transform}
+.btn::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--sand);transform:scale(0);opacity:0;transition:transform .55s var(--ease),opacity .4s;z-index:-1}
+.btn:hover{box-shadow:0 0 44px -6px rgba(232,132,44,.75)}
+.btn:hover::before{transform:scale(1.05);opacity:1}
+.btn svg{width:17px;height:17px}
+.btn.sm{padding:11px 20px;font-size:.7rem}
+.btn.gh{background:transparent;color:var(--sand);box-shadow:inset 0 0 0 1px rgba(234,217,192,.5)}
+.btn.gh:hover{color:var(--night);box-shadow:inset 0 0 0 1px var(--sand)}
+.burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative;color:inherit}
+.burger span{position:absolute;left:10px;right:10px;height:1.5px;background:currentColor;transition:transform .4s var(--ease)}
+.burger span:first-child{top:17px}.burger span:last-child{top:26px}
+.open .burger span:first-child{transform:translateY(4.5px) rotate(45deg)}.open .burger span:last-child{transform:translateY(-4.5px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:25;background:var(--night);display:flex;flex-direction:column;justify-content:center;padding:90px var(--pad) 40px;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s}
+.mnav::before{content:"";position:absolute;right:-30%;top:-10%;width:90%;padding-bottom:90%;border-radius:50%;background:radial-gradient(closest-side,rgba(110,23,48,.8),transparent)}
+.mnav a{position:relative;display:flex;align-items:baseline;gap:16px;font-family:"Bodoni Moda",serif;font-style:italic;font-size:11vw;line-height:1.25;border-bottom:1px solid var(--line);padding:8px 0;transform:translateY(20px);opacity:0;transition:transform .6s var(--ease),opacity .6s}
+.mnav a small{font-family:"Manrope",sans-serif;font-style:normal;font-size:.66rem;letter-spacing:.24em;color:var(--ember);font-weight:700}
+.mnav p{position:relative;margin-top:26px;color:var(--mute);font-size:.86rem;letter-spacing:.08em}
+.open .mnav{opacity:1;visibility:visible}.open .mnav a{transform:none;opacity:1}
+.open .mnav a:nth-child(2){transition-delay:.06s}.open .mnav a:nth-child(3){transition-delay:.12s}.open .mnav a:nth-child(4){transition-delay:.18s}.open .mnav a:nth-child(5){transition-delay:.24s}
+
+/* chapter rail */
+.rail{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+.rail a{display:flex;align-items:center;gap:10px;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--mute);transition:color .4s}
+.rail a span{opacity:0;transform:translateX(8px);transition:opacity .4s,transform .4s var(--ease)}
+.rail a i{display:block;width:18px;height:1px;background:currentColor;transition:transform .4s var(--ease);transform-origin:right}
+.rail a:hover span,.rail a.on span{opacity:1;transform:none}
+.rail a.on{color:var(--ember)}.rail a.on i{transform:scaleX(2)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;padding:120px var(--pad) 46px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;isolation:isolate}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);z-index:-1;will-change:transform}
+.b1{width:62vmax;height:62vmax;right:-22vmax;top:-22vmax;background:radial-gradient(closest-side,rgba(110,23,48,.95),rgba(110,23,48,0));animation:drift 18s ease-in-out infinite alternate}
+.b2{width:44vmax;height:44vmax;left:-16vmax;bottom:-18vmax;background:radial-gradient(closest-side,rgba(232,132,44,.5),rgba(232,132,44,0));animation:drift 22s ease-in-out infinite alternate-reverse}
+.b3{width:26vmax;height:26vmax;right:16%;bottom:8%;background:radial-gradient(closest-side,rgba(244,177,90,.28),transparent);animation:drift 15s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-6vmax,5vmax,0) scale(1.18)}}
+.glass{position:absolute;right:max(var(--pad),6vw);top:15%;width:min(38vw,430px);z-index:-1;will-change:transform}
+.glass path,.glass circle,.glass line{fill:none;stroke:var(--sand);stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.8s .5s var(--ease) forwards}
+.glass .e{stroke:var(--ember)}
+.glass .dl{animation-delay:1.3s}
+.glass .moon{stroke:none;fill:url(#mg);stroke-dasharray:none;animation:fade 2s .3s both}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero .cap{animation:fade 1s .2s both;display:flex;align-items:center;gap:14px}
+.hero .cap::before{content:"";width:40px;height:1px;background:var(--ember)}
+.hero h1{font-size:clamp(3.3rem,14.6vw,11.5rem);margin:22px 0 30px;line-height:.9}
+.hero h1 .ln{display:block;overflow:hidden;padding:.04em .08em .14em 0;margin-bottom:-.14em}
+.hero h1 .ln>span{display:inline-block;animation:up 1.3s var(--ease) both}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.14s}.hero h1 .ln:nth-child(3)>span{animation-delay:.28s}
+.hero h1 em{color:var(--ember2)}
+.hero h1 .ind{padding-left:clamp(0px,9vw,150px)}
+.hero-bot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 60px;align-items:end;border-top:1px solid var(--line);padding-top:26px;animation:fade 1s .8s both}
+.hero-bot p{max-width:48ch;color:rgba(234,217,192,.78)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+@keyframes up{from{transform:translateY(112%) skewY(5deg)}to{transform:none}}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.mq{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:16px 0;position:relative;z-index:2}
+.mq div{display:inline-flex;animation:mq 30s linear infinite;will-change:transform}
+.mq span{display:inline-flex;align-items:center;gap:26px;padding-right:26px;font-family:"Bodoni Moda",serif;font-style:italic;font-size:clamp(1.2rem,2.2vw,1.8rem)}
+.mq span i{font-style:normal;color:var(--ember);font-size:.6em}
+
+/* chapters */
+.ch{position:relative;z-index:2}
+.chh{padding:clamp(80px,11vw,160px) var(--pad) clamp(30px,4vw,50px);display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(18px,4vw,60px);align-items:end}
+.num{font-family:"Bodoni Moda",serif;font-style:italic;font-size:clamp(5rem,15vw,13rem);line-height:.74;color:transparent;-webkit-text-stroke:1px rgba(232,132,44,.75)}
+.chh h2{font-size:clamp(2.2rem,6vw,5rem);margin-top:14px}
+.chh h2 em{color:var(--ember2)}
+.chh p{color:var(--mute);max-width:48ch;margin-top:16px}
+
+/* horizontal */
+.hz{position:relative}
+.track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px var(--pad) 30px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.hz.pinned .pin{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.hz.pinned .track{overflow:visible;scroll-snap-type:none;will-change:transform;padding-bottom:10px}
+.hz.pinned .chh{padding-top:70px;padding-bottom:26px}
+.hz.pinned .num{font-size:clamp(4rem,9vw,8rem)}
+.dish{flex:0 0 min(78vw,360px);scroll-snap-align:center;position:relative;border-radius:22px;padding:26px;min-height:clamp(380px,52vh,470px);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:linear-gradient(160deg,#1E1719,#120E0F);box-shadow:inset 0 0 0 1px var(--line);transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
+.dish::before{content:"";position:absolute;width:150%;padding-bottom:150%;left:-25%;top:-70%;border-radius:50%;background:radial-gradient(closest-side,var(--c,rgba(232,132,44,.5)),transparent);opacity:.55;transition:transform .9s var(--ease),opacity .6s}
+.dish:hover{transform:translateY(-10px);box-shadow:inset 0 0 0 1px rgba(232,132,44,.6),0 40px 60px -40px rgba(232,132,44,.6)}
+.dish:hover::before{transform:translateY(22%) scale(1.15);opacity:.9}
+.dish>*{position:relative}
+.dish .top{display:flex;justify-content:space-between;align-items:flex-start;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:rgba(234,217,192,.7)}
+.dish svg.art{width:120px;height:120px;margin:10px 0 0 -6px;transition:transform .8s var(--ease)}
+.dish:hover svg.art{transform:rotate(-6deg) scale(1.08)}
+.dish .art *{fill:none;stroke:var(--sand);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.dish .art .e{stroke:var(--ember2)}
+.dish h3{font-size:clamp(1.9rem,3vw,2.5rem);font-style:italic;line-height:1.02}
+.dish p{color:rgba(234,217,192,.7);font-size:.95rem;margin-top:10px;max-width:28ch}
+.dish.end{background:var(--ember);color:var(--night);box-shadow:none;justify-content:center;gap:22px}
+.dish.end::before{display:none}
+.dish.end h3{font-size:clamp(2.2rem,3.6vw,3rem)}
+.dish.end p{color:rgba(12,10,11,.75)}
+.dish.end .btn{background:var(--night);color:var(--sand);align-self:flex-start}
+.dish.end .btn:hover{color:var(--night)}
+.spacer{flex:0 0 1px}
+.hint{padding:0 var(--pad);color:var(--mute);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.hint svg{width:34px;height:10px}
+.hz.pinned .hint{margin-top:18px}
+
+/* mix */
+.mix{overflow:hidden;padding-bottom:clamp(40px,6vw,90px)}
+.mixrow{display:flex;align-items:baseline;gap:clamp(16px,3vw,40px);white-space:nowrap;border-top:1px solid var(--line);padding:clamp(10px,1.6vw,22px) var(--pad);will-change:transform}
+.mixrow:last-of-type{border-bottom:1px solid var(--line)}
+.mixrow b{font-family:"Bodoni Moda",serif;font-weight:400;font-size:clamp(3.4rem,13vw,11rem);line-height:1.05;color:transparent;-webkit-text-stroke:1px var(--sand);transition:color .6s var(--ease),-webkit-text-stroke-color .6s}
+.mixrow:hover b,.mixrow.lit b{color:var(--ember2);-webkit-text-stroke-color:var(--ember2)}
+.mixrow:nth-child(2) b{font-style:italic}
+.mixrow span{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);font-weight:700}
+.mixp{padding:clamp(30px,4vw,56px) var(--pad) 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 60px}
+.mixp p{max-width:46ch;color:rgba(234,217,192,.78)}
+.mixp p.bd{font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1.2;color:var(--sand);font-style:italic}
+
+/* rating */
+.rate{margin:0 var(--pad);border-radius:28px;padding:clamp(40px,6vw,90px);background:radial-gradient(120% 140% at 0% 0%,#8A1F3F 0%,var(--wine) 40%,#2A0A14 100%);position:relative;overflow:hidden;display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,6vw,90px);align-items:center}
+.rate::before{content:"";position:absolute;right:-10%;bottom:-60%;width:60%;padding-bottom:60%;border-radius:50%;background:radial-gradient(closest-side,rgba(232,132,44,.55),transparent)}
+.rate>*{position:relative}
+.rnum{font-family:"Bodoni Moda",serif;font-size:clamp(7rem,20vw,15rem);line-height:.8;font-variant-numeric:lining-nums tabular-nums}
+.stars{position:relative;width:clamp(150px,16vw,210px);margin-bottom:18px}
+.stars svg{width:100%;height:auto}
+.stars .on{position:absolute;inset:0;clip-path:inset(0 100% 0 0);transition:clip-path 1.6s .3s var(--ease)}
+.in .stars .on{clip-path:inset(0 16% 0 0)}
+.rate h3{font-size:clamp(1.8rem,3.8vw,3.2rem);font-style:italic;line-height:1.08}
+.rate h3 span{font-style:normal;font-variant-numeric:lining-nums tabular-nums}
+.rate p{margin-top:14px;color:rgba(234,217,192,.75);max-width:42ch}
+
+/* address */
+.addr{padding:0 var(--pad) clamp(40px,6vw,90px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(26px,5vw,80px);align-items:stretch}
+.addr dl div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line)}
+.addr dl div:last-child{border-bottom:1px solid var(--line)}
+.addr dt{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--ember);padding-top:.45em}
+.addr dd{font-family:"Bodoni Moda",serif;font-size:1.25rem;line-height:1.35}
+.addr dd a{border-bottom:1px solid rgba(232,132,44,.7);transition:color .3s}
+.addr dd a:hover{color:var(--ember2)}
+.addr .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.map{position:relative;border-radius:22px;overflow:hidden;min-height:360px;background:linear-gradient(150deg,#1B1516,#0F0C0D);box-shadow:inset 0 0 0 1px var(--line)}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .rd{fill:none;stroke:rgba(234,217,192,.22);stroke-width:1}
+.js .map .rd{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s var(--ease)}
+.js .map.in .rd{stroke-dashoffset:0}
+.map .hot{stroke:var(--ember);stroke-width:1.6}
+.map .ping{fill:none;stroke:var(--ember);transform-origin:center;transform-box:fill-box;animation:ping 2.6s ease-out infinite}
+.map .ping.p2{animation-delay:1.3s}
+@keyframes ping{from{transform:scale(.3);opacity:1}to{transform:scale(3.4);opacity:0}}
+.map .lbl{position:absolute;left:18px;bottom:16px;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.map .lbl b{display:block;font-family:"Bodoni Moda",serif;font-style:italic;font-weight:400;font-size:1.5rem;letter-spacing:0;text-transform:none;color:var(--ember2)}
+.map .lbl2{position:absolute;right:18px;top:16px;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+
+/* final */
+.fin{position:relative;padding:clamp(90px,13vw,200px) var(--pad) clamp(70px,9vw,130px);overflow:hidden;isolation:isolate;text-align:center}
+.fin .blob{z-index:-1}
+.fin .b4{width:70vmax;height:70vmax;left:50%;bottom:-48vmax;margin-left:-35vmax;background:radial-gradient(closest-side,rgba(232,132,44,.55),rgba(110,23,48,.35) 55%,transparent);animation:drift 16s ease-in-out infinite alternate}
+.fin h2{font-size:clamp(3rem,12vw,10rem);margin:22px 0 26px;line-height:.92}
+.fin h2 em{color:var(--ember2)}
+.fin p{max-width:44ch;margin:0 auto 34px;color:rgba(234,217,192,.8)}
+.fin .acts{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.fin .tel{display:block;margin-top:34px;font-family:"Bodoni Moda",serif;font-size:clamp(1.6rem,3.4vw,2.4rem);font-variant-numeric:lining-nums}
+.ft{border-top:1px solid var(--line);padding:26px var(--pad) 80px;display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between;font-size:.82rem;color:var(--mute);position:relative;z-index:2}
+.ft a{color:var(--sand)}
+.pill{position:fixed;left:14px;bottom:14px;z-index:45;background:rgba(21,17,18,.9);color:var(--sand);padding:7px 13px;border-radius:999px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;display:flex;align-items:center;gap:8px;border:1px solid var(--line);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.pill i{width:6px;height:6px;border-radius:50%;background:var(--ember)}
+
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1.1s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1100px){.rail{display:none}}
+@media (max-width:900px){
+.nav{display:none}.burger{display:block}
+.hero{padding-top:100px}
+.glass{width:64vw;right:-10vw;top:12%;opacity:.55}
+.hero-bot{grid-template-columns:1fr}
+.chh{grid-template-columns:1fr;gap:6px}
+.mixp,.addr{grid-template-columns:1fr}
+.rate{grid-template-columns:1fr;border-radius:22px}
+.addr dl div{grid-template-columns:96px 1fr}
+.map{min-height:300px}
+.mixrow span{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.js .rv{opacity:1;transform:none}
+.glass path,.glass circle,.glass line{stroke-dashoffset:0}
+.js .map .rd{stroke-dashoffset:0}
+.stars .on{clip-path:inset(0 16% 0 0)}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="glowc" id="glowc" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <path id="st" d="M12 2.4l2.9 6.1 6.7.9-4.9 4.6 1.2 6.6L12 17.4l-5.9 3.2 1.2-6.6-4.9-4.6 6.7-.9z"/>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <radialGradient id="mg" cx=".35" cy=".3"><stop offset="0" stop-color="#F4B15A" stop-opacity=".5"/><stop offset=".6" stop-color="#E8842C" stop-opacity=".16"/><stop offset="1" stop-color="#E8842C" stop-opacity="0"/></radialGradient>
+</defs></svg>
+
+<header class="hdr" id="hdr">
+  <a href="#top" class="logo" aria-label="Stories Lagos home">Stories <small>Lagos</small></a>
+  <nav class="nav" aria-label="Primary">
+    <a class="l" href="#ch1">The table</a>
+    <a class="l" href="#ch2">The mix</a>
+    <a class="l" href="#ch4">The address</a>
+    <a class="btn sm" href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20Stories%20Lagos"><svg><use href="#wa"/></svg>Reserve</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mnav" id="mnav">
+  <a href="#ch1"><small>I</small>The table</a>
+  <a href="#ch2"><small>II</small>The mix</a>
+  <a href="#ch3"><small>III</small>The word</a>
+  <a href="#ch4"><small>IV</small>The address</a>
+  <a href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20Stories%20Lagos" style="color:var(--ember2)"><small>V</small>Reserve</a>
+  <p>+234 903 649 9010 · @storieslagos</p>
+</div>
+
+<nav class="rail" id="rail" aria-label="Chapters">
+  <a href="#top" data-ch="top"><span>Prologue</span><i></i></a>
+  <a href="#ch1" data-ch="ch1"><span>I · The table</span><i></i></a>
+  <a href="#ch2" data-ch="ch2"><span>II · The mix</span><i></i></a>
+  <a href="#ch3" data-ch="ch3"><span>III · The word</span><i></i></a>
+  <a href="#ch4" data-ch="ch4"><span>IV · The address</span><i></i></a>
+  <a href="#ch5" data-ch="ch5"><span>V · Your chapter</span><i></i></a>
+</nav>
+
+<main>
+<section class="hero" id="top" data-sec>
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <svg class="glass" id="glass" viewBox="0 0 300 380" aria-hidden="true">
+    <circle class="moon" cx="150" cy="150" r="150"/>
+    <path pathLength="1" d="M52 70h196L150 196z"/>
+    <path pathLength="1" d="M150 196v130"/>
+    <path pathLength="1" d="M96 330q54-12 108 0"/>
+    <path class="e dl" pathLength="1" d="M78 104h144"/>
+    <path class="e dl" pathLength="1" d="M214 34 138 138"/>
+    <circle class="e dl" pathLength="1" cx="170" cy="94" r="12"/>
+    <path class="dl" pathLength="1" d="M236 250q-14-16 0-32t0-32"/>
+    <path class="dl" pathLength="1" d="M258 262q-14-16 0-32t0-32"/>
+  </svg>
+  <span class="cap">Restaurant &amp; Lounge · Lekki Phase 1</span>
+  <h1><span class="ln"><span>Every night</span></span><span class="ln ind"><span>tells <em>a</em></span></span><span class="ln"><span><em>story.</em></span></span></h1>
+  <div class="hero-bot">
+    <p>Nigerian, Asian and Italian plates. Cocktails that keep the conversation going. Shisha for the slow part of the evening. Come and write yours at 19 Da-Silva Street.</p>
+    <div class="hero-cta">
+      <a class="btn" data-mag href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20Stories%20Lagos"><svg><use href="#wa"/></svg>Reserve a table</a>
+      <a class="btn gh" href="#ch1">Begin</a>
+    </div>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div>
+  <span>Seafood platter<i>✦</i>Grilled lamb chops<i>✦</i>Prawn pasta<i>✦</i>Chocolate lava cake<i>✦</i>Cocktails<i>✦</i>Shisha<i>✦</i>Takeout &amp; delivery<i>✦</i></span>
+  <span>Seafood platter<i>✦</i>Grilled lamb chops<i>✦</i>Prawn pasta<i>✦</i>Chocolate lava cake<i>✦</i>Cocktails<i>✦</i>Shisha<i>✦</i>Takeout &amp; delivery<i>✦</i></span>
+</div></div>
+
+<!-- CHAPTER I -->
+<section class="ch hz" id="ch1" data-sec>
+  <div class="pin">
+    <header class="chh">
+      <span class="num rv" aria-hidden="true">I</span>
+      <div><span class="cap rv">Chapter one</span><h2 class="rv">The <em>table</em></h2><p class="rv">The plates and pours people come back for. Ask us for the full menu on WhatsApp.</p></div>
+    </header>
+    <div class="track" id="track">
+      <article class="dish" style="--c:rgba(232,132,44,.5)">
+        <div class="top"><span>No. 01</span><span>To share</span></div>
+        <svg class="art" viewBox="0 0 120 120"><ellipse cx="60" cy="78" rx="50" ry="16"/><path d="M34 72c0-22 12-34 26-34s26 12 26 34"/><path class="e" d="M48 70c0-12 5-20 12-20s12 8 12 20M60 38V24M52 28l8-6 8 6"/><path d="M22 60q-8-10 0-18M98 60q8-10 0-18"/></svg>
+        <div><h3>Seafood platter</h3><p>The centrepiece. Built for the middle of the table and too many hands.</p></div>
+      </article>
+      <article class="dish" style="--c:rgba(110,23,48,.9)">
+        <div class="top"><span>No. 02</span><span>From the grill</span></div>
+        <svg class="art" viewBox="0 0 120 120"><path d="M30 86c-10-22 4-48 30-50 20-2 34 12 30 30-3 14-16 24-34 24"/><path class="e" d="M56 90 28 108M34 104l-8-2 2 8"/><path d="M48 58q10-8 22 0M46 70q12-8 26 0"/></svg>
+        <div><h3>Grilled lamb chops</h3><p>Fire, char and a bone to hold on to.</p></div>
+      </article>
+      <article class="dish" style="--c:rgba(244,177,90,.4)">
+        <div class="top"><span>No. 03</span><span>The Italian side</span></div>
+        <svg class="art" viewBox="0 0 120 120"><ellipse cx="60" cy="76" rx="48" ry="18"/><path d="M36 70q8-18 24-6t24-6M34 78q10-12 26-2t26-4"/><path class="e" d="M70 52q16-14 22 2-4 10-16 6M92 54l8-6"/><path d="M60 40V18M54 18v14M66 18v14"/></svg>
+        <div><h3>Prawn pasta</h3><p>Twirled, glossy and gone before you planned to finish it.</p></div>
+      </article>
+      <article class="dish" style="--c:rgba(110,23,48,.9)">
+        <div class="top"><span>No. 04</span><span>The ending</span></div>
+        <svg class="art" viewBox="0 0 120 120"><path d="M32 54h56l-6 36H38z"/><path d="M30 54q30-14 60 0"/><path class="e" d="M52 90q-4 12 6 14t10-10M60 48q-6-10 0-18M72 46q-6-8 0-14"/><ellipse cx="60" cy="98" rx="44" ry="8"/></svg>
+        <div><h3>Chocolate lava cake</h3><p>Warm in the middle. Order two spoons, or do not.</p></div>
+      </article>
+      <article class="dish" style="--c:rgba(232,132,44,.55)">
+        <div class="top"><span>No. 05</span><span>From the bar</span></div>
+        <svg class="art" viewBox="0 0 120 120"><path d="M26 30h68L60 70z"/><path d="M60 70v34M42 106h36"/><path class="e" d="M38 44h44M84 18 56 54"/><circle class="e" cx="66" cy="40" r="5"/></svg>
+        <div><h3>Cocktails</h3><p>Shaken, stirred and poured for the long version of the night.</p></div>
+      </article>
+      <article class="dish" style="--c:rgba(244,177,90,.35)">
+        <div class="top"><span>No. 06</span><span>The lounge</span></div>
+        <svg class="art" viewBox="0 0 120 120"><path d="M60 26v40M50 66h20l6 30H44z"/><path d="M52 26h16M48 104h24"/><path class="e" d="M70 74q26 0 26-20t-14-22"/><path d="M56 18q-6-8 0-14M66 18q6-8 0-14"/></svg>
+        <div><h3>Shisha</h3><p>For the slow hours, when nobody is checking the time.</p></div>
+      </article>
+      <article class="dish end">
+        <h3>Staying in tonight?</h3>
+        <p>Takeout and delivery are available. Send us your order and we will take it from there.</p>
+        <a class="btn" href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20place%20an%20order%20from%20Stories%20Lagos"><svg><use href="#wa"/></svg>Order on WhatsApp</a>
+      </article>
+      <span class="spacer" aria-hidden="true"></span>
+    </div>
+    <div class="hint" aria-hidden="true"><svg viewBox="0 0 34 10" fill="none" stroke="currentColor"><path d="M0 5h32M28 1l4 4-4 4"/></svg><span id="hinttxt">Swipe through</span></div>
+  </div>
+</section>
+
+<!-- CHAPTER II -->
+<section class="ch mix" id="ch2" data-sec>
+  <header class="chh">
+    <span class="num rv" aria-hidden="true">II</span>
+    <div><span class="cap rv">Chapter two</span><h2 class="rv">The <em>mix</em></h2><p class="rv">Three kitchens, one menu, no rules about what goes with what.</p></div>
+  </header>
+  <div class="mixrow" data-x="-1"><b>Nigerian</b><span>Home turf</span><b aria-hidden="true">Nigerian</b></div>
+  <div class="mixrow" data-x="1"><b>Asian</b><span>Heat and umami</span><b aria-hidden="true">Asian</b><b aria-hidden="true">Asian</b></div>
+  <div class="mixrow" data-x="-1"><b>Italian</b><span>Pasta, properly</span><b aria-hidden="true">Italian</b></div>
+  <div class="mixp">
+    <p class="bd rv">Casual dining with a lounge heartbeat.</p>
+    <p class="rv" style="--d:.1s">Start with dinner and stay for the night. Stories is a restaurant and lounge in Lekki Phase 1 where the table, the bar and the shisha all share the same room, and the same mood.</p>
+  </div>
+</section>
+
+<!-- CHAPTER III -->
+<section class="ch" id="ch3" data-sec>
+  <header class="chh">
+    <span class="num rv" aria-hidden="true">III</span>
+    <div><span class="cap rv">Chapter three</span><h2 class="rv">The <em>word</em></h2></div>
+  </header>
+  <div class="rate rv">
+    <div class="rnum"><span data-count="4.2" data-dec="1">4.2</span></div>
+    <div>
+      <div class="stars" aria-label="4.2 out of 5 stars">
+        <svg viewBox="0 0 120 24" fill="none" stroke="#EAD9C0" stroke-width="1"><use href="#st"/><use href="#st" x="24"/><use href="#st" x="48"/><use href="#st" x="72"/><use href="#st" x="96"/></svg>
+        <svg class="on" viewBox="0 0 120 24" fill="#F4B15A"><use href="#st"/><use href="#st" x="24"/><use href="#st" x="48"/><use href="#st" x="72"/><use href="#st" x="96"/></svg>
+      </div>
+      <h3>out of five, from <span data-count="525">525</span> reviews on Google.</h3>
+      <p>The story so far, as told by the people who have been.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER IV -->
+<section class="ch" id="ch4" data-sec>
+  <header class="chh">
+    <span class="num rv" aria-hidden="true">IV</span>
+    <div><span class="cap rv">Chapter four</span><h2 class="rv">The <em>address</em></h2></div>
+  </header>
+  <div class="addr">
+    <div class="rv">
+      <dl>
+        <div><dt>Find us</dt><dd>19 Da-Silva St, Lekki Phase 1, Lagos, Nigeria</dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20Stories%20Lagos">+234 903 649 9010</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/storieslagos/" rel="noopener" target="_blank">@storieslagos</a></dd></div>
+        <div><dt>At home</dt><dd>Takeout and delivery available</dd></div>
+        <div><dt>Tables</dt><dd>Message us to reserve and to check tonight's availability</dd></div>
+      </dl>
+      <div class="acts">
+        <a class="btn" data-mag href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20Stories%20Lagos"><svg><use href="#wa"/></svg>Reserve</a>
+        <a class="btn gh" href="https://wa.me/2349036499010?text=Hi%2C%20could%20you%20send%20me%20your%20location%20pin%3F">Ask for the pin</a>
+      </div>
+    </div>
+    <div class="map rv" aria-hidden="true">
+      <svg viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice">
+        <path class="rd" pathLength="1" d="M-10 110 610 70"/><path class="rd" pathLength="1" d="M-10 360 610 390"/><path class="rd" pathLength="1" d="M110-10 150 470"/><path class="rd" pathLength="1" d="M470-10 440 470"/><path class="rd" pathLength="1" d="M-10 200q200 60 320 20t300 40"/>
+        <path class="rd hot" pathLength="1" d="M-10 250 610 226"/><path class="rd" pathLength="1" d="M300-10 290 470"/>
+        <circle class="ping" cx="295" cy="238" r="14"/><circle class="ping p2" cx="295" cy="238" r="14"/>
+        <circle cx="295" cy="238" r="7" fill="#E8842C"/>
+      </svg>
+      <span class="lbl"><b>19 Da-Silva St</b>Lekki Phase 1</span><span class="lbl2">Illustrative map</span>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER V -->
+<section class="ch fin" id="ch5" data-sec>
+  <span class="blob b4"></span>
+  <span class="cap rv">Chapter five</span>
+  <h2 class="rv">Yours starts <em>tonight.</em></h2>
+  <p class="rv">Dinner for two, a table for the whole crew or an order to the door. One message and it is handled.</p>
+  <div class="acts rv">
+    <a class="btn" data-mag href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20Stories%20Lagos"><svg><use href="#wa"/></svg>Reserve a table</a>
+    <a class="btn gh" href="https://wa.me/2349036499010?text=Hi%2C%20I'd%20like%20to%20place%20an%20order%20from%20Stories%20Lagos">Order takeout or delivery</a>
+  </div>
+  <span class="tel rv">+234 903 649 9010</span>
+</section>
+</main>
+
+<footer class="ft">
+  <span>Stories Lagos · 19 Da-Silva St, Lekki Phase 1, Lagos</span>
+  <span>+234 903 649 9010 · <a href="https://www.instagram.com/storieslagos/" rel="noopener" target="_blank">@storieslagos</a></span>
+  <span>Preview concept, not the official website</span>
+</footer>
+<div class="pill"><i></i>Preview concept</div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var wide=matchMedia('(min-width:901px)');
+  var hdr=document.getElementById('hdr'),burger=document.getElementById('burger');
+  burger.addEventListener('click',function(){var o=document.body.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+  document.querySelectorAll('#mnav a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('open');burger.setAttribute('aria-expanded',false);});});
+
+  function count(el){
+    if(reduce||el._c)return;el._c=1;
+    var end=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),t0=null,dur=1800;
+    function f(v){return dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US');}
+    function tick(t){if(t0===null)t0=t;var p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);el.textContent=f(end*e);if(p<1)requestAnimationFrame(tick);}
+    el.textContent=f(0);requestAnimationFrame(tick);
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(count);io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+  // chapter rail
+  var links={};document.querySelectorAll('#rail a').forEach(function(a){links[a.dataset.ch]=a;});
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){for(var k in links)links[k].classList.toggle('on',k===e.target.id);}});},{rootMargin:'-45% 0px -45% 0px'});
+  document.querySelectorAll('[data-sec]').forEach(function(s){so.observe(s);});
+
+  // pinned horizontal chapter
+  var hz=document.getElementById('ch1'),track=document.getElementById('track'),hint=document.getElementById('hinttxt'),max=0,pinned=false;
+  function setup(){
+    var want=wide.matches&&fine&&!reduce&&window.innerHeight>=700;
+    if(want){
+      hz.classList.add('pinned');pinned=true;
+      max=Math.max(0,track.scrollWidth-window.innerWidth);
+      hz.style.height=(window.innerHeight+max)+'px';
+      hint.textContent='Keep scrolling';
+    }else{
+      hz.classList.remove('pinned');pinned=false;max=0;hz.style.height='';track.style.transform='';
+      hint.textContent='Swipe through';
+    }
+  }
+
+  var rows=[].slice.call(document.querySelectorAll('.mixrow')),glass=document.getElementById('glass'),ticking=false;
+  function frame(){
+    ticking=false;
+    var y=window.scrollY||0,vh=window.innerHeight;
+    hdr.classList.toggle('scrolled',y>30);
+    if(reduce)return;
+    if(y<vh*1.1)glass.style.transform='translate3d(0,'+(y*.22).toFixed(1)+'px,0) rotate('+(y*.012).toFixed(2)+'deg)';
+    if(pinned&&max>0){
+      var r=hz.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/max));
+      track.style.transform='translate3d('+(-p*max).toFixed(1)+'px,0,0)';
+    }
+    rows.forEach(function(row){
+      var r=row.getBoundingClientRect();
+      if(r.bottom<0||r.top>vh)return;
+      var p=(r.top+r.height/2-vh/2)/vh;
+      row.style.transform='translate3d('+(p*(+row.dataset.x)*14-4).toFixed(2)+'vw,0,0)';
+      row.classList.toggle('lit',Math.abs(p)<.16);
+    });
+  }
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(frame);}}
+  window.addEventListener('scroll',req,{passive:true});
+  window.addEventListener('resize',function(){setup();req();});
+  window.addEventListener('load',function(){setup();req();});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){setup();req();});
+  setup();frame();
+
+  if(fine&&!reduce){
+    // cursor-follow ember glow
+    var g=document.getElementById('glowc'),gx=0,gy=0,tx=0,ty=0,run=false;
+    function loop(){gx+=(tx-gx)*.12;gy+=(ty-gy)*.12;g.style.transform='translate3d('+gx.toFixed(1)+'px,'+gy.toFixed(1)+'px,0)';
+      if(Math.abs(tx-gx)>.5||Math.abs(ty-gy)>.5)requestAnimationFrame(loop);else run=false;}
+    window.addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY;g.classList.add('on');if(!run){run=true;requestAnimationFrame(loop);}},{passive:true});
+    document.addEventListener('pointerleave',function(){g.classList.remove('on');});
+    document.querySelectorAll('[data-mag]').forEach(function(b){
+      b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.25)+'px,'+((e.clientY-r.top-r.height/2)*.35)+'px)';});
+      b.addEventListener('pointerleave',function(){b.style.transform='';});
+    });
+  }
+})();
+</script>
+</body>
+</html>

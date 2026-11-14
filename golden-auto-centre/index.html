@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden Auto Centre Ltd | Auto Repair Garage, Industrial Area, Nairobi</title>
+<meta name="description" content="Golden Auto Centre Ltd. Servicing, diagnostics, body work, paint and mechanical repair for private vehicles at 49 Butere Rd, Industrial Area, Nairobi.">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090806;--panel:#12100b;--panel2:#1a1710;--gold:#d4a53a;--gold2:#f4d98a;--gold3:#8a6a1f;--ink:#f3eddd;--mute:#a2987f;--line:rgba(212,165,58,.22);--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.disp{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:.005em}
+.gold-t{background:linear-gradient(100deg,var(--gold3),var(--gold2) 35%,var(--gold) 60%,var(--gold2) 85%,var(--gold3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.09;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* header */
+.hd{position:fixed;top:0;left:0;right:0;z-index:60}
+.hd::before{content:"";position:absolute;inset:0;background:rgba(9,8,6,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);opacity:0;transition:opacity .4s}
+.hd.scrolled::before{opacity:1}
+.hd-in{position:relative;display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px;position:relative;z-index:3}
+.logo svg{width:38px;height:38px}
+.logo b{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase;line-height:1}
+.logo small{display:block;font-size:.6rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;font-family:Manrope,sans-serif;font-weight:700;margin-top:4px}
+.nav{display:flex;align-items:center;gap:34px;font-size:.86rem;font-weight:500}
+.nav a:not(.btn){position:relative;padding:6px 0;color:#d9d1bd}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
+.tg{display:none;position:relative;z-index:3;width:46px;height:46px;background:none;border:1px solid var(--line);border-radius:50%;cursor:pointer}
+.tg i{position:absolute;left:13px;right:13px;height:1.5px;background:var(--gold2);transition:transform .4s var(--ease)}
+.tg i:first-child{top:19px}.tg i:last-child{top:26px}
+.menu .tg i:first-child{transform:translateY(3.5px) rotate(45deg)}
+.menu .tg i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:2px;font-weight:700;font-size:.9rem;letter-spacing:.04em;overflow:hidden;transition:transform .35s var(--ease);will-change:transform;isolation:isolate}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-g{background:linear-gradient(100deg,#b98a25,var(--gold2) 50%,#c9982f);color:#141006}
+.btn-g::after{content:"";position:absolute;top:0;bottom:0;left:0;width:45%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:translateX(-140%) skewX(-18deg);transition:transform .8s var(--ease);z-index:-1}
+.btn-g:hover::after{transform:translateX(330%) skewX(-18deg)}
+.btn-o{border:1px solid var(--line);color:var(--gold2)}
+.btn-o::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleY(0);transform-origin:bottom;transition:transform .45s var(--ease);z-index:-1}
+.btn-o:hover{color:#141006}.btn-o:hover::before{transform:scaleY(1)}
+.btn-sm{padding:11px 18px;font-size:.8rem}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px 0 70px;overflow:hidden;background:radial-gradient(90% 70% at 85% 60%,rgba(212,165,58,.13),transparent 60%),radial-gradient(60% 50% at 0% 0%,rgba(212,165,58,.08),transparent 60%),linear-gradient(180deg,#0c0a07,#090806)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(212,165,58,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(212,165,58,.05) 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(80% 70% at 70% 50%,#000,transparent);mask-image:radial-gradient(80% 70% at 70% 50%,#000,transparent)}
+.glow{position:absolute;top:0;left:0;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;background:radial-gradient(circle,rgba(244,217,138,.16),transparent 62%);pointer-events:none;opacity:0;transition:opacity .6s;will-change:transform}
+.hero:hover .glow{opacity:1}
+.hero-g{position:relative;display:grid;gap:36px;align-items:center}
+.hero h1{font-size:clamp(3.3rem,15vw,5.6rem);margin:22px 0 24px}
+.ln{display:block;overflow:hidden;padding-bottom:.06em}
+.ln>span{display:block}
+.js .ln>span{transform:translateY(108%);transition:transform 1.1s var(--ease) var(--d,0s)}
+.js .loaded .ln>span{transform:none}
+.js .fade{opacity:0;transform:translateY(18px);transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .loaded .fade{opacity:1;transform:none}
+.hero p.lead{max-width:520px;color:#cfc6b0;font-size:1.05rem}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;margin-top:32px}
+.tel{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:1.5rem;letter-spacing:.06em;color:var(--ink)}
+.tel small{display:block;font-family:Manrope,sans-serif;font-size:.66rem;letter-spacing:.24em;color:var(--mute);text-transform:uppercase;font-weight:700}
+.car{position:relative}
+.car svg{width:100%;height:auto;overflow:visible}
+.car path,.car circle,.car line{fill:none;stroke:url(#gg);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0}
+.js .car .dr{stroke-dashoffset:1;transition:stroke-dashoffset 2.6s cubic-bezier(.6,0,.2,1) var(--d,.5s)}
+.js .loaded .car .dr{stroke-dashoffset:0}
+.car .thin{stroke-width:1;opacity:.55}
+.car-tag{display:inline-block;margin:0 0 14px auto;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:7px 11px;background:rgba(9,8,6,.6)}
+.hero-meta{position:relative;display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:28px;margin-top:44px;padding-top:24px;border-top:1px solid var(--line);font-size:.78rem;color:var(--mute);letter-spacing:.04em}
+.hero-meta b{display:block;color:var(--gold2);font-family:"Big Shoulders Display",sans-serif;font-size:1.7rem;letter-spacing:.04em;line-height:1.1}
+
+/* marquee */
+.mq{border-block:1px solid var(--line);background:#0e0c08;overflow:hidden;padding:18px 0}
+.mq-t{display:flex;width:max-content;animation:mq 34s linear infinite}
+.mq-t span{display:flex;align-items:center;gap:28px;padding-right:28px;font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:.14em;text-transform:uppercase;color:#cdbf9a;white-space:nowrap}
+.mq-t i{width:9px;height:9px;background:var(--gold);transform:rotate(45deg);flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+section{position:relative}
+.sec{padding:96px 0}
+.h2{font-size:clamp(2.6rem,8vw,5rem);margin-top:18px}
+
+/* services */
+.svc-g{display:grid;gap:44px}
+.svc-intro p{color:var(--mute);margin-top:20px;max-width:420px}
+.svc-list{list-style:none;border-top:1px solid var(--line)}
+.svc{position:relative;display:grid;grid-template-columns:54px 1fr 44px;gap:8px 16px;align-items:start;padding:30px 0;border-bottom:1px solid var(--line);overflow:hidden}
+.svc::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(212,165,58,.13),transparent 70%);transform:translateX(-101%);transition:transform .7s var(--ease)}
+.svc:hover::before{transform:none}
+.svc>*{position:relative}
+.svc .no{font-family:"Big Shoulders Display",sans-serif;font-weight:600;font-size:1.1rem;color:var(--gold);letter-spacing:.1em;padding-top:8px;transition:transform .5s var(--ease)}
+.svc:hover .no{transform:translateX(10px)}
+.svc h3{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:clamp(1.7rem,5vw,2.4rem);text-transform:uppercase;line-height:1;letter-spacing:.02em}
+.svc p{color:var(--mute);font-size:.95rem;margin-top:10px;max-width:520px}
+.svc .ic{width:40px;height:40px;stroke:var(--gold);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .6s var(--ease)}
+.svc:hover .ic{transform:rotate(-12deg) scale(1.12)}
+
+/* why */
+.why{background:linear-gradient(180deg,#0e0c08,#090806);border-block:1px solid var(--line)}
+.why-top{display:grid;gap:26px;margin-bottom:54px}
+.why-top p{color:#cfc6b0;max-width:520px}
+.why-g{display:grid;gap:18px}
+.card{position:relative;padding:34px 28px 30px;background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);overflow:hidden;transition:transform .5s var(--ease)}
+.card:hover{transform:translateY(-8px)}
+.card::after{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.card:hover::after{transform:scaleX(1)}
+.card .k{font-family:"Big Shoulders Display",sans-serif;font-size:4.2rem;font-weight:900;line-height:1;color:transparent;-webkit-text-stroke:1px var(--gold3);position:absolute;right:16px;top:8px;opacity:.6}
+.card h3{font-family:"Big Shoulders Display",sans-serif;font-size:1.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;line-height:1.05;max-width:11em}
+.card p{color:var(--mute);font-size:.94rem;margin-top:12px}
+.card svg{width:34px;height:34px;stroke:var(--gold);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-bottom:22px}
+
+/* rating */
+.rate{padding:100px 0;overflow:hidden;background:radial-gradient(70% 90% at 50% 50%,rgba(212,165,58,.14),transparent 70%)}
+.rate-bg{position:absolute;left:50%;top:50%;font-size:min(46vw,620px);color:transparent;-webkit-text-stroke:1px rgba(212,165,58,.13);white-space:nowrap;pointer-events:none;margin:-.48em 0 0 -1.1em;will-change:transform}
+.rate-g{position:relative;display:grid;gap:40px;align-items:end}
+.score{font-size:clamp(7rem,30vw,15rem);line-height:.8}
+.stars{position:relative;display:inline-block;margin-top:22px}
+.stars svg{width:150px;height:30px}
+.stars .base{fill:#3a3222}
+.stars .top{position:absolute;left:0;top:0;width:90%;overflow:hidden}
+.stars .top svg{fill:var(--gold)}
+.rate-r p{color:#cfc6b0;max-width:440px;margin-bottom:26px}
+.rev{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.rev b{font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:4.4rem;line-height:1;color:var(--ink)}
+.rev span{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700}
+
+/* location */
+.loc-g{display:grid;gap:40px}
+.info{border-top:1px solid var(--line)}
+.info div{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:20px 0;border-bottom:1px solid var(--line)}
+.info dt{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700;padding-top:4px}
+.info dd{color:#e4dcc8}
+.info dd a{border-bottom:1px solid var(--gold3)}
+.map{position:relative;border:1px solid var(--line);background:linear-gradient(160deg,#15120c,#0b0a07);aspect-ratio:500/380;align-self:center;overflow:hidden}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .cap{position:absolute;left:14px;bottom:12px;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.pin{animation:pin 2.4s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pin{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(2.4);opacity:0}}
+
+/* final */
+.final{padding:120px 0;text-align:left;border-top:1px solid var(--line);overflow:hidden;background:linear-gradient(180deg,#090806,#120f08)}
+.final h2{font-size:clamp(4rem,17vw,12rem)}
+.final-row{display:flex;flex-wrap:wrap;align-items:center;gap:22px 34px;margin-top:36px}
+.final p{color:#cfc6b0;max-width:420px}
+.ft{border-top:1px solid var(--line);padding:34px 0 90px;font-size:.82rem;color:var(--mute)}
+.ft-in{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:space-between}
+.pill{position:fixed;left:14px;bottom:14px;z-index:80;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 13px;border-radius:99px;background:rgba(20,17,10,.85);border:1px solid var(--line);color:#cbbf9f;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.fab{position:fixed;right:14px;bottom:14px;z-index:80;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,var(--gold2),#b98a25);color:#141006;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .35s var(--ease)}
+.fab:hover{transform:scale(1.1) rotate(-8deg)}
+.fab svg{width:26px;height:26px}
+
+@media (max-width:899px){
+ .tg{display:block}
+ .nav{position:fixed;inset:0;z-index:2;flex-direction:column;justify-content:center;align-items:flex-start;gap:6px;padding:90px 28px 40px;background:#090806;opacity:0;pointer-events:none;transform:translateY(-14px);transition:opacity .4s,transform .5s var(--ease)}
+ .nav a:not(.btn){font-family:"Big Shoulders Display",sans-serif;font-weight:900;font-size:2.9rem;text-transform:uppercase;line-height:1.15;color:var(--ink)}
+ .nav .btn{margin-top:22px;padding:16px 26px;font-size:.9rem}
+ .menu .nav{opacity:1;pointer-events:auto;transform:none}
+ .hero-meta{grid-template-columns:1fr 1fr;gap:20px}
+}
+@media (min-width:900px){
+ .hero-g{grid-template-columns:1fr 1fr;gap:30px}
+ .hero h1{font-size:clamp(4.4rem,7.2vw,7rem)}
+ .car{margin-right:-6%}
+ .svc-g{grid-template-columns:.8fr 1.2fr;gap:70px}
+ .svc-intro{position:sticky;top:120px;align-self:start}
+ .why-top{grid-template-columns:1.2fr .8fr;align-items:end}
+ .why-g{grid-template-columns:repeat(4,1fr)}
+ .card:nth-child(even){margin-top:36px}
+ .rate-g{grid-template-columns:1fr 1fr}
+ .loc-g{grid-template-columns:1fr 1fr;gap:70px;align-items:stretch}
+ .sec{padding:130px 0}
+}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .js .rv,.js .fade,.js .ln>span{opacity:1;transform:none}
+ .js .car .dr{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4d98a"/><stop offset=".5" stop-color="#d4a53a"/><stop offset="1" stop-color="#8a6a1f"/></linearGradient>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.200 8.200 0 0 1-4.200-1.150l-.3-.18-3 .78.800-2.900-.2-.300A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.25-.120-1.470-.720-1.700-.800-.230-.090-.390-.120-.560.120-.160.250-.640.800-.780.970-.140.160-.290.180-.530.060a6.700 6.700 0 0 1-3.340-2.920c-.250-.430.250-.400.720-1.340.080-.160.040-.300-.020-.430-.060-.120-.560-1.340-.760-1.830-.200-.480-.400-.420-.560-.420h-.470a.900.900 0 0 0-.660.300 2.760 2.760 0 0 0-.860 2.050c0 1.200.880 2.370 1 2.540.130.160 1.740 2.650 4.200 3.720 1.570.680 2.180.740 2.960.620.480-.070 1.470-.600 1.680-1.180.200-.580.200-1.070.140-1.180-.060-.100-.220-.160-.470-.280z"/></symbol>
+  <symbol id="stars5" viewBox="0 0 120 24"><path d="M12 2l3.090 6.260L22 9.270l-5 4.870 1.180 6.880L12 17.770l-6.180 3.250L7 14.140 2 9.270l6.910-1.010z"/><path transform="translate(24)" d="M12 2l3.090 6.260L22 9.270l-5 4.870 1.180 6.880L12 17.770l-6.180 3.250L7 14.140 2 9.270l6.910-1.010z"/><path transform="translate(48)" d="M12 2l3.090 6.260L22 9.270l-5 4.870 1.180 6.880L12 17.770l-6.180 3.250L7 14.140 2 9.270l6.910-1.010z"/><path transform="translate(72)" d="M12 2l3.090 6.260L22 9.270l-5 4.870 1.180 6.880L12 17.770l-6.180 3.250L7 14.140 2 9.270l6.910-1.010z"/><path transform="translate(96)" d="M12 2l3.090 6.260L22 9.270l-5 4.870 1.180 6.880L12 17.770l-6.180 3.250L7 14.140 2 9.270l6.910-1.010z"/></symbol>
+ </defs>
+</svg>
+
+<header class="hd">
+ <div class="wrap hd-in">
+  <a href="#top" class="logo" aria-label="Golden Auto Centre home">
+   <svg viewBox="0 0 40 40" fill="none"><path d="M20 2l15.600 9v18L20 38 4.400 29V11z" stroke="url(#gg)" stroke-width="1.6"/><path d="M26 15.500a7 7 0 1 0 1 6.500H20" stroke="url(#gg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+   <span><b>Golden Auto</b><small>Centre Ltd</small></span>
+  </a>
+  <nav class="nav" id="nav">
+   <a href="#services">Services</a>
+   <a href="#why">Why us</a>
+   <a href="#reviews">Reviews</a>
+   <a href="#find">Find us</a>
+   <a class="btn btn-g btn-sm" href="https://wa.me/254716226632?text=Hi%20Golden%20Auto%20Centre%2C%20I%27d%20like%20to%20book%20my%20car%20in"><svg><use href="#wa"/></svg>Book on WhatsApp</a>
+  </nav>
+  <button class="tg" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="glow" aria-hidden="true"></div>
+ <div class="wrap">
+  <div class="hero-g">
+   <div>
+    <div class="eyebrow fade" style="--d:.1s">Industrial Area, Nairobi</div>
+    <h1 class="disp">
+     <span class="ln"><span style="--d:.2s">Repairs done</span></span>
+     <span class="ln"><span style="--d:.32s">to a <em class="gold-t" style="font-style:normal">golden</em></span></span>
+     <span class="ln"><span style="--d:.44s">standard.</span></span>
+    </h1>
+    <p class="lead fade" style="--d:.7s">Servicing, diagnostics, body work, paint and mechanical repair for private vehicles, all under one roof at 49 Butere Rd. Insurance repair work welcome.</p>
+    <div class="hero-cta fade" style="--d:.85s">
+     <a class="btn btn-g mag" href="https://wa.me/254716226632?text=Hi%20Golden%20Auto%20Centre%2C%20I%27d%20like%20to%20book%20my%20car%20in"><svg><use href="#wa"/></svg>Book on WhatsApp</a>
+     <div class="tel"><small>Call or WhatsApp</small>+254 716 226632</div>
+    </div>
+   </div>
+   <div class="car fade" style="--d:.4s" aria-hidden="true">
+    <div style="text-align:right"><span class="car-tag">Bay 01 / Inspection</span></div>
+    <svg viewBox="0 0 800 320">
+     <path class="dr" pathLength="1" style="--d:.5s" d="M40 222v-30q5-22 50-30l110-14q60-58 130-66l150-2q80 4 140 66l100 14q45 8 50 40v22h-70a55 55 0 0 0-110 0H250a55 55 0 0 0-110 0z"/>
+     <path class="dr thin" pathLength="1" style="--d:.9s" d="M228 148q44-46 108-52l62-1v53zM416 95l62 0q62 6 112 53H416z"/>
+     <path class="dr thin" pathLength="1" style="--d:1.2s" d="M407 96v120M250 180h300M60 190h34M724 176l34 6M420 164h26M270 164h26"/>
+     <circle class="dr" pathLength="1" style="--d:1.1s" cx="195" cy="222" r="46"/>
+     <circle class="dr" pathLength="1" style="--d:1.1s" cx="645" cy="222" r="46"/>
+     <circle class="dr thin" pathLength="1" style="--d:1.5s" cx="195" cy="222" r="24"/>
+     <circle class="dr thin" pathLength="1" style="--d:1.5s" cx="645" cy="222" r="24"/>
+     <path class="dr thin" pathLength="1" style="--d:1.7s" d="M195 198v48M171 222h48M178 205l34 34M212 205l-34 34M645 198v48M621 222h48M628 205l34 34M662 205l-34 34"/>
+     <line class="dr" pathLength="1" style="--d:1.9s" x1="0" y1="270" x2="800" y2="270"/>
+     <path class="dr thin" pathLength="1" style="--d:2.1s" d="M195 284v16M645 284v16M195 292h450M40 40v14M770 40v14M40 47h730"/>
+    </svg>
+   </div>
+  </div>
+  <div class="hero-meta fade" style="--d:1.05s">
+   <div><b>4.5 / 5</b>Google rating</div>
+   <div><b>109</b>Google reviews</div>
+   <div><b>Panel garage</b>Insurance repair work welcome</div>
+  </div>
+ </div>
+</section>
+
+<div class="mq" aria-hidden="true">
+ <div class="mq-t">
+  <span>Servicing<i></i>Diagnostics<i></i>Body work<i></i>Paint<i></i>Mechanical repair<i></i>Insurance work welcome<i></i></span>
+  <span>Servicing<i></i>Diagnostics<i></i>Body work<i></i>Paint<i></i>Mechanical repair<i></i>Insurance work welcome<i></i></span>
+ </div>
+</div>
+
+<section class="sec" id="services">
+ <div class="wrap svc-g">
+  <div class="svc-intro rv">
+   <div class="eyebrow">What we do</div>
+   <h2 class="disp h2">One garage.<br><span class="gold-t">Every job.</span></h2>
+   <p>From a routine service to a full body repair, your car stays in one place and one team answers for it.</p>
+   <a class="btn btn-o mag" style="margin-top:28px" href="https://wa.me/254716226632?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20my%20car"><svg><use href="#wa"/></svg>Ask for a quote</a>
+  </div>
+  <ul class="svc-list">
+   <li class="svc rv">
+    <span class="no">01</span>
+    <div><h3>Servicing</h3><p>Routine maintenance to keep your car dependable on Nairobi roads: fluids, filters, checks and the small things that prevent big ones.</p></div>
+    <svg class="ic" viewBox="0 0 40 40"><path d="M27 6a8 8 0 0 0-9.500 10.500L6 28a3.500 3.500 0 0 0 5 5l11.500-11.500A8 8 0 0 0 33 12l-5 5-4.500-1.500L22 11z"/></svg>
+   </li>
+   <li class="svc rv">
+    <span class="no">02</span>
+    <div><h3>Diagnostics</h3><p>Warning light on, strange noise, something just not right? We trace the fault first, so the repair addresses the cause.</p></div>
+    <svg class="ic" viewBox="0 0 40 40"><path d="M4 22h7l3-9 6 16 4-11 2 4h10"/><rect x="4" y="7" width="32" height="26" rx="2"/></svg>
+   </li>
+   <li class="svc rv">
+    <span class="no">03</span>
+    <div><h3>Body work &amp; paint</h3><p>Dents, scrapes and accident damage straightened, refinished and painted so the panel looks like it belongs to the car again.</p></div>
+    <svg class="ic" viewBox="0 0 40 40"><path d="M8 14h14v8H8zM22 16h5v4h-5zM27 14v8M13 22v10a2 2 0 0 0 4 0V22M31 12l3-2M31 18h4M31 24l3 2"/></svg>
+   </li>
+   <li class="svc rv">
+    <span class="no">04</span>
+    <div><h3>Mechanical repair</h3><p>The work under the bonnet and beneath the car. Tell us what it is doing and we will tell you what it needs.</p></div>
+    <svg class="ic" viewBox="0 0 40 40"><circle cx="20" cy="20" r="6"/><path d="M20 4v6M20 30v6M4 20h6M30 20h6M8.700 8.700l4.200 4.200M27.100 27.100l4.200 4.200M8.700 31.300l4.200-4.200M27.100 12.900l4.200-4.200"/></svg>
+   </li>
+  </ul>
+ </div>
+</section>
+
+<section class="sec why" id="why">
+ <div class="wrap">
+  <div class="why-top">
+   <div class="rv">
+    <div class="eyebrow">Why Golden</div>
+    <h2 class="disp h2">Built around<br>the private <span class="gold-t">motorist.</span></h2>
+   </div>
+   <p class="rv" style="--d:.1s">Your car is how you get to work, to school, to everything. We treat it as the thing you rely on, and we keep the conversation simple and direct.</p>
+  </div>
+  <div class="why-g">
+   <article class="card rv"><span class="k">1</span>
+    <svg viewBox="0 0 34 34"><path d="M4 21v-5l4-7h14l5 7 3 1v4h-3M11 21h10M4 21h1"/><circle cx="8" cy="22" r="3"/><circle cx="24" cy="22" r="3"/></svg>
+    <h3>Private vehicles are our focus</h3><p>A garage set up for personal cars and the people who drive them every day.</p></article>
+   <article class="card rv" style="--d:.08s"><span class="k">2</span>
+    <svg viewBox="0 0 34 34"><path d="M17 3l11 4v8c0 8-5 13-11 16C11 28 6 23 6 15V7z"/><path d="M12 17l4 4 7-8"/></svg>
+    <h3>Insurance repair work welcome</h3><p>We are on an insurer's approved panel-garage list, so accident repairs through insurance are familiar ground.</p></article>
+   <article class="card rv" style="--d:.16s"><span class="k">3</span>
+    <svg viewBox="0 0 34 34"><path d="M17 31s10-9 10-17a10 10 0 0 0-20 0c0 8 10 17 10 17z"/><circle cx="17" cy="14" r="3.500"/></svg>
+    <h3>Easy to reach</h3><p>49 Butere Rd, just off Dar es Salaam Rd in Industrial Area.</p></article>
+   <article class="card rv" style="--d:.24s"><span class="k">4</span>
+    <svg viewBox="0 0 34 34"><path d="M5 28l2-6a12 12 0 1 1 5 5z"/><path d="M12 15h10M12 20h6"/></svg>
+    <h3>A direct line</h3><p>Message us on WhatsApp, describe the problem, send a photo. A person replies.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="rate" id="reviews">
+ <div class="disp rate-bg" data-par="-.12" aria-hidden="true">4.5</div>
+ <div class="wrap rate-g">
+  <div class="rv">
+   <div class="eyebrow">Rated on Google</div>
+   <div class="disp score gold-t" style="margin-top:26px"><span class="cnt" data-to="4.5" data-dec="1">4.5</span></div>
+   <div class="stars" role="img" aria-label="4.5 out of 5 stars">
+    <svg class="base"><use href="#stars5"/></svg>
+    <div class="top"><svg><use href="#stars5"/></svg></div>
+   </div>
+  </div>
+  <div class="rate-r rv" style="--d:.15s">
+   <div class="rev"><b class="cnt" data-to="109">109</b><span>Google reviews</span></div>
+   <p>Our customers have rated us 4.5 out of 5 on Google. Read what they say there, then come and see the work for yourself.</p>
+   <a class="btn btn-g mag" href="https://wa.me/254716226632?text=Hi%20Golden%20Auto%20Centre%2C%20I%27d%20like%20to%20book%20my%20car%20in"><svg><use href="#wa"/></svg>Book your car in</a>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="find">
+ <div class="wrap loc-g">
+  <div class="rv">
+   <div class="eyebrow">Find us</div>
+   <h2 class="disp h2" style="margin-bottom:34px">49 Butere Rd.</h2>
+   <dl class="info">
+    <div><dt>Address</dt><dd>49 Butere Rd (off Dar es Salaam Rd)<br>Industrial Area, Nairobi, Kenya</dd></div>
+    <div><dt>Phone</dt><dd><a href="https://wa.me/254716226632?text=Hi%2C%20I%27d%20like%20to%20book">+254 716 226632</a> (WhatsApp)</dd></div>
+    <div><dt>Hours</dt><dd>Message us for today's availability and we will confirm a time that suits you.</dd></div>
+    <div><dt>Insurance</dt><dd>Insurance repair work welcome.</dd></div>
+   </dl>
+  </div>
+  <div class="map rv" style="--d:.12s" aria-label="Schematic location sketch">
+   <svg viewBox="0 0 500 380" fill="none">
+    <g stroke="rgba(212,165,58,.12)"><path d="M0 60h500M0 130h500M0 310h500M70 0v380M170 0v380M400 0v380"/></g>
+    <path d="M-10 250L510 190" stroke="#3b3322" stroke-width="26"/>
+    <path d="M-10 250L510 190" stroke="#d4a53a" stroke-width="1" stroke-dasharray="10 10"/>
+    <path d="M290 216L250 -10" stroke="#3b3322" stroke-width="16"/>
+    <text x="40" y="276" fill="#a2987f" font-size="12" letter-spacing="3" font-family="Manrope,sans-serif" transform="rotate(-6.600 40 276)">DAR ES SALAAM RD</text>
+    <text x="300" y="60" fill="#a2987f" font-size="12" letter-spacing="3" font-family="Manrope,sans-serif" transform="rotate(80 300 60)">BUTERE RD</text>
+    <circle class="pin" cx="272" cy="118" r="10" fill="#d4a53a"/>
+    <circle cx="272" cy="118" r="7" fill="#f4d98a"/>
+    <path d="M286 110h120" stroke="#d4a53a"/>
+    <text x="300" y="102" fill="#f4d98a" font-size="13" letter-spacing="2" font-family="Manrope,sans-serif" font-weight="700">GOLDEN AUTO CENTRE</text>
+   </svg>
+   <span class="cap">Schematic, not to scale</span>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="wrap">
+  <div class="eyebrow rv">Ready when you are</div>
+  <h2 class="disp rv" style="margin-top:20px">Bring <span class="gold-t">it in.</span></h2>
+  <div class="final-row rv" style="--d:.12s">
+   <p>Tell us the make, the model and what it is doing. We will take it from there.</p>
+   <a class="btn btn-g mag" href="https://wa.me/254716226632?text=Hi%20Golden%20Auto%20Centre%2C%20I%27d%20like%20to%20book%20my%20car%20in"><svg><use href="#wa"/></svg>Message us on WhatsApp</a>
+   <div class="tel"><small>Call or WhatsApp</small>+254 716 226632</div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="ft">
+ <div class="wrap ft-in">
+  <span>Golden Auto Centre Ltd</span>
+  <span>49 Butere Rd, Industrial Area, Nairobi</span>
+  <span>+254 716 226632</span>
+ </div>
+</footer>
+
+<span class="pill">Preview concept</span>
+<a class="fab" href="https://wa.me/254716226632?text=Hi%2C%20I%27d%20like%20to%20book" aria-label="Chat on WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+(function(){
+ var d=document,b=d.body;
+ var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var fine=window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+ requestAnimationFrame(function(){requestAnimationFrame(function(){b.classList.add('loaded')})});
+
+ var hd=d.querySelector('.hd'),tg=d.querySelector('.tg'),nav=d.querySelector('.nav');
+ tg.addEventListener('click',function(){var o=b.classList.toggle('menu');tg.setAttribute('aria-expanded',String(o))});
+ nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('menu');tg.setAttribute('aria-expanded','false')})});
+
+ function count(el){
+  var t=parseFloat(el.dataset.to),dec=+(el.dataset.dec||0);
+  if(rm){el.textContent=t.toFixed(dec);return}
+  var s=null;
+  function step(ts){if(!s)s=ts;var p=Math.min((ts-s)/1700,1),e=1-Math.pow(1-p,3);el.textContent=(t*e).toFixed(dec);if(p<1)requestAnimationFrame(step)}
+  requestAnimationFrame(step);
+ }
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.cnt').forEach(count);io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+  d.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+ }else{d.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+
+ var pars=[].slice.call(d.querySelectorAll('[data-par]')),tick=false;
+ function onScroll(){
+  hd.classList.toggle('scrolled',window.scrollY>20);
+  if(rm)return;
+  pars.forEach(function(el){var r=el.parentNode.getBoundingClientRect();if(r.bottom>0&&r.top<window.innerHeight){el.style.transform='translate3d('+((r.top-window.innerHeight/2)*parseFloat(el.dataset.par)).toFixed(1)+'px,0,0)'}});
+ }
+ window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){onScroll();tick=false})}},{passive:true});
+ onScroll();
+
+ if(fine&&!rm){
+  var hero=d.querySelector('.hero'),glow=d.querySelector('.glow');
+  hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();glow.style.transform='translate3d('+(e.clientX-r.left)+'px,'+(e.clientY-r.top)+'px,0)'});
+  d.querySelectorAll('.mag').forEach(function(el){
+   el.addEventListener('pointermove',function(e){var r=el.getBoundingClientRect();el.style.transform='translate3d('+((e.clientX-r.left-r.width/2)*.28).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.4).toFixed(1)+'px,0)'});
+   el.addEventListener('pointerleave',function(){el.style.transform=''});
+  });
+ }
+})();
+</script>
+</body>
+</html>

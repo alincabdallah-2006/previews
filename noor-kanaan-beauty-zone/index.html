@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noor Kanaan Beauty Zone | City Centre Beirut, Level 1</title>
+<meta name="description" content="Noor Kanaan Beauty Zone, beauty salon inside City Centre Beirut, Level 1, facing Carrefour, Hazmieh. Rated 4.8 on Google from 175 reviews. Book on WhatsApp.">
+<meta name="theme-color" content="#f2ede3">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f2ede3;--ink:#14110d;--coral:#ff4b2b;--butter:#ffd45e;--sand:#e4dccb;--mute:#5d564b;
+  --disp:'Bricolage Grotesque',system-ui,sans-serif;--sans:'Instrument Sans',system-ui,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--disp);font-weight:800;line-height:.92;letter-spacing:-.035em;text-transform:uppercase}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1.5px solid var(--ink);border-radius:999px;padding:7px 13px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--coral)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;font-family:var(--disp);font-weight:800;text-transform:uppercase;letter-spacing:.01em;font-size:1rem;padding:17px 26px;background:var(--coral);color:var(--ink);border:2px solid var(--ink);border-radius:14px;transition:transform .35s var(--ease);will-change:transform}
+.btn{box-shadow:5px 5px 0 var(--ink);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn svg{width:20px;height:20px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(4px) rotate(-45deg)}
+.btn.dark{background:var(--ink);color:var(--paper);box-shadow:5px 5px 0 var(--coral)}.btn.dark:hover{box-shadow:9px 9px 0 var(--coral)}
+.btn.butter{background:var(--butter)}
+.btn.sm{padding:10px 16px;font-size:.82rem;border-radius:11px;box-shadow:3px 3px 0 var(--ink)}
+.bw{display:inline-block;isolation:isolate}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:transform .5s var(--ease)}
+.hdr .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:14px;padding:10px 12px 10px 20px;border:2px solid transparent;border-radius:18px;transition:background .4s,border-color .4s,margin .4s var(--ease)}
+.hdr.scrolled .bar{background:rgba(242,237,227,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:var(--ink);margin-top:8px}
+.logo{font-family:var(--disp);font-weight:800;font-size:1.15rem;letter-spacing:-.03em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.logo .sun{width:26px;height:26px;border-radius:50%;background:repeating-conic-gradient(var(--coral) 0 15deg,transparent 15deg 30deg);-webkit-mask:radial-gradient(circle,#000 0 32%,transparent 33% 44%,#000 45%);mask:radial-gradient(circle,#000 0 32%,transparent 33% 44%,#000 45%);animation:spin 14s linear infinite}
+.nav{display:flex;gap:6px;font-weight:600;font-size:.88rem}
+.nav a{padding:8px 14px;border-radius:999px;transition:background .3s,color .3s}
+.nav a:hover{background:var(--ink);color:var(--paper)}
+.burger{display:none;width:44px;height:44px;border:2px solid var(--ink);border-radius:12px;background:var(--butter);cursor:pointer;position:relative}
+.burger i{position:absolute;left:10px;right:10px;height:2px;background:var(--ink);transition:transform .4s var(--ease),top .4s var(--ease)}
+.burger i:first-child{top:15px}.burger i:last-child{top:23px}
+.nav-open .burger i:first-child{top:19px;transform:rotate(45deg)}.nav-open .burger i:last-child{top:19px;transform:rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:45;background:var(--coral);padding:100px 24px 40px;display:flex;flex-direction:column;justify-content:center;gap:4px;transform:translateY(-102%);transition:transform .7s var(--ease);visibility:hidden}
+.nav-open .mnav{transform:none;visibility:visible}
+.nav-open .logo .sun{background:repeating-conic-gradient(var(--ink) 0 15deg,transparent 15deg 30deg)}
+.mnav a.l{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:3.1rem;line-height:1;letter-spacing:-.04em;padding:8px 0;border-bottom:2px solid var(--ink)}
+.mnav .bw{margin-top:30px;align-self:flex-start}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* hero */
+.hero{position:relative;padding:118px 0 0;overflow:hidden;isolation:isolate}
+.burst{position:absolute;right:-16vw;top:-14vw;width:62vw;max-width:860px;aspect-ratio:1;z-index:-1;will-change:transform}
+.burst b{position:absolute;inset:0;border-radius:50%;background:repeating-conic-gradient(var(--butter) 0 5deg,transparent 5deg 12deg);-webkit-mask:radial-gradient(circle,transparent 0 27%,#000 28% 69%,transparent 70%);mask:radial-gradient(circle,transparent 0 27%,#000 28% 69%,transparent 70%);animation:spin 80s linear infinite}
+.burst::after{content:"";position:absolute;inset:30%;border-radius:50%;background:var(--coral)}
+.js .burst{opacity:0;transform:scale(.6);transition:opacity 1.2s,transform 1.6s var(--ease)}
+.js.loaded .burst{opacity:1;transform:none}
+.hero h1{font-size:clamp(4.6rem,20.5vw,17.5rem);margin-top:26px}
+.ln{display:block;overflow:hidden;padding-top:.06em;margin-top:-.06em}
+.ln>span{display:inline-block}
+.js .ln>span{transform:translateY(105%) rotate(4deg);transform-origin:left bottom;transition:transform 1.1s var(--ease)}
+.js .ln:nth-child(2)>span{transition-delay:.12s}
+.js.loaded .ln>span{transform:none}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:10px}
+.sub .zone{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:clamp(1.5rem,5.4vw,4rem);letter-spacing:-.03em;line-height:1;color:var(--coral)}
+.js .fade{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js.loaded .fade{opacity:1;transform:none}
+.js .d1{transition-delay:.4s}.js .d2{transition-delay:.55s}.js .d3{transition-delay:.7s}
+.hero-low{display:grid;grid-template-columns:1.2fr 1fr auto;gap:28px;align-items:end;margin-top:clamp(30px,5vw,60px);padding-bottom:44px}
+.hero-low p.lead{font-size:1.15rem;max-width:26em;font-weight:500}
+.hero-low .tel{font-size:.9rem;color:var(--mute)}
+.hero-low .tel b{display:block;font-family:var(--disp);font-size:1.4rem;color:var(--ink);letter-spacing:-.02em}
+.badge{position:relative;width:132px;height:132px;flex:none}
+.badge svg.ring{width:100%;height:100%;animation:spin 18s linear infinite}
+.badge text{font-family:var(--disp);font-weight:600;font-size:11.2px;letter-spacing:.16em;text-transform:uppercase;fill:var(--ink)}
+.badge .mid{position:absolute;inset:30px;border-radius:50%;background:var(--ink);color:var(--butter);display:grid;place-items:center;font-family:var(--disp);font-weight:800;font-size:1.5rem;letter-spacing:-.03em}
+
+/* ticker */
+.mq{background:var(--ink);color:var(--paper);padding:16px 0;overflow:hidden;white-space:nowrap;border-block:2px solid var(--ink);transform:rotate(-1.2deg) scale(1.03);margin:10px 0 0}
+.mq-in{display:inline-flex;animation:mq 28s linear infinite;will-change:transform}
+.mq span{font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:clamp(1.1rem,2.4vw,1.7rem);padding:0 20px;display:inline-flex;align-items:center;gap:40px}
+.mq span::after{content:"";width:18px;height:18px;background:var(--coral);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.js .rv{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.r2{transition-delay:.1s}.js .rv.r3{transition-delay:.2s}
+
+/* horizontal services */
+.hs{position:relative;margin-top:60px}
+.hs-sticky{padding:60px 0}
+.hs-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}
+.hs-head h2{font-size:clamp(2.6rem,7.5vw,6rem)}
+.hs-head p{max-width:22em;color:var(--mute);font-size:.95rem}
+.hs-track{display:flex;gap:18px;overflow-x:auto;padding:6px 20px 16px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.hs.pin .hs-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:70px 0 20px}
+.hs.pin .hs-track{overflow:visible;width:max-content;scroll-snap-type:none;will-change:transform;padding-inline:max(20px,calc((100vw - 1240px)/2))}
+.sc{flex:0 0 auto;width:min(78vw,400px);height:min(56vh,440px);min-height:330px;border:2px solid var(--ink);border-radius:26px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;scroll-snap-align:center;position:relative;overflow:hidden;transition:transform .5s var(--ease)}
+.sc:hover{transform:translateY(-8px) rotate(-1deg)}
+.sc:nth-child(even):hover{transform:translateY(-8px) rotate(1deg)}
+.sc .num{font-family:var(--disp);font-weight:800;font-size:.9rem;letter-spacing:.06em}
+.sc svg.ic{width:92px;height:92px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;position:absolute;right:22px;top:22px;transition:transform .8s var(--ease)}
+.sc:hover svg.ic{transform:rotate(12deg) scale(1.1)}
+.sc h3{font-size:clamp(2.1rem,5vw,2.9rem);margin-bottom:12px}
+.sc p{font-size:.98rem;max-width:22em}
+.sc.c1{background:var(--ink);color:var(--paper)}.sc.c2{background:var(--coral)}.sc.c3{background:var(--butter)}.sc.c4{background:var(--paper)}.sc.c5{background:var(--ink);color:var(--butter)}
+.sc.end{background:var(--sand);justify-content:center;align-items:flex-start;gap:20px}
+.sc.end h3{font-size:clamp(1.9rem,4.4vw,2.5rem)}
+.prog{height:4px;background:var(--sand);border-radius:4px;overflow:hidden;margin-top:18px;display:none}
+.hs.pin .prog{display:block}
+.prog i{display:block;height:100%;background:var(--coral);transform:scaleX(0);transform-origin:left}
+
+/* find */
+.sec{padding:clamp(80px,11vw,150px) 0}
+.find h2{font-size:clamp(2.8rem,9vw,7.6rem);margin:20px 0 50px}
+.find h2 span{color:var(--coral)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}
+.st{padding:28px 26px 34px 0;border-right:2px solid var(--ink);position:relative}
+.st+.st{padding-left:26px}.st:last-child{border-right:0}
+.st .n{font-family:var(--disp);font-weight:800;font-size:clamp(5rem,11vw,9rem);line-height:.85;color:transparent;-webkit-text-stroke:2px var(--ink);display:inline-block;transition:color .4s,transform .5s var(--ease)}
+.st:hover .n{color:var(--coral);transform:translateY(-6px)}
+.st h3{font-size:1.6rem;margin:18px 0 8px;letter-spacing:-.02em}
+.st p{color:var(--mute)}
+
+/* rating */
+.rate{background:var(--coral);border-block:2px solid var(--ink);overflow:hidden;position:relative}
+.rate .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,6vw,90px);align-items:center;padding-block:clamp(60px,9vw,120px)}
+.rate .big{font-family:var(--disp);font-weight:800;font-size:clamp(8rem,28vw,22rem);line-height:.78;letter-spacing:-.06em;font-variant-numeric:tabular-nums}
+.rate h2{font-size:clamp(2rem,5vw,4.2rem)}
+.rate p{margin-top:18px;max-width:30em;font-weight:500;font-size:1.05rem}
+.stars{display:flex;gap:6px;margin-bottom:22px}
+.stars svg{width:34px;height:34px;fill:var(--butter);stroke:var(--ink);stroke-width:1.5;stroke-linejoin:round}
+.js .stars svg{transform:scale(0) rotate(-90deg);transition:transform .7s var(--ease)}
+.js .in .stars svg{transform:none}
+.js .in .stars svg:nth-child(2){transition-delay:.08s}.js .in .stars svg:nth-child(3){transition-delay:.16s}.js .in .stars svg:nth-child(4){transition-delay:.24s}.js .in .stars svg:nth-child(5){transition-delay:.32s}
+
+/* visit */
+.v-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}
+.box{border:2px solid var(--ink);border-radius:26px;padding:clamp(24px,4vw,44px);position:relative;overflow:hidden}
+.box h3{font-size:clamp(2rem,4.6vw,3.6rem);margin:18px 0 16px}
+.box p{max-width:30em}
+.box.loc{background:var(--butter);min-height:380px;display:flex;flex-direction:column;justify-content:space-between}
+.floor{display:flex;gap:8px;margin-top:26px;align-items:flex-end}
+.floor div{flex:1;border:2px solid var(--ink);border-radius:12px;padding:12px;font-family:var(--disp);font-weight:800;text-transform:uppercase;font-size:.8rem;background:var(--paper);height:64px;display:flex;align-items:flex-end}
+.floor div.on{background:var(--ink);color:var(--butter);height:108px;position:relative}
+.floor div.on::before{content:"";position:absolute;top:12px;left:12px;width:12px;height:12px;border-radius:50%;background:var(--coral);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.4}}
+.box.hrs{background:var(--ink);color:var(--paper);display:flex;flex-direction:column;justify-content:space-between;gap:26px}
+.box.hrs .tag{border-color:var(--paper)}
+.box.hrs p{color:rgba(242,237,227,.75)}
+.box.hrs .num{font-family:var(--disp);font-weight:800;font-size:clamp(1.6rem,3.4vw,2.2rem);letter-spacing:-.02em;color:var(--butter);margin-top:10px}
+
+/* cta */
+.cta{background:var(--ink);color:var(--paper);position:relative;overflow:hidden;isolation:isolate;border-radius:36px 36px 0 0}
+.cta .wrap{padding-block:clamp(90px,14vw,190px)}
+.cta h2{font-size:clamp(3.4rem,13.5vw,12.5rem)}
+.cta h2 em{font-style:normal;color:var(--butter)}
+.cta .row{display:flex;flex-wrap:wrap;gap:26px 34px;align-items:center;margin-top:46px}
+.cta .ph{font-family:var(--disp);font-weight:600;font-size:1.3rem}
+.cta .ph small{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,237,227,.6);font-weight:500}
+.cta .burst2{position:absolute;right:-180px;bottom:-180px;width:520px;aspect-ratio:1;border-radius:50%;z-index:-1;background:repeating-conic-gradient(var(--coral) 0 5deg,transparent 5deg 12deg);-webkit-mask:radial-gradient(circle,transparent 0 30%,#000 31% 69%,transparent 70%);mask:radial-gradient(circle,transparent 0 30%,#000 31% 69%,transparent 70%);animation:spin 70s linear infinite reverse}
+
+footer{background:var(--ink);color:rgba(242,237,227,.6);font-size:.84rem;padding:0 0 70px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between;border-top:1px solid rgba(242,237,227,.2);padding-top:26px}
+footer b{color:var(--paper);font-family:var(--disp);text-transform:uppercase}
+
+.pv{position:fixed;left:12px;bottom:12px;z-index:60;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:7px 11px;border-radius:999px;background:rgba(20,17,13,.7);color:#fff;border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);pointer-events:none}
+
+@media (max-width:900px){
+  .nav,.hdr .bw{display:none}.burger{display:block}
+  .hero{padding-top:104px}
+  .burst{width:110vw;right:-50vw;top:-30vw}
+  .hero-low{grid-template-columns:1fr;gap:24px}
+  .hero h1{font-size:19vw}
+  .hs-head{flex-direction:column;align-items:flex-start;gap:10px}
+  .hs-head p{font-size:.88rem}
+  .steps{grid-template-columns:1fr}
+  .st,.st+.st{padding:24px 0;border-right:0;border-bottom:2px solid var(--ink);display:grid;grid-template-columns:auto 1fr;column-gap:20px;align-items:center}
+  .st .n{grid-row:1/3;font-size:5.4rem}
+  .st h3{margin:0 0 4px;align-self:end}.st p{align-self:start}
+  .rate .wrap{grid-template-columns:1fr}
+  .v-grid{grid-template-columns:1fr}
+  .box.loc{min-height:0}
+  .cta .burst2{width:340px;right:-150px;bottom:-150px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv,.js .ln>span,.js .fade,.js .burst,.js .stars svg{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap"><div class="bar">
+    <a href="#top" class="logo"><span class="sun"></span>Noor Kanaan</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#zone">Services</a><a href="#find">Find us</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+    </nav>
+    <span class="bw"><a class="btn sm" href="https://wa.me/96176797070?text=Hi%20Noor%20Kanaan%20Beauty%20Zone%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a></span>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  </div></div>
+</header>
+<div class="mnav">
+  <a class="l" href="#zone">Services</a>
+  <a class="l" href="#find">Find us</a>
+  <a class="l" href="#reviews">Reviews</a>
+  <a class="l" href="#visit">Visit</a>
+  <span class="bw"><a class="btn dark" href="https://wa.me/96176797070?text=Hi%20Noor%20Kanaan%20Beauty%20Zone%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a></span>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="burst" aria-hidden="true"><b></b></div>
+  <div class="wrap">
+    <span class="tag fade"><i></i>City Centre Beirut &middot; Level 1</span>
+    <h1 aria-label="Noor Kanaan Beauty Zone">
+      <span class="ln"><span>Noor</span></span>
+      <span class="ln"><span>Kanaan</span></span>
+    </h1>
+    <div class="sub fade d1"><span class="zone">Beauty Zone</span></div>
+    <div class="hero-low">
+      <p class="lead fade d2">Your beauty stop inside City Centre Beirut. Level 1, facing Carrefour. Step out of the mall rush and into the chair.</p>
+      <div class="fade d3">
+        <span class="bw"><a class="btn mag" href="https://wa.me/96176797070?text=Hi%20Noor%20Kanaan%20Beauty%20Zone%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+        <p class="tel" style="margin-top:20px">WhatsApp <b>+961 76 797 070</b></p>
+      </div>
+      <div class="badge fade d3" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 132 132"><defs><path id="circ" d="M66 66m-54 0a54 54 0 1 1 108 0a54 54 0 1 1 -108 0"/></defs><text><textPath href="#circ" textLength="334">Rated on Google &#10022; 175 reviews &#10022;</textPath></text></svg>
+        <div class="mid">4.8</div>
+      </div>
+    </div>
+  </div>
+  <div class="mq" aria-hidden="true">
+    <div class="mq-in">
+      <span>City Centre Beirut</span><span>Level 1</span><span>Facing Carrefour</span><span>Hazmieh</span><span>Book on WhatsApp</span>
+      <span>City Centre Beirut</span><span>Level 1</span><span>Facing Carrefour</span><span>Hazmieh</span><span>Book on WhatsApp</span>
+    </div>
+  </div>
+</section>
+
+<section class="hs" id="zone">
+  <div class="hs-sticky">
+    <div class="wrap hs-head">
+      <h2>In the Zone</h2>
+      <p>The kind of treatments a beautician&rsquo;s chair is made for. Message us for the current menu and prices.</p>
+    </div>
+    <div class="hs-track">
+      <article class="sc c1">
+        <span class="num">01</span>
+        <svg class="ic" viewBox="0 0 64 64"><path d="M22 58V30a10 10 0 0 1 20 0v28"/><path d="M22 40h20"/><path d="M32 6v8M16 12l5 6M48 12l-5 6"/></svg>
+        <div><h3>Nails</h3><p>Manicures, pedicures and gel colour, shaped and finished cleanly.</p></div>
+      </article>
+      <article class="sc c2">
+        <span class="num">02</span>
+        <svg class="ic" viewBox="0 0 64 64"><path d="M6 36q26 22 52 0"/><path d="M12 41l-4 8M22 46l-2 9M32 48v10M42 46l2 9M52 41l4 8"/><path d="M10 22q22-14 44 0"/></svg>
+        <div><h3>Lashes &amp; brows</h3><p>Definition for the eyes, from tidy brows to fuller lashes.</p></div>
+      </article>
+      <article class="sc c3">
+        <span class="num">03</span>
+        <svg class="ic" viewBox="0 0 64 64"><path d="M32 6C32 6 14 28 14 40a18 18 0 0 0 36 0C50 28 32 6 32 6z"/><path d="M24 42a8 8 0 0 0 8 8"/></svg>
+        <div><h3>Skin &amp; facials</h3><p>Cleansing, care and a fresher face before you head back out.</p></div>
+      </article>
+      <article class="sc c4">
+        <span class="num">04</span>
+        <svg class="ic" viewBox="0 0 64 64"><path d="M8 44c8-10 14-10 22 0s14 10 26-2"/><path d="M8 30c8-10 14-10 22 0s14 10 26-2"/><path d="M8 16c8-10 14-10 22 0s14 10 26-2"/></svg>
+        <div><h3>Smooth skin</h3><p>Hair removal handled quickly, carefully and comfortably.</p></div>
+      </article>
+      <article class="sc c5">
+        <span class="num">05</span>
+        <svg class="ic" viewBox="0 0 64 64"><path d="M32 4l5 18 18 5-18 5-5 18-5-18-18-5 18-5z"/><path d="M52 44l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+        <div><h3>Occasion glow</h3><p>Getting ready for something? Tell us the day and we&rsquo;ll plan around it.</p></div>
+      </article>
+      <article class="sc end">
+        <h3>Not sure what you need?</h3>
+        <p>Send a message and ask. We&rsquo;ll point you to the right treatment.</p>
+        <span class="bw"><a class="btn dark" href="https://wa.me/96176797070?text=Hi%2C%20could%20you%20send%20me%20your%20services%20and%20prices%3F">Ask us</a></span>
+      </article>
+    </div>
+    <div class="wrap"><div class="prog"><i></i></div></div>
+  </div>
+</section>
+
+<section class="sec find" id="find">
+  <div class="wrap">
+    <span class="tag rv"><i></i>Find us</span>
+    <h2 class="rv">Three steps<br>from the <span>doors.</span></h2>
+    <div class="steps">
+      <div class="st rv"><span class="n">1</span><h3>City Centre Beirut</h3><p>Head into the mall in Hazmieh.</p></div>
+      <div class="st rv r2"><span class="n">2</span><h3>Go to Level 1</h3><p>Take the escalator or lift up to the first level.</p></div>
+      <div class="st rv r3"><span class="n">3</span><h3>Face Carrefour</h3><p>We are right there, facing the Carrefour entrance.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rate" id="reviews">
+  <div class="wrap">
+    <div class="big rv"><span data-to="4.8" data-dec="1">4.8</span></div>
+    <div class="rv r2">
+      <div class="stars" aria-label="4.8 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+      <h2>Stars on Google from <span data-to="175">175</span> reviews.</h2>
+      <p>That is 175 people who took the time to rate their visit. Come and see what they are talking about.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="visit">
+  <div class="wrap v-grid">
+    <div class="box loc rv">
+      <div>
+        <span class="tag"><i></i>Location</span>
+        <h3>City Centre Beirut, Level 1</h3>
+        <p>Facing Carrefour, Hazmieh, Lebanon.</p>
+      </div>
+      <div class="floor" aria-hidden="true"><div>Ground</div><div class="on">Level 1<br>We&rsquo;re here</div></div>
+    </div>
+    <div class="box hrs rv r2">
+      <div>
+        <span class="tag"><i></i>Hours &amp; booking</span>
+        <h3>Ask before you come</h3>
+        <p>Message us for today&rsquo;s opening times and the next free slot, and we&rsquo;ll hold your place.</p>
+        <p class="num">+961 76 797 070</p>
+      </div>
+      <span class="bw"><a class="btn butter" href="https://wa.me/96176797070?text=Hi%2C%20what%20is%20your%20availability%20today%3F">Check today&rsquo;s availability</a></span>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="burst2" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 class="rv">Shop less.<br><em>Glow</em> more.</h2>
+    <div class="row rv r2">
+      <span class="bw"><a class="btn mag" href="https://wa.me/96176797070?text=Hi%20Noor%20Kanaan%20Beauty%20Zone%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+      <p class="ph"><small>WhatsApp</small>+961 76 797 070</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Noor Kanaan Beauty Zone</b>
+    <span>City Centre Beirut, Level 1, facing Carrefour, Hazmieh, Lebanon</span>
+    <a href="https://wa.me/96176797070?text=Hi%20Noor%20Kanaan%20Beauty%20Zone%2C%20I%27d%20like%20to%20book%20an%20appointment.">+961 76 797 070</a>
+  </div>
+</footer>
+<div class="pv">Preview concept</div>
+
+<script>
+(function(){
+  var d=document,de=d.documentElement,rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches,fine=window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  setTimeout(function(){de.classList.add('loaded')},60);
+
+  var hdr=d.querySelector('.hdr'),burger=d.querySelector('.burger'),mnav=d.querySelector('.mnav');
+  function closeNav(){d.body.classList.remove('nav-open');burger.setAttribute('aria-expanded','false')}
+  burger.addEventListener('click',function(){var o=d.body.classList.toggle('nav-open');burger.setAttribute('aria-expanded',o?'true':'false')});
+  mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeNav)});
+
+  function count(el){
+    if(rm)return;
+    var to=parseFloat(el.getAttribute('data-to')),dec=+el.getAttribute('data-dec')||0,st=null;
+    function f(t){if(!st)st=t;var p=Math.min((t-st)/1500,1),e=1-Math.pow(1-p,4);el.textContent=(to*e).toFixed(dec);if(p<1)requestAnimationFrame(f)}
+    el.textContent=(0).toFixed(dec);requestAnimationFrame(f);setTimeout(function(){el.textContent=to.toFixed(dec)},2800);
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-to]').forEach(count);io.unobserve(e.target)}})},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+    d.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  }else{d.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+
+  /* pinned horizontal scroll */
+  var hs=d.querySelector('.hs'),track=d.querySelector('.hs-track'),bar=d.querySelector('.prog i'),burst=d.querySelector('.burst b'),dist=0;
+  function size(){
+    if(rm)return;
+    hs.classList.add('pin');
+    dist=Math.max(track.scrollWidth-de.clientWidth,0);
+    hs.style.height=(window.innerHeight+dist)+'px';
+  }
+  var tick=false;
+  function frame(){
+    tick=false;var y=window.scrollY||0;
+    hdr.classList.toggle('scrolled',y>30);
+    if(rm||!dist)return;
+    var r=hs.getBoundingClientRect(),p=Math.min(Math.max(-r.top/dist,0),1);
+    track.style.transform='translate3d('+(-p*dist).toFixed(1)+'px,0,0)';
+    bar.style.transform='scaleX('+p.toFixed(4)+')';
+    if(y>2&&y<window.innerHeight*1.2)burst.parentNode.style.transform='translate3d(0,'+(y*.25).toFixed(1)+'px,0)';
+  }
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(frame)}},{passive:true});
+  window.addEventListener('resize',function(){size();frame()});
+  window.addEventListener('load',function(){size();frame()});
+  size();frame();
+
+  if(fine&&!rm){
+    d.querySelectorAll('.mag').forEach(function(b){
+      b.addEventListener('mousemove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.3).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.4).toFixed(1)+'px)'});
+      b.addEventListener('mouseleave',function(){b.style.transform=''});
+    });
+  }
+})();
+</script>
+</body>
+</html>

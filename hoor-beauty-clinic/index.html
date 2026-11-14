@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoor Beauty Clinic | Skin, Laser, Facials and Spa in Beirut</title>
+<meta name="description" content="Hoor Beauty Clinic, a beauty clinic and spa in Beirut, Lebanon. Skin, laser, facial and spa treatments. Rated 4.8 on Google from 409 reviews. Book on WhatsApp.">
+<meta name="theme-color" content="#f1eee6">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#f1eee6;--mist:#e3e6dc;--sage:#a7b6a2;--moss:#5f7a6b;--deep:#1c342e;--deeper:#142722;--brass:#b08a52;--ink:#1d2622;--mute:#66706a;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.7,.2,1);--line:rgba(28,52,46,.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-weight:300;background:var(--bone);color:var(--ink);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-size:1.02rem}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+button{font:inherit;color:inherit}
+.wrap{width:min(1200px,100% - 44px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1;letter-spacing:-.015em}
+i.it,em{font-style:italic;color:var(--moss)}
+.label{font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;font-weight:400;color:var(--brass);display:inline-flex;align-items:center;gap:14px}
+.label::before{content:"";width:6px;height:6px;border:1px solid var(--brass);transform:rotate(45deg)}
+
+.btn{display:inline-flex;align-items:center;gap:16px;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;font-weight:400;padding:18px 30px;background:var(--deep);color:var(--bone);border-radius:2px;position:relative;overflow:hidden;transition:transform .5s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;background:var(--brass);transform:scaleX(0);transform-origin:right;transition:transform .7s var(--ease)}
+.btn:hover::before{transform:scaleX(1);transform-origin:left}
+.btn>*{position:relative}
+.btn .ar{width:26px;height:1px;background:currentColor;position:relative;transition:transform .5s var(--ease);transform-origin:left}
+.btn .ar::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid;border-right:1px solid;transform:rotate(45deg)}
+.btn:hover .ar{transform:scaleX(1.4)}
+.btn.ghost{background:transparent;color:var(--deep);box-shadow:inset 0 0 0 1px var(--deep)}
+.btn.ghost:hover{color:var(--bone)}.btn.ghost::before{background:var(--deep)}
+.btn.light{background:var(--bone);color:var(--deep)}
+.btn.sm{padding:13px 20px;font-size:.66rem}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .5s,box-shadow .5s}
+.hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px;transition:height .5s var(--ease)}
+.hdr.scrolled{background:rgba(241,238,230,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--line)}
+.hdr.scrolled .wrap{height:64px}
+.nav{display:flex;gap:30px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:400}
+.nav a{opacity:.7;transition:opacity .3s}.nav a:hover{opacity:1}
+.logo{text-align:center;font-family:var(--serif);font-size:1.7rem;letter-spacing:.34em;padding-left:.34em;line-height:1;font-weight:400}
+.logo small{display:block;font-family:var(--sans);font-size:.5rem;letter-spacing:.44em;margin-top:5px;color:var(--mute);font-weight:400}
+.hdr .right{display:flex;justify-content:flex-end;align-items:center}
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.burger i{position:absolute;left:10px;right:10px;height:1px;background:var(--ink);transition:transform .5s var(--ease),top .5s var(--ease)}
+.burger i:first-child{top:18px}.burger i:last-child{top:26px}
+.nav-open .burger i:first-child{top:22px;transform:rotate(45deg)}.nav-open .burger i:last-child{top:22px;transform:rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:45;background:var(--mist);padding:100px 26px 40px;display:flex;flex-direction:column;justify-content:center;opacity:0;visibility:hidden;transition:opacity .5s,visibility .5s}
+.nav-open .mnav{opacity:1;visibility:visible}
+.mnav a.l{font-family:var(--serif);font-size:2.7rem;padding:10px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
+.mnav a.l span{font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;color:var(--brass)}
+.mnav .btn{margin-top:34px;align-self:flex-start}
+
+/* hero */
+.hero{padding:136px 0 0;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(3.3rem,8vw,7.4rem);margin:30px 0 30px}
+.ln{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.ln>span{display:inline-block}
+.js .ln>span{transform:translateY(108%);opacity:0;transition:transform 1.5s var(--ease),opacity 1.5s var(--ease)}
+.js .ln:nth-child(2)>span{transition-delay:.14s}.js .ln:nth-child(3)>span{transition-delay:.28s}
+.js.loaded .ln>span{transform:none;opacity:1}
+.js .fade{opacity:0;transform:translateY(16px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
+.js.loaded .fade{opacity:1;transform:none}
+.js .d1{transition-delay:.6s}.js .d2{transition-delay:.75s}.js .d3{transition-delay:.3s}
+.lead{max-width:29em;color:var(--mute);font-size:1.1rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:38px}
+.tel{font-size:.95rem;font-weight:400;letter-spacing:.06em}
+.tel small{display:block;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
+
+.lens-wrap{position:relative;max-width:500px;width:100%;margin-left:auto;aspect-ratio:1}
+.orbit{position:absolute;inset:0;animation:spin 60s linear infinite}
+.orbit svg{width:100%;height:100%}
+.orbit circle{fill:none;stroke:var(--brass);stroke-width:.5;stroke-dasharray:1.5 5}
+.orbit .dot{fill:var(--brass);stroke:none}
+.lens{position:absolute;inset:8%;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 30% 25%,#3c5f52,var(--deep) 60%,var(--deeper))}
+.lens .orb{position:absolute;border-radius:50%;will-change:transform}
+.lens .o1{width:70%;aspect-ratio:1;left:-18%;bottom:-22%;background:radial-gradient(circle,rgba(167,182,162,.75),rgba(167,182,162,0) 68%)}
+.lens .o2{width:54%;aspect-ratio:1;right:-10%;top:-8%;background:radial-gradient(circle,rgba(176,138,82,.5),rgba(176,138,82,0) 68%)}
+.lens .o3{width:36%;aspect-ratio:1;right:14%;bottom:8%;background:radial-gradient(circle,rgba(241,238,230,.35),rgba(241,238,230,0) 70%)}
+.lens svg{position:absolute;inset:0;width:100%;height:100%}
+.draw path{fill:none;stroke:#eef0e6;stroke-width:1;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.draw path.br{stroke:#d9b987}
+.js .draw path{stroke-dashoffset:1;transition:stroke-dashoffset 2.6s var(--ease)}
+.js.loaded .hero .draw path,.js .in .draw path,.js .draw.in path{stroke-dashoffset:0}
+.js.loaded .hero .draw path:nth-child(2){transition-delay:.25s}.js.loaded .hero .draw path:nth-child(3){transition-delay:.5s}.js.loaded .hero .draw path:nth-child(4){transition-delay:.75s}.js.loaded .hero .draw path:nth-child(5){transition-delay:1s}
+.coord{position:absolute;left:-6px;bottom:6%;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);writing-mode:vertical-rl;transform:rotate(180deg)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.facts{margin-top:70px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr)}
+.facts div{padding:26px 0 30px;border-right:1px solid var(--line);padding-left:28px}
+.facts div:first-child{padding-left:0}.facts div:last-child{border-right:0}
+.facts b{font-family:var(--serif);font-weight:300;font-size:2.6rem;line-height:1;display:block}
+.facts span{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+
+.js .rv{opacity:0;transform:translateY(30px);transition:opacity 1.3s var(--ease),transform 1.3s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.r2{transition-delay:.12s}.js .rv.r3{transition-delay:.24s}
+
+.sec{padding:clamp(86px,11vw,160px) 0;position:relative}
+.head{max-width:760px;margin-bottom:60px}
+.head h2{font-size:clamp(2.6rem,5.8vw,4.8rem);margin-top:22px}
+.head p{margin-top:20px;color:var(--mute);max-width:34em}
+
+/* treatments */
+.treat{background:var(--mist)}
+.t-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.tabs{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.tab{display:grid;grid-template-columns:44px 1fr auto;align-items:baseline;gap:8px;padding:24px 0;border:0;border-bottom:1px solid var(--line);background:none;text-align:left;cursor:pointer;position:relative}
+.tab .n{font-size:.68rem;letter-spacing:.2em;color:var(--brass)}
+.tab .t{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);line-height:1;transition:transform .6s var(--ease),color .4s;color:rgba(29,38,34,.45)}
+.tab .x{width:9px;height:9px;border-radius:50%;border:1px solid var(--deep);align-self:center;transition:background .4s,transform .5s var(--ease)}
+.tab::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--deep);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
+.tab:hover .t{color:var(--ink);transform:translateX(8px)}
+.tab[aria-selected="true"] .t{color:var(--ink);font-style:italic;transform:translateX(8px)}
+.tab[aria-selected="true"] .x{background:var(--deep);transform:scale(1.3)}
+.tab[aria-selected="true"]::after{transform:scaleX(1)}
+.panels{display:grid;position:sticky;top:96px}
+.panel{grid-area:1/1;background:var(--deep);color:var(--bone);border-radius:4px;padding:clamp(28px,4.4vw,56px);position:relative;overflow:hidden;opacity:0;visibility:hidden;transform:translateY(18px) scale(.985);transition:opacity .7s var(--ease),transform .7s var(--ease),visibility .7s}
+.panel.on{opacity:1;visibility:visible;transform:none}
+.panel::before{content:"";position:absolute;width:340px;height:340px;right:-120px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(167,182,162,.4),rgba(167,182,162,0) 70%)}
+.panel>*{position:relative}
+.panel .k{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:#d9b987}
+.panel h3{font-size:clamp(2rem,3.8vw,3rem);margin:18px 0 18px;line-height:1.05}
+.panel p{color:rgba(241,238,230,.75);max-width:30em}
+.panel ul{list-style:none;margin:28px 0 34px;border-top:1px solid rgba(241,238,230,.18)}
+.panel li{padding:14px 0;border-bottom:1px solid rgba(241,238,230,.18);display:flex;gap:16px;align-items:center}
+.panel li::before{content:"";width:5px;height:5px;background:#d9b987;transform:rotate(45deg);flex:none}
+.fine{margin-top:34px;font-size:.86rem;color:var(--mute)}
+
+/* approach */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;position:relative}
+.thread{position:absolute;left:0;right:0;top:27px;width:100%;height:2px;overflow:visible}
+.thread path{stroke:var(--brass);stroke-width:1;fill:none;stroke-dasharray:1;stroke-dashoffset:0}
+.js .thread path{stroke-dashoffset:1;transition:stroke-dashoffset 2.4s var(--ease) .2s}
+.js .steps.in .thread path{stroke-dashoffset:0}
+.step .c{width:56px;height:56px;border-radius:50%;background:var(--bone);border:1px solid var(--brass);display:grid;place-items:center;font-family:var(--serif);font-size:1.4rem;position:relative;z-index:1;transition:background .5s,color .5s,transform .6s var(--ease)}
+.step:hover .c{background:var(--deep);color:var(--bone);transform:scale(1.1)}
+.step h3{font-size:2rem;margin:28px 0 12px}
+.step p{color:var(--mute);max-width:22em}
+
+/* rating */
+.rate{background:var(--deep);color:var(--bone);overflow:hidden;position:relative;isolation:isolate}
+.rate .glow{position:absolute;left:0;top:0;width:640px;height:640px;margin:-320px 0 0 -320px;border-radius:50%;background:radial-gradient(circle,rgba(167,182,162,.3),rgba(167,182,162,0) 65%);z-index:-1;will-change:transform;transform:translate3d(70vw,220px,0)}
+.rate .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;padding-block:clamp(86px,11vw,160px)}
+.rate .label{color:#d9b987}.rate .label::before{border-color:#d9b987}
+.rate h2{font-size:clamp(2.4rem,5vw,4.2rem);margin:22px 0 22px}
+.rate h2 em{color:var(--sage)}
+.rate p{color:rgba(241,238,230,.7);max-width:30em}
+.nums{display:grid;grid-template-columns:1fr 1fr;border-left:1px solid rgba(241,238,230,.2)}
+.nums div{padding:0 0 0 clamp(18px,3vw,40px)}
+.nums div+div{border-left:1px solid rgba(241,238,230,.2)}
+.nums b{font-family:var(--serif);font-weight:300;font-size:clamp(4.6rem,11vw,9.5rem);line-height:.9;display:block;font-variant-numeric:tabular-nums lining-nums}
+.nums span{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(241,238,230,.6)}
+.stars{display:flex;gap:5px;margin-bottom:14px}
+.stars svg{width:15px;height:15px;fill:#d9b987}
+
+/* visit */
+.v-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.v{padding:clamp(28px,5vw,64px);position:relative}
+.v+.v{border-left:1px solid var(--line);background:#f6f4ee}
+.v h3{font-size:clamp(2.2rem,4vw,3.2rem);margin:20px 0 16px}
+.v p{color:var(--mute);max-width:26em}
+.v .btn{margin-top:30px}
+.v .big-n{font-family:var(--serif);font-size:clamp(1.8rem,3.4vw,2.4rem);margin-top:22px;color:var(--ink);letter-spacing:.02em}
+.rings{position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;opacity:.5;pointer-events:none}
+.rings circle{fill:none;stroke:var(--sage);stroke-width:1}
+
+/* cta */
+.cta{isolation:isolate;text-align:center;padding:clamp(100px,14vw,200px) 0;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(3.2rem,10vw,9rem);margin:26px auto 40px;max-width:10em}
+.cta .tel{margin-top:28px;display:inline-block}
+.cta .halo{position:absolute;left:50%;top:50%;width:min(900px,150vw);aspect-ratio:1;margin:0;transform:translate(-50%,-50%);border-radius:50%;border:1px solid var(--line);z-index:-1}
+.cta .halo::before,.cta .halo::after{content:"";position:absolute;inset:12%;border-radius:50%;border:1px solid var(--line)}
+.cta .halo::after{inset:26%;background:radial-gradient(circle,rgba(167,182,162,.35),rgba(167,182,162,0) 70%);border:0}
+
+footer{border-top:1px solid var(--line);padding:30px 0 74px;font-size:.78rem;letter-spacing:.08em;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between}
+
+.pv{position:fixed;left:12px;bottom:12px;z-index:60;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;font-weight:400;padding:7px 12px;border-radius:999px;background:rgba(20,39,34,.7);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);pointer-events:none}
+
+@media (max-width:900px){
+  .hdr .wrap{grid-template-columns:1fr auto;height:70px}
+  .nav,.hdr .btn{display:none}.burger{display:block}
+  .logo{text-align:left;font-size:1.45rem}
+  .hero{padding-top:112px}
+  .hero-grid{grid-template-columns:1fr;gap:50px}
+  .lens-wrap{margin:0 auto;max-width:340px}
+  .facts{grid-template-columns:1fr 1fr;margin-top:50px}
+  .facts div{padding:20px 0 22px 20px}
+  .facts div:nth-child(3){grid-column:1/-1;border-top:1px solid var(--line);border-right:0;padding-left:0}
+  .facts b{font-size:2.2rem}
+  .t-grid{grid-template-columns:1fr}
+  .tabs{flex-direction:row;overflow-x:auto;border-top:0;border-bottom:1px solid var(--line);gap:26px;scrollbar-width:none;margin-inline:-22px;padding-inline:22px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{display:block;padding:10px 0 14px;border-bottom:0;flex:none}
+  .tab .n,.tab .x{display:none}
+  .tab .t{font-size:1.9rem}.tab:hover .t,.tab[aria-selected="true"] .t{transform:none}
+  .panels{position:static}
+  .steps{grid-template-columns:1fr;gap:0}
+  .thread{display:none}
+  .step{display:grid;grid-template-columns:56px 1fr;column-gap:22px;padding:0 0 34px;position:relative}
+  .step::before{content:"";position:absolute;left:28px;top:56px;bottom:0;width:1px;background:var(--brass);opacity:.5}
+  .step:last-child::before{display:none}
+  .step h3{margin:8px 0 8px;font-size:1.8rem}.step p{grid-column:2}
+  .rate .wrap{grid-template-columns:1fr}
+  .nums{border-left:0}.nums div:first-child{padding-left:0}
+  .v-grid{grid-template-columns:1fr}
+  .v+.v{border-left:0;border-top:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv,.js .ln>span,.js .fade{opacity:1!important;transform:none!important}
+  .js .draw path,.js .thread path{stroke-dashoffset:0!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main"><a href="#treatments">Treatments</a><a href="#approach">Approach</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+    <a href="#top" class="logo">HOOR<small>BEAUTY CLINIC</small></a>
+    <div class="right">
+      <a class="btn sm ghost" href="https://wa.me/96181635513?text=Hi%20Hoor%20Beauty%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment."><span>Book on WhatsApp</span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+<div class="mnav">
+  <a class="l" href="#treatments">Treatments <span>01</span></a>
+  <a class="l" href="#approach">Approach <span>02</span></a>
+  <a class="l" href="#reviews">Reviews <span>03</span></a>
+  <a class="l" href="#visit">Visit <span>04</span></a>
+  <a class="btn" href="https://wa.me/96181635513?text=Hi%20Hoor%20Beauty%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment."><span>Book on WhatsApp</span><span class="ar"></span></a>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="label fade">Beauty clinic &amp; spa &middot; Beirut</p>
+        <h1>
+          <span class="ln"><span>Skin, cared for</span></span>
+          <span class="ln"><span>with clinical</span></span>
+          <span class="ln"><span><em>calm.</em></span></span>
+        </h1>
+        <p class="lead fade d1">Skin, laser, facial and spa treatments in Beirut, carried out with a careful hand in a setting made for switching off.</p>
+        <div class="hero-cta fade d2">
+          <a class="btn" href="https://wa.me/96181635513?text=Hi%20Hoor%20Beauty%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment."><span>Book on WhatsApp</span><span class="ar"></span></a>
+          <a class="tel" href="https://wa.me/96181635513?text=Hi%20Hoor%20Beauty%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment."><small>WhatsApp</small>+961 81 635 513</a>
+        </div>
+      </div>
+      <div class="lens-wrap fade d3" aria-hidden="true">
+        <div class="orbit"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="99"/><circle class="dot" cx="100" cy="1" r="2.2"/><circle class="dot" cx="30" cy="170" r="1.4"/></svg></div>
+        <div class="lens">
+          <div class="orb o1" data-par="-.1"></div><div class="orb o2" data-par=".12"></div><div class="orb o3" data-par="-.18"></div>
+          <svg class="draw" viewBox="0 0 300 300">
+            <path pathLength="1" d="M-10 170 C40 140 80 200 130 170 S220 140 310 172"/>
+            <path pathLength="1" d="M-10 195 C40 165 80 225 130 195 S220 165 310 197"/>
+            <path pathLength="1" d="M-10 220 C40 190 80 250 130 220 S220 190 310 222"/>
+            <path pathLength="1" d="M-10 245 C40 215 80 275 130 245 S220 215 310 247"/>
+            <path class="br" pathLength="1" d="M150 62 C150 62 122 100 122 121 a28 28 0 0 0 56 0 C178 100 150 62 150 62z"/>
+          </svg>
+        </div>
+        <span class="coord">Beirut &middot; 33.89&deg; N 35.50&deg; E</span>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="rv"><b>4.8</b><span>Google rating</span></div>
+      <div class="rv r2"><b>409</b><span>Google reviews</span></div>
+      <div class="rv r3"><b>Skin &middot; Laser &middot; Spa</b><span>Under one roof</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec treat" id="treatments">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="label">Treatments</p>
+      <h2>Four ways to look after <em>your skin.</em></h2>
+      <p>Choose an area to see what it covers. Not sure where to start? Tell us what you&rsquo;d like to change and we&rsquo;ll guide you.</p>
+    </div>
+    <div class="t-grid">
+      <div class="tabs rv" role="tablist" aria-label="Treatment areas">
+        <button class="tab" role="tab" aria-selected="true" aria-controls="p-skin" id="t-skin"><span class="n">01</span><span class="t">Skin</span><span class="x"></span></button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-laser" id="t-laser"><span class="n">02</span><span class="t">Laser</span><span class="x"></span></button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-facial" id="t-facial"><span class="n">03</span><span class="t">Facials</span><span class="x"></span></button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p-spa" id="t-spa"><span class="n">04</span><span class="t">Spa</span><span class="x"></span></button>
+      </div>
+      <div class="panels rv r2">
+        <div class="panel on" role="tabpanel" id="p-skin" aria-labelledby="t-skin">
+          <span class="k">01 &middot; Skin</span>
+          <h3>Care built around your skin.</h3>
+          <p>Treatments chosen for how your skin looks and feels now, and where you would like it to be.</p>
+          <ul><li>Skin assessment and advice</li><li>Care for tone, texture and clarity</li><li>Hydration and glow-focused treatments</li></ul>
+          <a class="btn light" href="https://wa.me/96181635513?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20skin%20treatments."><span>Ask about skin</span><span class="ar"></span></a>
+        </div>
+        <div class="panel" role="tabpanel" id="p-laser" aria-labelledby="t-laser">
+          <span class="k">02 &middot; Laser</span>
+          <h3>Precise, considered laser sessions.</h3>
+          <p>Laser treatments carried out with attention to your comfort and to your skin type.</p>
+          <ul><li>Laser hair removal</li><li>Sessions paced to your skin and hair</li><li>Guidance on care before and after</li></ul>
+          <a class="btn light" href="https://wa.me/96181635513?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20laser%20treatments."><span>Ask about laser</span><span class="ar"></span></a>
+        </div>
+        <div class="panel" role="tabpanel" id="p-facial" aria-labelledby="t-facial">
+          <span class="k">03 &middot; Facials</span>
+          <h3>Facials that reset and refresh.</h3>
+          <p>From a deep clean to a soothing, hydrating hour, matched to what your skin needs on the day.</p>
+          <ul><li>Deep cleansing facials</li><li>Hydrating and soothing facials</li><li>Facials selected for your skin type</li></ul>
+          <a class="btn light" href="https://wa.me/96181635513?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20facials."><span>Ask about facials</span><span class="ar"></span></a>
+        </div>
+        <div class="panel" role="tabpanel" id="p-spa" aria-labelledby="t-spa">
+          <span class="k">04 &middot; Spa</span>
+          <h3>Time set aside to unwind.</h3>
+          <p>Relaxing treatments in a quiet setting, on their own or alongside your skin care.</p>
+          <ul><li>Relaxing face and body treatments</li><li>A calm space to slow down</li><li>Easy to pair with a skin treatment</li></ul>
+          <a class="btn light" href="https://wa.me/96181635513?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20spa%20treatments."><span>Ask about spa</span><span class="ar"></span></a>
+        </div>
+      </div>
+    </div>
+    <p class="fine rv">Message us for the full, current treatment list and to confirm what suits you.</p>
+  </div>
+</section>
+
+<section class="sec" id="approach">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="label">Approach</p>
+      <h2>Booking is a <em>conversation,</em> not a form.</h2>
+    </div>
+    <div class="steps rv">
+      <svg class="thread" viewBox="0 0 100 2" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 1H100" vector-effect="non-scaling-stroke"/></svg>
+      <div class="step"><div class="c">1</div><h3>Message us</h3><p>Tell us on WhatsApp what you would like to work on.</p></div>
+      <div class="step"><div class="c">2</div><h3>Get guidance</h3><p>We suggest a treatment and a time that suits you.</p></div>
+      <div class="step"><div class="c">3</div><h3>Come in</h3><p>Arrive, settle, and leave the rest to us.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rate" id="reviews">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="rv">
+      <p class="label">Reviews</p>
+      <h2>Trusted by the people who have <em>been in the chair.</em></h2>
+      <p>Hoor Beauty Clinic holds a 4.8 star rating on Google, built from 409 individual reviews.</p>
+    </div>
+    <div class="nums rv r2">
+      <div>
+        <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+        <b data-to="4.8" data-dec="1">4.8</b><span>Stars on Google</span>
+      </div>
+      <div>
+        <div class="stars" style="visibility:hidden"><svg viewBox="0 0 24 24"></svg></div>
+        <b data-to="409">409</b><span>Google reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="visit">
+  <div class="wrap">
+    <div class="v-grid rv">
+      <div class="v">
+        <p class="label">Location</p>
+        <h3>Beirut, Lebanon</h3>
+        <p>Message us and we will send the clinic&rsquo;s location pin and directions straight to your phone.</p>
+        <a class="btn ghost" href="https://wa.me/96181635513?text=Hi%2C%20could%20you%20send%20me%20your%20location%3F"><span>Get directions</span><span class="ar"></span></a>
+        <svg class="rings" viewBox="0 0 220 220" aria-hidden="true"><circle cx="110" cy="110" r="108"/><circle cx="110" cy="110" r="78"/><circle cx="110" cy="110" r="48"/><circle cx="110" cy="110" r="18"/></svg>
+      </div>
+      <div class="v">
+        <p class="label">Hours &amp; appointments</p>
+        <h3>Ask for today&rsquo;s times</h3>
+        <p>Message us for today&rsquo;s availability and opening times. We reply on WhatsApp.</p>
+        <p class="big-n">+961 81 635 513</p>
+        <a class="btn" href="https://wa.me/96181635513?text=Hi%2C%20what%20is%20your%20availability%20today%3F"><span>Check availability</span><span class="ar"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="halo" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="label rv">Begin</p>
+    <h2 class="rv">Your skin, in <em>good hands.</em></h2>
+    <div class="rv r2">
+      <a class="btn" href="https://wa.me/96181635513?text=Hi%20Hoor%20Beauty%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment."><span>Book on WhatsApp</span><span class="ar"></span></a><br>
+      <a class="tel" href="https://wa.me/96181635513?text=Hi%20Hoor%20Beauty%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment."><small>WhatsApp</small>+961 81 635 513</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Hoor Beauty Clinic &middot; Beauty clinic &amp; spa</span>
+    <span>Beirut, Lebanon</span>
+    <a href="https://wa.me/96181635513?text=Hi%20Hoor%20Beauty%20Clinic%2C%20I%27d%20like%20to%20book%20an%20appointment.">+961 81 635 513</a>
+  </div>
+</footer>
+<div class="pv">Preview concept</div>
+
+<script>
+(function(){
+  var d=document,de=d.documentElement,rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches,fine=window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  setTimeout(function(){de.classList.add('loaded')},60);
+
+  var hdr=d.querySelector('.hdr'),burger=d.querySelector('.burger'),mnav=d.querySelector('.mnav');
+  function closeNav(){d.body.classList.remove('nav-open');burger.setAttribute('aria-expanded','false')}
+  burger.addEventListener('click',function(){var o=d.body.classList.toggle('nav-open');burger.setAttribute('aria-expanded',o?'true':'false')});
+  mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeNav)});
+
+  function count(el){
+    if(rm)return;
+    var to=parseFloat(el.getAttribute('data-to')),dec=+el.getAttribute('data-dec')||0,st=null;
+    function f(t){if(!st)st=t;var p=Math.min((t-st)/2200,1),e=1-Math.pow(1-p,3);el.textContent=(to*e).toFixed(dec);if(p<1)requestAnimationFrame(f)}
+    el.textContent=(0).toFixed(dec);requestAnimationFrame(f);setTimeout(function(){el.textContent=to.toFixed(dec)},2800);
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-to]').forEach(count);io.unobserve(e.target)}})},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+    d.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  }else{d.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+
+  /* tabs */
+  var tabs=[].slice.call(d.querySelectorAll('.tab')),panels=[].slice.call(d.querySelectorAll('.panel'));
+  function pick(i){
+    tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i?'true':'false');t.tabIndex=j===i?0:-1});
+    panels.forEach(function(p,j){p.classList.toggle('on',j===i)});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(i)});
+    t.addEventListener('keydown',function(e){
+      var k=e.key,n=-1;
+      if(k==='ArrowDown'||k==='ArrowRight')n=(i+1)%tabs.length;
+      if(k==='ArrowUp'||k==='ArrowLeft')n=(i-1+tabs.length)%tabs.length;
+      if(n>-1){e.preventDefault();pick(n);tabs[n].focus()}
+    });
+  });
+
+  var pars=[].slice.call(d.querySelectorAll('[data-par]')),tick=false;
+  function frame(){
+    tick=false;var y=window.scrollY||0,vh=window.innerHeight;
+    hdr.classList.toggle('scrolled',y>30);
+    if(rm)return;
+    pars.forEach(function(el){var r=el.parentNode.getBoundingClientRect();if(r.bottom<-100||r.top>vh+100)return;
+      var c=r.top+r.height/2-vh/2;el.style.transform='translate3d(0,'+(c*parseFloat(el.getAttribute('data-par'))).toFixed(1)+'px,0)'});
+  }
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(frame)}},{passive:true});
+  window.addEventListener('resize',frame);frame();
+
+  if(fine&&!rm){
+    var rate=d.querySelector('.rate'),glow=rate.querySelector('.glow'),gx=0,gy=0,tx=0,ty=0,run=false;
+    function loop(){gx+=(tx-gx)*.08;gy+=(ty-gy)*.08;glow.style.transform='translate3d('+gx.toFixed(1)+'px,'+gy.toFixed(1)+'px,0)';
+      if(Math.abs(tx-gx)>.5||Math.abs(ty-gy)>.5)requestAnimationFrame(loop);else run=false}
+    rate.addEventListener('mousemove',function(e){var r=rate.getBoundingClientRect();tx=e.clientX-r.left;ty=e.clientY-r.top;
+      if(!run){run=true;if(!gx&&!gy){gx=tx;gy=ty}requestAnimationFrame(loop)}});
+  }
+})();
+</script>
+</body>
+</html>

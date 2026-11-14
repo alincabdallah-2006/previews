@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhysioWorld &amp; Rehabilitation Clinic | Physiotherapy, Spintex Road, Accra</title>
+<meta name="description" content="PhysioWorld & Rehabilitation Clinic. Physiotherapy at Community 18, Spintex Road, Accra. Spine care, stroke rehabilitation, sports injuries and therapeutic massage. WhatsApp +233 24 489 0929.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--cream:#FAF3E3;--cream2:#F1E6CC;--forest:#12392F;--forest2:#0C2A23;--coral:#EF5F33;--sun:#F2B93B;--mint:#CFE5D2;--ink:#14231F;--ease:cubic-bezier(.22,.9,.24,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px;overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:inherit;text-decoration:none}svg{display:block}
+.wrap{width:100%;max-width:1220px;margin:0 auto;padding:0 20px}
+.disp{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.95}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.04em;padding:8px 14px;border-radius:99px;background:var(--mint);color:var(--forest)}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--coral);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.4}}
+
+.hd{position:fixed;top:10px;left:10px;right:10px;z-index:70;transition:transform .5s var(--ease)}
+.hd .bar{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 10px 10px 18px;border-radius:99px;transition:background .4s,box-shadow .4s}
+.hd.sc .bar,.hd.open .bar{background:#fff;box-shadow:0 10px 40px -14px rgba(18,57,47,.35)}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Bricolage Grotesque';font-weight:800;font-size:19px;letter-spacing:-.02em;color:var(--forest)}
+.logo svg{width:34px;height:34px}
+.nav{display:none;gap:30px;font-size:15px;font-weight:500}
+.nav a{position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--coral);transform:scaleX(0);transition:transform .4s var(--ease)}
+.nav a:hover::after{transform:scaleX(1)}
+.hd .btn{display:none}
+.burger{width:46px;height:46px;border-radius:50%;border:0;background:var(--forest);cursor:pointer;position:relative}
+.burger i{position:absolute;left:14px;right:14px;height:2px;border-radius:2px;background:var(--cream);transition:transform .4s var(--ease)}
+.burger i:first-child{top:19px}.burger i:last-child{top:26px}
+.open .burger i:first-child{transform:translateY(3.5px) rotate(45deg)}.open .burger i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:60;background:var(--forest);color:var(--cream);padding:110px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;visibility:hidden;transform:scale(1.04);transition:opacity .4s,transform .5s var(--ease),visibility .4s}
+.mnav.on{opacity:1;visibility:visible;transform:none}
+.mnav a{font-family:'Bricolage Grotesque';font-weight:800;font-size:44px;letter-spacing:-.03em;line-height:1.2}
+.mnav p{margin-top:auto;font-size:15px;opacity:.75}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:99px;background:var(--coral);color:#fff;font-weight:700;font-size:16px;transition:transform .35s var(--ease),box-shadow .35s;box-shadow:0 6px 0 var(--forest2);will-change:transform}
+.btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 var(--forest2)}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--forest2)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.dark{background:var(--forest);color:var(--cream);box-shadow:0 6px 0 var(--coral)}
+.btn.dark:hover{box-shadow:0 9px 0 var(--coral)}
+.btn.sm{padding:11px 20px;font-size:14.5px;box-shadow:none}
+.btn.sm:hover{box-shadow:none;transform:scale(1.05)}
+
+.hero{position:relative;padding:118px 0 56px;overflow:hidden}
+.hero .wrap{display:grid;gap:40px;position:relative}
+.hero h1{font-size:clamp(3.3rem,13.2vw,8.6rem);margin:20px 0 22px;color:var(--forest)}
+.hero h1 .c{color:var(--coral)}
+.line{display:block;overflow:hidden;padding-bottom:.06em}.line>span{display:block}
+.js .line>span{transform:translateY(110%) rotate(4deg);transform-origin:left bottom;transition:transform 1s var(--ease)}
+.js .line:nth-child(2)>span{transition-delay:.1s}.js .line:nth-child(3)>span{transition-delay:.2s}
+.js .loaded .line>span{transform:none}
+.js .fade{opacity:0;transform:translateY(20px);transition:opacity .9s .45s,transform .9s .45s var(--ease)}
+.js .fade.f2{transition-delay:.62s}
+.js .loaded .fade{opacity:1;transform:none}
+.lead{font-size:18.5px;max-width:470px;color:#33443F}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px;margin-top:30px}
+.tel{font-size:15px;font-weight:500}.tel b{display:block;font-size:17px}
+.art{position:relative;max-width:440px;width:100%;margin:10px auto 0;aspect-ratio:1/1.12}
+.arch{position:absolute;inset:0 7% 0 7%;background:var(--forest);border-radius:999px 999px 34px 34px;overflow:hidden}
+.arch::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(242,185,59,.35),transparent 55%),radial-gradient(circle at 80% 90%,rgba(239,95,51,.4),transparent 50%)}
+.arch svg{position:absolute;inset:6% 0 0;width:100%;height:94%}
+.spine{fill:none;stroke:var(--cream);stroke-width:3;stroke-linecap:round;stroke-dasharray:1}
+.js .spine{stroke-dashoffset:1;transition:stroke-dashoffset 2s ease .5s}
+.js .loaded .spine{stroke-dashoffset:0}
+.vt{fill:var(--cream);transform-box:fill-box;transform-origin:center}
+.js .vt{opacity:0;transform:scale(.3);transition:opacity .5s,transform .7s var(--ease);transition-delay:calc(var(--i)*.09s + .7s)}
+.js .loaded .vt{opacity:1;transform:none}
+.orbit{fill:none;stroke:rgba(250,243,227,.3);stroke-width:1.5;stroke-dasharray:4 10;transform-origin:150px 260px;animation:spin 40s linear infinite}
+.orbit.o2{animation-duration:60s;animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.blob{position:absolute;border-radius:50%;will-change:transform}
+.b1{width:92px;height:92px;background:var(--sun);right:0;top:8%}
+.b2{width:58px;height:58px;background:var(--coral);left:0;bottom:18%}
+.b3{width:130px;height:130px;border:2px dashed var(--forest);right:-30px;bottom:-20px;opacity:.35}
+.badge{position:absolute;left:-2%;top:12%;background:#fff;border-radius:22px;padding:12px 16px;box-shadow:0 18px 40px -18px rgba(18,57,47,.5);display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;line-height:1.2;animation:float 5s ease-in-out infinite}
+.badge b{font-family:'Bricolage Grotesque';font-size:28px;color:var(--forest)}
+.badge svg{width:18px;height:18px;fill:var(--sun)}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+.mq{background:var(--forest);color:var(--cream);overflow:hidden;white-space:nowrap;padding:20px 0;transform:rotate(-1.4deg) scale(1.03);margin:20px 0 10px}
+.mq div{display:inline-flex;animation:mq 30s linear infinite;will-change:transform}
+.mq span{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(1.6rem,4vw,2.6rem);letter-spacing:-.02em;padding:0 22px;display:inline-flex;align-items:center;gap:44px}
+.mq span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px var(--sun)}
+.mq span::after{content:"";width:16px;height:16px;border-radius:50%;background:var(--coral)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.js .rv{opacity:0;transform:translateY(36px);transition:opacity .8s var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.sec{padding:84px 0}
+.h2{font-size:clamp(2.5rem,7vw,5rem);color:var(--forest)}
+.sub{max-width:480px;margin-top:18px;color:#33443F}
+
+.cards{display:grid;gap:16px;margin-top:44px;perspective:1200px}
+.card{position:relative;border-radius:32px;padding:28px 26px 30px;min-height:290px;display:flex;flex-direction:column;overflow:hidden;transition:transform .5s var(--ease);transform-style:preserve-3d;will-change:transform}
+.card h3{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(1.8rem,3.2vw,2.5rem);letter-spacing:-.03em;line-height:1;margin-top:auto}
+.card p{margin-top:12px;font-size:16px;max-width:380px}
+.card .ic{width:84px;height:84px;margin-bottom:26px;transition:transform .6s var(--ease)}
+.card:hover .ic{transform:rotate(-8deg) scale(1.1)}
+.card .ic *{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.card .go{position:absolute;right:20px;top:20px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.22);display:grid;place-items:center;transition:transform .5s var(--ease),background .3s}
+.card:hover .go{transform:rotate(45deg);background:#fff;color:var(--forest)}
+.card .go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+.c1{background:var(--forest);color:var(--cream)}.c2{background:var(--coral);color:#fff}.c3{background:var(--sun);color:var(--forest2)}.c4{background:var(--mint);color:var(--forest)}
+.c3 .go,.c4 .go{background:rgba(18,57,47,.12)}
+.card::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;border:2px solid currentColor;opacity:.12;right:-70px;bottom:-90px}
+
+.how{background:var(--cream2);border-radius:44px;margin:0 10px}
+.how-grid{display:grid;gap:44px}
+.steps{display:grid;gap:14px;counter-reset:s}
+.step{background:var(--cream);border-radius:26px;padding:24px;display:grid;grid-template-columns:58px 1fr;gap:16px;align-items:start;transition:transform .4s var(--ease)}
+.step:hover{transform:translateX(8px)}
+.step::before{counter-increment:s;content:counter(s);font-family:'Bricolage Grotesque';font-weight:800;font-size:26px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--forest);color:var(--sun)}
+.step:nth-child(2)::before{background:var(--coral);color:#fff}.step:nth-child(3)::before{background:var(--sun);color:var(--forest)}
+.step h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:22px;letter-spacing:-.02em}
+.step p{font-size:15.5px;color:#3d4d48;margin-top:4px}
+
+.rate{background:var(--coral);color:#fff;border-radius:44px;margin:0 10px;padding:70px 0;overflow:hidden;position:relative}
+.rate::before,.rate::after{content:"";position:absolute;border-radius:50%;border:2px dashed rgba(255,255,255,.35);animation:spin 50s linear infinite}
+.rate::before{width:380px;height:380px;right:-140px;top:-160px}.rate::after{width:260px;height:260px;left:-100px;bottom:-120px;animation-direction:reverse}
+.rate .wrap{display:grid;gap:30px;position:relative}
+.big{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(6.5rem,28vw,15rem);line-height:.8;letter-spacing:-.06em;font-variant-numeric:tabular-nums}
+.stars{position:relative;display:inline-block;margin-bottom:14px}
+.stars div{display:flex;gap:4px}
+.stars svg{width:28px;height:28px;fill:rgba(255,255,255,.3)}
+.stars .on{position:absolute;inset:0;width:94%;overflow:hidden}
+.stars .on svg{fill:var(--sun);flex:none}
+.rate h3{font-family:'Bricolage Grotesque';font-weight:700;font-size:clamp(1.6rem,3.6vw,2.6rem);letter-spacing:-.025em;line-height:1.08;max-width:540px}
+.rate small{display:block;margin-top:14px;font-size:14px;font-weight:500;opacity:.9}
+
+.visit{display:grid;gap:36px}
+.info{display:grid;gap:12px;margin-top:34px}
+.info li{list-style:none;background:#fff;border-radius:24px;padding:20px 22px;display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:center;transition:transform .4s var(--ease)}
+.info li:hover{transform:translateY(-4px)}
+.info .i{width:48px;height:48px;border-radius:50%;background:var(--mint);display:grid;place-items:center;color:var(--forest)}
+.info .i svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.info b{display:block;font-family:'Bricolage Grotesque';font-size:20px;letter-spacing:-.02em;line-height:1.2}
+.info span{font-size:15px;color:#4a5a55}
+.info a.u{color:var(--coral);font-weight:700}
+.map{background:var(--forest);border-radius:36px;aspect-ratio:1/1;position:relative;overflow:hidden;max-height:520px;width:100%}
+.map svg{width:100%;height:100%}
+.map .pin{transform-box:fill-box;transform-origin:center bottom;animation:float 3s ease-in-out infinite}
+.map .ping{transform-box:fill-box;transform-origin:center;animation:ping 2.4s ease-out infinite}
+@keyframes ping{0%{transform:scale(.4);opacity:.8}100%{transform:scale(2.6);opacity:0}}
+.map text{font-family:'DM Sans';font-weight:700;font-size:11px;letter-spacing:.12em;fill:rgba(250,243,227,.7)}
+
+.final{background:var(--forest);color:var(--cream);border-radius:44px 44px 0 0;margin-top:84px;padding:96px 0 84px;text-align:center;position:relative;overflow:hidden}
+.final h2{font-size:clamp(3rem,12vw,8.5rem);color:var(--cream)}
+.final h2 .c{color:var(--sun)}
+.final p{max-width:430px;margin:22px auto 32px;opacity:.82}
+.final .blob{opacity:.9}
+footer{background:var(--forest2);color:rgba(250,243,227,.7);padding:40px 0 80px;font-size:14.5px}
+footer .wrap{display:grid;gap:18px}
+footer .logo{color:var(--cream)}
+.fl{display:flex;flex-wrap:wrap;gap:8px 22px}
+footer a:hover{color:var(--sun)}
+.pill{position:fixed;left:12px;bottom:12px;z-index:90;font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:99px;background:rgba(12,42,35,.82);color:#FAF3E3;pointer-events:none}
+
+@media(min-width:900px){
+.wrap{padding:0 40px}
+.nav{display:flex}.burger{display:none}.hd .btn{display:inline-flex}
+.hero{padding:150px 0 80px}
+.hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center}
+.sec{padding:130px 0}
+.cards{grid-template-columns:repeat(12,1fr);gap:20px}
+.c1{grid-column:span 7}.c2{grid-column:span 5}.c3{grid-column:span 5}.c4{grid-column:span 7}
+.card{min-height:340px;padding:36px}
+.how,.rate{margin:0 24px;border-radius:60px}
+.how-grid{grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.rate{padding:110px 0}
+.rate .wrap{grid-template-columns:auto 1fr;gap:70px;align-items:center}
+.visit{grid-template-columns:1fr .9fr;gap:70px;align-items:center}
+.final{padding:150px 0 130px;border-radius:70px 70px 0 0}
+footer .wrap{grid-template-columns:1fr auto;align-items:center}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.js .line>span,.js .rv,.js .fade,.js .vt{opacity:1!important;transform:none!important}
+.js .spine{stroke-dashoffset:0!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21 7 14.2 2 9.3l6.9-1z"/></symbol><symbol id="wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.3c-.4 2.9 3.3 6.8 6.4 6.8l.9-1.5-1.8-1-.8.7c-1-.4-2-1.4-2.5-2.5l.7-.8-1-1.8z" fill="currentColor"/></symbol><symbol id="arr" viewBox="0 0 20 20"><path d="M5 15L15 5M7 5h8v8"/></symbol></svg>
+
+<header class="hd" id="hd"><div class="bar">
+  <a href="#top" class="logo" aria-label="PhysioWorld home"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#12392F"/><path d="M17 6c5 4-5 7 0 11s-5 7 0 11" fill="none" stroke="#F2B93B" stroke-width="3" stroke-linecap="round"/><circle cx="24.5" cy="10" r="3" fill="#EF5F33"/></svg>PhysioWorld</a>
+  <nav class="nav" aria-label="Main"><a href="#care">What we treat</a><a href="#how">Your visit</a><a href="#reviews">Reviews</a><a href="#visit">Find us</a></nav>
+  <a class="btn sm" href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20book%20a%20physiotherapy%20session." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Book a session</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+</div></header>
+<div class="mnav" id="mnav">
+  <a href="#care">What we treat</a><a href="#how">Your visit</a><a href="#reviews">Reviews</a><a href="#visit">Find us</a>
+  <p>WhatsApp +233 24 489 0929<br>Community 18, Spintex Road, Accra</p>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag fade"><i></i>Physiotherapy &middot; Spintex Road, Accra</span>
+      <h1 class="disp"><span class="line"><span>Back to</span></span><span class="line"><span>moving</span></span><span class="line"><span class="c">freely.</span></span></h1>
+      <p class="lead fade">PhysioWorld &amp; Rehabilitation Clinic offers hands-on physiotherapy for neck and back pain, stroke rehabilitation, sports injuries and therapeutic massage.</p>
+      <div class="cta-row fade f2">
+        <a class="btn mag" href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20book%20a%20physiotherapy%20session." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Book on WhatsApp</a>
+        <span class="tel">Call or message<b>+233 24 489 0929</b></span>
+      </div>
+    </div>
+    <div class="art fade" aria-hidden="true">
+      <div class="blob b1" data-par="-.08"></div><div class="blob b3" data-par=".05"></div>
+      <div class="arch">
+        <svg viewBox="0 0 300 520" preserveAspectRatio="xMidYMid meet">
+          <circle class="orbit" cx="150" cy="260" r="128"/><circle class="orbit o2" cx="150" cy="260" r="200"/>
+          <path class="spine" pathLength="1" d="M150 40C190 120 110 200 150 280C190 360 120 430 150 490"/>
+          <g>
+            <rect class="vt" style="--i:0" x="134" y="58" width="50" height="22" rx="11" transform="rotate(14 159 69)"/>
+            <rect class="vt" style="--i:1" x="136" y="98" width="52" height="22" rx="11" transform="rotate(4 162 109)"/>
+            <rect class="vt" style="--i:2" x="126" y="138" width="54" height="22" rx="11" transform="rotate(-10 153 149)"/>
+            <rect class="vt" style="--i:3" x="114" y="178" width="56" height="22" rx="11" transform="rotate(-10 142 189)"/>
+            <rect class="vt" style="--i:4" x="110" y="218" width="58" height="22" rx="11" transform="rotate(2 139 229)"/>
+            <rect class="vt" style="--i:5" x="118" y="258" width="58" height="22" rx="11" transform="rotate(12 147 269)"/>
+            <rect class="vt" style="--i:6" x="130" y="298" width="58" height="22" rx="11" transform="rotate(8 159 309)"/>
+            <rect class="vt" style="--i:7" x="132" y="338" width="56" height="22" rx="11" transform="rotate(-6 160 349)"/>
+            <rect class="vt" style="--i:8" x="124" y="378" width="54" height="22" rx="11" transform="rotate(-12 151 389)"/>
+            <rect class="vt" style="--i:9" x="118" y="418" width="50" height="22" rx="11" transform="rotate(-4 143 429)"/>
+          </g>
+        </svg>
+      </div>
+      <div class="blob b2" data-par=".1"></div>
+      <div class="badge"><b>4.7</b><span><svg><use href="#star"/></svg>on Google</span></div>
+    </div>
+  </div>
+</section>
+
+<div style="overflow:hidden;padding:16px 0" aria-hidden="true"><div class="mq"><div>
+  <span>Spine care</span><span>Stroke rehabilitation</span><span>Sports injuries</span><span>Therapeutic massage</span>
+  <span>Spine care</span><span>Stroke rehabilitation</span><span>Sports injuries</span><span>Therapeutic massage</span>
+</div></div></div>
+
+<section class="sec" id="care">
+  <div class="wrap">
+    <div class="rv"><h2 class="disp h2">What we<br>help with.</h2><p class="sub">Four areas of care, one clinic on Spintex Road. Tap any card to ask about it on WhatsApp.</p></div>
+    <div class="cards">
+      <a class="card c1 tilt rv" href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20book%20a%20session%20for%20neck%20or%20back%20pain." target="_blank" rel="noopener">
+        <span class="go"><svg><use href="#arr"/></svg></span>
+        <svg class="ic" viewBox="0 0 84 84"><path d="M42 8c12 14-12 24 0 38s-12 20 0 30"/><path d="M30 16h24M26 30h22M36 46h24M30 60h22"/></svg>
+        <h3>Spine care</h3><p>Physiotherapy for neck pain and back pain, starting with an assessment of how you sit, stand and move.</p>
+      </a>
+      <a class="card c2 tilt rv" style="--d:.08s" href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20stroke%20rehabilitation." target="_blank" rel="noopener">
+        <span class="go"><svg><use href="#arr"/></svg></span>
+        <svg class="ic" viewBox="0 0 84 84"><circle cx="42" cy="16" r="8"/><path d="M42 26v24M42 34l-16 8M42 34l16-6M42 50l-12 24M42 50l14 22"/><path d="M12 76h60"/></svg>
+        <h3>Stroke rehabilitation</h3><p>Guided, patient rehabilitation sessions working on movement, balance and everyday tasks.</p>
+      </a>
+      <a class="card c3 tilt rv" href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20book%20a%20session%20for%20a%20sports%20injury." target="_blank" rel="noopener">
+        <span class="go"><svg><use href="#arr"/></svg></span>
+        <svg class="ic" viewBox="0 0 84 84"><circle cx="52" cy="14" r="7"/><path d="M48 24L34 40l14 10-6 24M34 40L18 36M48 30l14 12h12M34 58L16 66"/></svg>
+        <h3>Sports injuries</h3><p>Care for strains, sprains and overuse problems, with a plan for returning to training.</p>
+      </a>
+      <a class="card c4 tilt rv" style="--d:.08s" href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20book%20a%20therapeutic%20massage." target="_blank" rel="noopener">
+        <span class="go"><svg><use href="#arr"/></svg></span>
+        <svg class="ic" viewBox="0 0 84 84"><path d="M10 58c10-10 22-10 32 0s22 10 32 0"/><path d="M10 72c10-10 22-10 32 0s22 10 32 0"/><path d="M28 40V22a5 5 0 0 1 10 0v12M38 30V16a5 5 0 0 1 10 0v16M48 32V20a5 5 0 0 1 10 0v22"/></svg>
+        <h3>Therapeutic massage</h3><p>Hands-on massage as part of your physiotherapy, focused on tight, sore or overworked muscles.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec how" id="how">
+  <div class="wrap how-grid">
+    <div class="rv"><span class="tag"><i></i>Your visit</span><h2 class="disp h2" style="margin-top:18px">Simple from<br>the first<br>message.</h2><p class="sub">No forms to fill online. Say hello on WhatsApp, tell us what is going on, and we take it from there.</p></div>
+    <div class="steps">
+      <div class="step rv"><div><h3>Message us</h3><p>Tell us briefly what you are dealing with and when you are free. We reply with an available time.</p></div></div>
+      <div class="step rv" style="--d:.1s"><div><h3>Assessment</h3><p>Your first session starts with questions and a movement assessment, so treatment fits your situation.</p></div></div>
+      <div class="step rv" style="--d:.2s"><div><h3>Treatment plan</h3><p>Hands-on treatment and exercises, with a plan you can understand and follow between visits.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reviews" style="padding-bottom:0">
+  <div class="rate"><div class="wrap rv">
+    <div class="big"><span data-count="4.7" data-dec="1">4.7</span></div>
+    <div>
+      <div class="stars" aria-label="4.7 out of 5 stars"><div><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><div class="on"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div></div>
+      <h3>Rated 4.7 out of 5 on Google from <span data-count="62">62</span> reviews.</h3>
+      <small>Based on public Google reviews of PhysioWorld &amp; Rehabilitation Clinic.</small>
+    </div>
+  </div></div>
+</section>
+
+<section class="sec" id="visit">
+  <div class="wrap visit">
+    <div class="rv">
+      <h2 class="disp h2">Find us on<br>Spintex Road.</h2>
+      <ul class="info">
+        <li><span class="i"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><b>Community 18, Spintex Road</b><span>Accra, Ghana &middot; <a class="u" href="https://www.google.com/maps/search/?api=1&query=PhysioWorld+%26+Rehabilitation+Clinic+Spintex+Road+Accra" target="_blank" rel="noopener">Open in Google Maps</a></span></div></li>
+        <li><span class="i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Sessions by appointment</b><span>Message us for today's availability.</span></div></li>
+        <li><span class="i"><svg viewBox="0 0 24 24"><use href="#wa"/></svg></span><div><b><a href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20book%20a%20physiotherapy%20session." target="_blank" rel="noopener">+233 24 489 0929</a></b><span>WhatsApp or call to book.</span></div></li>
+      </ul>
+    </div>
+    <div class="map rv" style="--d:.15s" aria-hidden="true">
+      <svg viewBox="0 0 400 400" fill="none">
+        <g stroke="rgba(250,243,227,.1)" stroke-width="10" stroke-linecap="round"><path d="M40 80l120 40 60 120M300 30l-40 120 80 200M60 340l120-60M330 90l60 30M20 200l100 20"/></g>
+        <path d="M-20 300C80 250 150 240 220 210S340 150 420 120" stroke="#F2B93B" stroke-width="14" stroke-linecap="round"/>
+        <path d="M-20 300C80 250 150 240 220 210S340 150 420 120" stroke="#12392F" stroke-width="2" stroke-dasharray="10 12"/>
+        <circle class="ping" cx="220" cy="210" r="22" fill="#EF5F33"/>
+        <g class="pin"><path d="M220 210c-17-22-27-34-27-48a27 27 0 0 1 54 0c0 14-10 26-27 48z" fill="#EF5F33"/><circle cx="220" cy="162" r="9" fill="#FAF3E3"/></g>
+        <text x="40" y="282" transform="rotate(-22 40 282)">SPINTEX ROAD</text><text x="250" y="168">COMMUNITY 18</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="blob b1" style="left:6%;top:14%;right:auto;width:60px;height:60px" data-par2></div><div class="blob b2" style="right:8%;left:auto;bottom:16%"></div>
+  <div class="wrap rv">
+    <h2 class="disp">Ready to<br>move <span class="c">better?</span></h2>
+    <p>Send us a message with what you need help with. We will reply with the next available session.</p>
+    <a class="btn mag" href="https://wa.me/233244890929?text=Hi%2C%20I%27d%20like%20to%20book%20a%20physiotherapy%20session." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Book on WhatsApp</a>
+    <p style="margin:20px auto 0;font-weight:700;opacity:1">+233 24 489 0929</p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">
+  <div><a href="#top" class="logo"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#FAF3E3"/><path d="M17 6c5 4-5 7 0 11s-5 7 0 11" fill="none" stroke="#12392F" stroke-width="3" stroke-linecap="round"/><circle cx="24.5" cy="10" r="3" fill="#EF5F33"/></svg>PhysioWorld &amp; Rehabilitation Clinic</a><p style="margin-top:12px">Community 18, Spintex Road, Accra, Ghana &middot; +233 24 489 0929</p></div>
+  <div class="fl"><a href="#care">What we treat</a><a href="#how">Your visit</a><a href="#reviews">Reviews</a><a href="#visit">Find us</a></div>
+</div></footer>
+<div class="pill">Preview concept</div>
+
+<script>
+(function(){
+  var d=document,b=d.body,reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches,hover=window.matchMedia('(hover:hover)').matches;
+  requestAnimationFrame(function(){setTimeout(function(){b.classList.add('loaded')},120)});
+
+  var hd=d.getElementById('hd'),pars=[].slice.call(d.querySelectorAll('[data-par]')),tick=false;
+  function onScroll(){
+    var y=window.pageYOffset;hd.classList.toggle('sc',y>24);
+    if(!reduce&&y<window.innerHeight*1.3){pars.forEach(function(p){p.style.transform='translate3d(0,'+(y*parseFloat(p.dataset.par))+'px,0)'})}
+    tick=false;
+  }
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+
+  var burger=d.getElementById('burger'),mnav=d.getElementById('mnav');
+  function setMenu(o){mnav.classList.toggle('on',o);hd.classList.toggle('open',o);b.classList.toggle('lock',o);burger.setAttribute('aria-expanded',o?'true':'false')}
+  burger.addEventListener('click',function(){setMenu(!mnav.classList.contains('on'))});
+  [].forEach.call(mnav.querySelectorAll('a'),function(a){a.addEventListener('click',function(){setMenu(false)})});
+
+  function count(el){
+    var t=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),s=null;
+    if(reduce){el.textContent=t.toFixed(dec);return}
+    function step(ts){if(!s)s=ts;var p=Math.min((ts-s)/1600,1),e=1-Math.pow(1-p,3);el.textContent=(t*e).toFixed(dec);if(p<1)requestAnimationFrame(step)}
+    el.textContent=(0).toFixed(dec);requestAnimationFrame(step);
+  }
+  var rv=[].slice.call(d.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');[].forEach.call(e.target.querySelectorAll('[data-count]'),count);io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  }else{rv.forEach(function(el){el.classList.add('in')})}
+
+  if(!reduce&&hover){
+    [].forEach.call(d.querySelectorAll('.tilt'),function(c){
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transitionDuration='.12s';c.style.transform='rotateY('+(x*9)+'deg) rotateX('+(-y*9)+'deg) translateY(-6px)'});
+      c.addEventListener('pointerleave',function(){c.style.transitionDuration='';c.style.transform=''});
+    });
+    [].forEach.call(d.querySelectorAll('.mag'),function(m){
+      m.addEventListener('pointermove',function(e){var r=m.getBoundingClientRect();m.style.transform='translate('+((e.clientX-r.left-r.width/2)*.2)+'px,'+((e.clientY-r.top-r.height/2)*.3)+'px)'});
+      m.addEventListener('pointerleave',function(){m.style.transform=''});
+    });
+  }
+})();
+</script>
+</body>
+</html>

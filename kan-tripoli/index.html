@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAN — Restaurant on Street 32, Tripoli</title>
+<meta name="description" content="KAN. Restaurant on Street 32, Tripoli, Lebanon. Rated 4.6 on Google. Reserve on WhatsApp.">
+<meta name="theme-color" content="#ECE6DA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#ECE6DA;--ink:#0D0D0B;--red:#E2401B;--mute:#7F796D;--line:rgba(13,13,11,.16);--pad:clamp(20px,4vw,56px);--ease:cubic-bezier(.2,.7,.1,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{background:var(--bone);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+svg{display:block}
+.mono{font-family:"DM Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+.disp{font-family:"Anton",Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;line-height:.86;letter-spacing:-.005em}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.22;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:18px var(--pad);transition:padding .4s var(--ease),background-color .4s,border-color .4s;border-bottom:1px solid transparent}
+.hdr.scrolled{padding-top:10px;padding-bottom:10px;background:rgba(236,230,218,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-color:var(--line)}
+.logo{font-family:"Anton",Impact,sans-serif;font-size:1.7rem;letter-spacing:.04em;line-height:1;display:flex;align-items:center;gap:8px}
+.logo i{width:9px;height:9px;border-radius:50%;background:var(--red);display:block}
+.nav{display:flex;align-items:center;gap:34px}
+.nav a.l{position:relative;padding:6px 0}
+.nav a.l::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nav a.l:hover::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:var(--bone);padding:15px 24px;border-radius:999px;position:relative;overflow:hidden;isolation:isolate;transition:transform .3s var(--ease);will-change:transform}
+.btn::before{content:"";position:absolute;inset:0;background:var(--red);border-radius:inherit;transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1}
+.btn:hover::before{transform:none}
+.btn svg{width:16px;height:16px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn.sm{padding:11px 18px}
+.btn.inv{background:var(--bone);color:var(--ink)}
+.btn.inv:hover{color:var(--bone)}
+.burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative;color:inherit}
+.burger span{position:absolute;left:10px;right:10px;height:2px;background:currentColor;transition:transform .4s var(--ease)}
+.burger span:first-child{top:17px}.burger span:last-child{top:25px}
+.open .burger span:first-child{transform:translateY(4px) rotate(45deg)}
+.open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:25;background:var(--bone);display:flex;flex-direction:column;justify-content:flex-end;padding:100px var(--pad) 40px;gap:6px;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.mnav a.big{font-family:"Anton",Impact,sans-serif;font-size:19vw;line-height:.95;text-transform:uppercase;border-top:1px solid var(--line);padding:10px 0;transform:translateY(24px);opacity:0;transition:transform .6s var(--ease),opacity .6s}
+.mnav .mono{margin-top:22px;color:var(--mute)}
+.open .mnav{opacity:1;visibility:visible}
+.open .mnav a.big{transform:none;opacity:1}
+.open .mnav a.big:nth-child(2){transition-delay:.06s}.open .mnav a.big:nth-child(3){transition-delay:.12s}.open .mnav a.big:nth-child(4){transition-delay:.18s}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:96px var(--pad) 28px;overflow:hidden}
+.hero-top{display:flex;justify-content:space-between;gap:16px;color:var(--mute)}
+.hero-top span{display:block;animation:fade 1s .9s both}
+.word{display:flex;justify-content:space-between;align-items:flex-end;position:relative;margin:auto 0;user-select:none}
+.ltr{display:block;overflow:hidden;will-change:transform;padding-top:.06em}
+.ltr b{display:block;font-family:"Anton",Impact,"Arial Narrow",sans-serif;font-weight:400;font-size:min(58vw,62vh);line-height:.84;animation:rise 1.2s var(--ease) both}
+.ltr:nth-child(2) b{animation-delay:.12s}.ltr:nth-child(3) b{animation-delay:.24s}
+.dot{position:absolute;left:50%;top:50%;width:min(15vw,19vh);height:min(15vw,19vh);margin:-7vh 0 0 -7.5vw;border-radius:50%;background:var(--red);mix-blend-mode:multiply;will-change:transform;animation:pop 1s .7s var(--ease) both}
+.hero-bot{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;border-top:1px solid var(--ink);padding-top:22px}
+.hero-bot h1{font-size:clamp(1.7rem,3.4vw,3rem);line-height:1.05;max-width:17ch;animation:fade 1s 1s both}
+.hero-bot h1 em{color:var(--red)}
+.hero-cta{display:flex;align-items:center;gap:22px;animation:fade 1s 1.15s both}
+.hero-cta .mono{color:var(--mute)}
+@keyframes rise{from{transform:translateY(104%)}to{transform:none}}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:none}}
+
+/* marquee */
+.mq{overflow:hidden;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:14px 0;white-space:nowrap}
+.mq-t{display:inline-flex;animation:mq 26s linear infinite;will-change:transform}
+.mq-t span{display:inline-flex;align-items:center;gap:28px;padding-right:28px;font-family:"Anton",Impact,sans-serif;text-transform:uppercase;font-size:clamp(1.3rem,2.6vw,2.2rem);letter-spacing:.02em}
+.mq-t span i{width:.5em;height:.5em;border-radius:50%;background:var(--red);display:block}
+.mq-t em{font-family:"Instrument Serif",serif;text-transform:none;font-size:1.1em;letter-spacing:0}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* sections */
+.sec{padding:clamp(72px,11vw,160px) var(--pad)}
+.sec-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:24px;align-items:start;margin-bottom:clamp(36px,6vw,80px)}
+.sec-h .mono{color:var(--mute);padding-top:.6em}
+.sec-h h2{font-size:clamp(3rem,9vw,8.5rem)}
+.sec-h h2 em{font-family:"Instrument Serif",serif;text-transform:none;font-style:italic;letter-spacing:-.02em;color:var(--red)}
+
+.rows{border-top:1px solid var(--ink)}
+.row a{position:relative;display:grid;grid-template-columns:64px minmax(0,1.3fr) minmax(0,1fr) 40px;gap:20px;align-items:center;padding:clamp(18px,2.6vw,34px) 12px;border-bottom:1px solid var(--ink);isolation:isolate;transition:color .35s}
+.row a::before{content:"";position:absolute;inset:0;background:var(--ink);transform:scaleY(0);transform-origin:bottom;transition:transform .5s var(--ease);z-index:-1}
+.row .nm{font-family:"Anton",Impact,sans-serif;text-transform:uppercase;font-size:clamp(2.2rem,6.4vw,5.6rem);line-height:.95;transition:transform .5s var(--ease)}
+.row .ds{font-family:"Instrument Serif",serif;font-size:clamp(1.1rem,1.7vw,1.5rem);line-height:1.2;color:var(--mute);transition:color .35s}
+.row svg{width:30px;height:30px;transform:translate(-10px,10px);opacity:0;transition:transform .5s var(--ease),opacity .35s}
+.row .mono{color:var(--red)}
+@media (hover:hover){
+.row a:hover{color:var(--bone)}
+.row a:hover::before{transform:scaleY(1)}
+.row a:hover .nm{transform:translateX(14px)}
+.row a:hover .ds{color:var(--bone)}
+.row a:hover svg{transform:none;opacity:1}
+}
+.note{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;margin-top:28px;color:var(--mute)}
+.note p{max-width:46ch}
+
+.dark{background:var(--ink);color:var(--bone)}
+.state{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:24px}
+.state .mono{color:var(--red)}
+.scrub{font-family:"Instrument Serif",serif;font-size:clamp(2rem,5.4vw,5rem);line-height:1.06;letter-spacing:-.015em;max-width:20ch}
+.js .scrub .w{opacity:.14;will-change:opacity}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:clamp(56px,8vw,120px);border-top:1px solid rgba(236,230,218,.25)}
+.trio li{padding:26px 22px 0 0;border-right:1px solid rgba(236,230,218,.25)}
+.trio li+li{padding-left:22px}
+.trio li:last-child{border-right:0}
+.trio h3{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(1.5rem,2.6vw,2.3rem);margin:14px 0 8px;line-height:1}
+.trio p{color:rgba(236,230,218,.62);font-size:.98rem;max-width:30ch}
+.trio .mono{color:var(--red)}
+
+.rate{background:var(--red);color:var(--ink);padding:clamp(56px,8vw,110px) var(--pad);display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,6vw,90px);align-items:end;overflow:hidden}
+.rate .num{font-family:"Anton",Impact,sans-serif;font-size:clamp(9rem,30vw,25rem);line-height:.78;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.rate .side{padding-bottom:1.2vw}
+.stars{position:relative;width:clamp(150px,18vw,230px);margin-bottom:18px}
+.stars svg{width:100%;height:auto}
+.stars .on{position:absolute;inset:0;clip-path:inset(0 100% 0 0);transition:clip-path 1.6s .3s var(--ease)}
+.in .stars .on,.stars.in .on{clip-path:inset(0 8% 0 0)}
+.rate p.serif{font-size:clamp(1.6rem,3.6vw,3.2rem);line-height:1.05;max-width:16ch}
+.rate .mono{margin-top:18px;display:block}
+
+.loc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:stretch}
+.loc h2{font-size:clamp(3rem,8vw,7.5rem);margin:18px 0 26px}
+.loc dl{border-top:1px solid var(--ink)}
+.loc dl div{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.loc dt{color:var(--mute);padding-top:.35em}
+.loc dd a{border-bottom:1px solid currentColor}
+.loc .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn.ghost:hover{color:var(--bone)}
+.btn.ghost::before{background:var(--ink)}
+.map{position:relative;border:1px solid var(--ink);min-height:340px;overflow:hidden;background:#E4DDCF}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map path,.map line{fill:none;stroke:var(--ink);stroke-width:1.2;vector-effect:non-scaling-stroke}
+.js .map .dr{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.2s var(--ease)}
+.js .map.in .dr{stroke-dashoffset:0}
+.map .st{stroke:var(--red);stroke-width:5}
+.map .pin{fill:var(--red);stroke:none}
+.map .ring{fill:none;stroke:var(--red);stroke-width:1.5;transform-origin:center;transform-box:fill-box;animation:ring 2.4s ease-out infinite}
+@keyframes ring{from{transform:scale(.4);opacity:1}to{transform:scale(2.4);opacity:0}}
+.map .tag{position:absolute;left:16px;bottom:14px;background:var(--bone);border:1px solid var(--ink);padding:7px 10px}
+.map .tag2{position:absolute;right:16px;top:14px;color:var(--mute)}
+
+.fin{padding:clamp(72px,10vw,150px) var(--pad) clamp(40px,5vw,70px);text-align:left;overflow:hidden}
+.fin .mono{color:var(--red)}
+.fin a.huge{display:block;font-family:"Anton",Impact,sans-serif;text-transform:uppercase;font-size:clamp(4.6rem,23.5vw,25rem);line-height:.84;margin:22px 0 30px;position:relative;width:fit-content;max-width:100%}
+.fin a.huge span{display:inline-block;transition:transform .6s var(--ease),color .4s}
+.fin a.huge:hover span{color:var(--red);transform:skewX(-8deg)}
+.fin .meta{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between;border-top:1px solid rgba(236,230,218,.25);padding-top:26px}
+.fin .tel{font-family:"Instrument Serif",serif;font-size:clamp(1.8rem,4vw,3rem);line-height:1}
+.ft{background:var(--ink);color:rgba(236,230,218,.55);padding:22px var(--pad) 78px;display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between;border-top:1px solid rgba(236,230,218,.14)}
+.pill{position:fixed;left:14px;bottom:14px;z-index:45;background:rgba(13,13,11,.86);color:var(--bone);padding:7px 12px;border-radius:999px;font-family:"DM Mono",monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:7px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border:1px solid rgba(236,230,218,.2)}
+.pill i{width:6px;height:6px;border-radius:50%;background:var(--red)}
+
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:860px){
+.nav{display:none}.burger{display:block}
+.hero{padding-top:84px;padding-bottom:62px}
+.ltr b{font-size:min(57vw,52vh)}
+.dot{width:19vw;height:19vw;margin:-9vw 0 0 -9.5vw}
+.hero-bot{grid-template-columns:1fr}
+.hero-cta{justify-content:space-between}
+.sec-h,.state{grid-template-columns:1fr;gap:12px}
+.row a{grid-template-columns:34px minmax(0,1fr) 26px;gap:12px;padding-left:4px;padding-right:4px}
+.row .ds{grid-column:2/3;grid-row:2;margin-top:-6px}
+.row svg{opacity:1;transform:none;width:22px;height:22px;grid-column:3;grid-row:1}
+.trio{grid-template-columns:1fr}
+.trio li,.trio li+li{border-right:0;border-bottom:1px solid rgba(236,230,218,.25);padding:22px 0}
+.rate{grid-template-columns:1fr;align-items:start}
+.loc{grid-template-columns:1fr}
+.map{min-height:300px}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.js .rv{opacity:1;transform:none}
+.js .scrub .w{opacity:1}
+.js .map .dr{stroke-dashoffset:0}
+.stars .on{clip-path:inset(0 8% 0 0)}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="hdr" id="hdr">
+  <a href="#top" class="logo" aria-label="KAN home">KAN<i></i></a>
+  <nav class="nav mono" aria-label="Primary">
+    <a class="l" href="#menu">Menu</a>
+    <a class="l" href="#house">The house</a>
+    <a class="l" href="#find">Find us</a>
+    <a class="btn sm" data-mag href="https://wa.me/96181342607?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20KAN">Reserve
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mnav" id="mnav">
+  <a class="big" href="#menu">Menu</a>
+  <a class="big" href="#house">The house</a>
+  <a class="big" href="#find">Find us</a>
+  <a class="big" href="https://wa.me/96181342607?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20KAN" style="color:var(--red)">Reserve</a>
+  <span class="mono">+961 81 342 607 — Street 32, Tripoli</span>
+</div>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="hero-top mono"><span>Restaurant</span><span>Street 32 — Tripoli, Lebanon</span></div>
+  <div class="word" aria-label="KAN" role="img">
+    <span class="ltr" data-l="-1"><b>K</b></span>
+    <span class="ltr" data-l="0"><b>A</b></span>
+    <span class="ltr" data-l="1"><b>N</b></span>
+    <span class="dot" id="dot" aria-hidden="true"></span>
+  </div>
+  <div class="hero-bot">
+    <h1 class="serif">Three letters. <em>One long evening</em> on Street 32.</h1>
+    <div class="hero-cta">
+      <a class="btn" data-mag href="https://wa.me/96181342607?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20KAN">Reserve a table
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+      <span class="mono">Scroll</span>
+    </div>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mq-t">
+  <span>Starters<i></i><em>to begin</em><i></i>Mains<i></i><em>to stay for</em><i></i>Grills<i></i><em>over fire</em><i></i>Desserts<i></i><em>to finish</em><i></i>Drinks<i></i></span>
+  <span>Starters<i></i><em>to begin</em><i></i>Mains<i></i><em>to stay for</em><i></i>Grills<i></i><em>over fire</em><i></i>Desserts<i></i><em>to finish</em><i></i>Drinks<i></i></span>
+</div></div>
+
+<section class="sec" id="menu">
+  <div class="sec-h">
+    <span class="mono rv">(01) The menu</span>
+    <h2 class="disp rv">Five ways <em>to</em> fill a table</h2>
+  </div>
+  <ul class="rows">
+    <li class="row rv"><a href="https://wa.me/96181342607?text=Hi%2C%20could%20you%20send%20me%20the%20KAN%20menu%3F"><span class="mono">01</span><span class="nm">Starters</span><span class="ds">Small plates that open the table and start the talking.</span><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 23 23 7M10 7h13v13"/></svg></a></li>
+    <li class="row rv"><a href="https://wa.me/96181342607?text=Hi%2C%20could%20you%20send%20me%20the%20KAN%20menu%3F"><span class="mono">02</span><span class="nm">Mains</span><span class="ds">The centre of the evening, plated with intent.</span><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 23 23 7M10 7h13v13"/></svg></a></li>
+    <li class="row rv"><a href="https://wa.me/96181342607?text=Hi%2C%20could%20you%20send%20me%20the%20KAN%20menu%3F"><span class="mono">03</span><span class="nm">Grills</span><span class="ds">Straight from the fire, made for the middle of the table.</span><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 23 23 7M10 7h13v13"/></svg></a></li>
+    <li class="row rv"><a href="https://wa.me/96181342607?text=Hi%2C%20could%20you%20send%20me%20the%20KAN%20menu%3F"><span class="mono">04</span><span class="nm">Desserts</span><span class="ds">A sweet reason to stay a little longer.</span><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 23 23 7M10 7h13v13"/></svg></a></li>
+    <li class="row rv"><a href="https://wa.me/96181342607?text=Hi%2C%20could%20you%20send%20me%20the%20KAN%20menu%3F"><span class="mono">05</span><span class="nm">Drinks</span><span class="ds">Something cold, something warm, something to raise.</span><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 23 23 7M10 7h13v13"/></svg></a></li>
+  </ul>
+  <div class="note rv">
+    <p>The full menu lives with us. Tap any line and we will send it to you on WhatsApp.</p>
+    <a class="btn ghost" data-mag href="https://wa.me/96181342607?text=Hi%2C%20could%20you%20send%20me%20the%20KAN%20menu%3F">Ask for the menu
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+  </div>
+</section>
+
+<section class="sec dark" id="house">
+  <div class="state">
+    <span class="mono rv">(02) The house</span>
+    <p class="scrub" data-scrub>KAN is a short name for a long evening. A room on Street 32 where the table is the point, the plates keep arriving, and nobody is in a hurry to leave.</p>
+  </div>
+  <ul class="trio">
+    <li class="rv"><span class="mono">A</span><h3>Come as a pair</h3><p>A corner, two chairs and enough time to actually talk.</p></li>
+    <li class="rv" style="--d:.1s"><span class="mono">B</span><h3>Come as a crowd</h3><p>Tell us how many you are and we will set the table to fit.</p></li>
+    <li class="rv" style="--d:.2s"><span class="mono">C</span><h3>Come for an occasion</h3><p>Birthdays, reunions, good news. Message us and we will plan it with you.</p></li>
+  </ul>
+</section>
+
+<section class="rate" id="rating">
+  <div class="num rv"><span data-count="4.6" data-dec="1">4.6</span></div>
+  <div class="side rv" style="--d:.15s">
+    <div class="stars" aria-label="4.6 out of 5 stars">
+      <svg viewBox="0 0 120 24" fill="none" stroke="#0D0D0B" stroke-width="1.2"><defs><path id="s" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></defs><use href="#s"/><use href="#s" x="24"/><use href="#s" x="48"/><use href="#s" x="72"/><use href="#s" x="96"/></svg>
+      <svg class="on" viewBox="0 0 120 24" fill="#0D0D0B"><use href="#s"/><use href="#s" x="24"/><use href="#s" x="48"/><use href="#s" x="72"/><use href="#s" x="96"/></svg>
+    </div>
+    <p class="serif">Out of five, across <span data-count="481">481</span> Google reviews.</p>
+    <span class="mono">Google rating — Tripoli, Lebanon</span>
+  </div>
+</section>
+
+<section class="sec" id="find">
+  <div class="loc">
+    <div>
+      <span class="mono rv" style="color:var(--mute)">(03) Find us</span>
+      <h2 class="disp rv">Street 32, Tripoli</h2>
+      <dl class="rv">
+        <div><dt class="mono">Address</dt><dd>Street 32, Tripoli, Lebanon</dd></div>
+        <div><dt class="mono">WhatsApp</dt><dd><a href="https://wa.me/96181342607?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20KAN">+961 81 342 607</a></dd></div>
+        <div><dt class="mono">Tables</dt><dd>Message us to reserve and to check today's availability.</dd></div>
+      </dl>
+      <div class="acts rv">
+        <a class="btn" data-mag href="https://wa.me/96181342607?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20KAN">Reserve on WhatsApp
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+        <a class="btn ghost" href="https://wa.me/96181342607?text=Hi%2C%20could%20you%20send%20me%20your%20location%20pin%3F">Ask for the pin</a>
+      </div>
+    </div>
+    <div class="map rv" aria-hidden="true">
+      <svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice">
+        <path class="dr" pathLength="1" d="M-10 90 L610 40"/><path class="dr" pathLength="1" d="M-10 210 L610 170"/><path class="dr" pathLength="1" d="M-10 420 L610 400"/>
+        <path class="dr" pathLength="1" d="M90 -10 L130 530"/><path class="dr" pathLength="1" d="M250 -10 L270 530"/><path class="dr" pathLength="1" d="M470 -10 L450 530"/>
+        <path class="dr" pathLength="1" d="M-10 330 C140 300 200 250 330 300 S520 330 610 270"/>
+        <path class="dr st" pathLength="1" d="M-10 318 L610 286"/>
+        <circle class="ring" cx="360" cy="299" r="16"/><circle class="pin" cx="360" cy="299" r="9"/>
+      </svg>
+      <span class="tag mono">KAN — Street 32</span>
+      <span class="tag2 mono">Illustrative map</span>
+    </div>
+  </div>
+</section>
+
+<section class="fin dark" id="reserve">
+  <span class="mono rv">(04) Your table</span>
+  <a class="huge rv" href="https://wa.me/96181342607?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20KAN" aria-label="Reserve a table on WhatsApp"><span>Reserve</span></a>
+  <div class="meta rv">
+    <span class="tel">+961 81 342 607</span>
+    <a class="btn inv" data-mag href="https://wa.me/96181342607?text=Hi%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20KAN">Message us on WhatsApp
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+  </div>
+</section>
+</main>
+
+<footer class="ft mono">
+  <span>KAN — Street 32, Tripoli, Lebanon</span>
+  <span>+961 81 342 607</span>
+  <span>Preview concept, not the official website</span>
+</footer>
+<div class="pill"><i></i>Preview concept</div>
+
+<script>
+(function(){
+  var root=document.documentElement;root.classList.add('js');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  var hdr=document.getElementById('hdr'),burger=document.getElementById('burger');
+
+  burger.addEventListener('click',function(){
+    var o=document.body.classList.toggle('open');
+    burger.setAttribute('aria-expanded',o);
+  });
+  document.querySelectorAll('#mnav a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('open');burger.setAttribute('aria-expanded',false);});});
+
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');
+    e.target.querySelectorAll('[data-count]').forEach(count);io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+  function count(el){
+    if(reduce||el._c)return;el._c=1;
+    var end=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),t0=null,dur=1700;
+    function f(v){return dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US');}
+    function tick(t){if(t0===null)t0=t;var p=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-p,3);el.textContent=f(end*e);if(p<1)requestAnimationFrame(tick);}
+    el.textContent=f(0);requestAnimationFrame(tick);
+  }
+
+  // word scrub
+  var scrub=document.querySelector('[data-scrub]'),ws=[];
+  if(scrub){
+    scrub.innerHTML=scrub.textContent.trim().split(/\s+/).map(function(w){return '<span class="w">'+w+'</span>';}).join(' ');
+    ws=[].slice.call(scrub.children);
+  }
+
+  // hero parallax
+  var hero=document.getElementById('hero'),ltrs=[].slice.call(document.querySelectorAll('.ltr')),dot=document.getElementById('dot');
+  var mx=0,my=0,cx=0,cy=0,sp=0,ticking=false;
+
+  function frame(){
+    ticking=false;
+    var y=window.scrollY||0,vh=window.innerHeight;
+    hdr.classList.toggle('scrolled',y>30);
+    if(reduce)return;
+    sp=Math.min(1,y/vh);
+    cx+=(mx-cx)*.08;cy+=(my-cy)*.08;
+    if(y<vh*1.1){
+      ltrs.forEach(function(l){
+        var d=+l.dataset.l;
+        l.style.transform='translate3d('+(d*sp*9+cx*(d===0?-10:d*14)/10)+'vw,'+((d===0?-sp*14:sp*4)+cy*(d===0?-1.2:.6))+'vh,0)';
+      });
+      dot.style.transform='translate3d('+(cx*40)+'px,'+(cy*30+sp*vh*.35)+'px,0) scale('+(1+sp*1.4)+')';
+    }
+    if(scrub){
+      var r=scrub.getBoundingClientRect();
+      var p=Math.min(1,Math.max(0,(vh*.82-r.top)/(r.height+vh*.35)));
+      for(var i=0;i<ws.length;i++){var t=Math.min(1,Math.max(0,p*(ws.length+2)-i));ws[i].style.opacity=(.14+.86*t).toFixed(3);}
+    }
+    if(Math.abs(mx-cx)>.002||Math.abs(my-cy)>.002)req();
+  }
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(frame);}}
+  window.addEventListener('scroll',req,{passive:true});
+  window.addEventListener('resize',req);
+  if(fine&&!reduce){
+    hero.addEventListener('pointermove',function(e){mx=e.clientX/window.innerWidth*2-1;my=e.clientY/window.innerHeight*2-1;req();});
+    hero.addEventListener('pointerleave',function(){mx=0;my=0;req();});
+    // magnetic buttons
+    document.querySelectorAll('[data-mag]').forEach(function(b){
+      b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.25)+'px,'+((e.clientY-r.top-r.height/2)*.35)+'px)';});
+      b.addEventListener('pointerleave',function(){b.style.transform='';});
+    });
+  }
+  frame();
+})();
+</script>
+</body>
+</html>

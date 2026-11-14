@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quays Lagos | Restaurant, Lounge and Butchery in Lekki Phase 1</title>
+<meta name="description" content="Quays Lagos: fine dining, cocktails, Sunday brunch and a butchery at 3 Tokunbo Omisore St, Lekki Phase 1. Reserve a table on WhatsApp.">
+<meta name="theme-color" content="#071a1c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--ink:#071a1c;--lagoon:#0c2f30;--palm:#12433f;--sand:#efe5d0;--paper:#f7f0e1;--brass:#c9a35b;--coral:#e56f4a;--pad:clamp(20px,5vw,72px);--serif:'Fraunces',Georgia,serif;--sans:'Manrope',system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.1,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--ink);color:var(--sand);line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
+body.nav-open{overflow:hidden}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+main{overflow-x:clip}
+em{font-style:italic}
+.grain{position:fixed;inset:0;z-index:90;pointer-events:none;opacity:.09;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:600;color:var(--brass);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.02;letter-spacing:-.02em}
+h2{font-size:clamp(2.3rem,6.4vw,5rem)}
+h2 em,h1 em{color:var(--brass);font-weight:300}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:.92rem;letter-spacing:.02em;overflow:hidden;isolation:isolate;transition:transform .5s var(--ease);will-change:transform}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-solid{background:var(--brass);color:var(--ink)}
+.btn-solid::before{content:"";position:absolute;inset:0;background:var(--sand);border-radius:inherit;transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1}
+.btn-solid:hover::before{transform:none}
+.btn-line{border:1px solid rgba(239,229,208,.35);color:var(--sand)}
+.btn-line::before{content:"";position:absolute;inset:0;background:rgba(239,229,208,.1);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease);z-index:-1}
+.btn-line:hover::before{transform:none}
+.btn .arr{transition:transform .4s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+
+/* header */
+.hd{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:18px var(--pad);transition:transform .5s var(--ease)}
+.hd::before{content:"";position:absolute;inset:0;background:rgba(7,26,28,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,163,91,.22);opacity:0;transition:opacity .4s;z-index:-1}
+.hd.scrolled::before{opacity:1}
+.logo{font-family:var(--serif);font-size:1.7rem;font-weight:400;letter-spacing:-.02em;display:flex;align-items:baseline;gap:8px;transition:transform .4s var(--ease);transform-origin:left center}
+.hd.scrolled .logo{transform:scale(.88)}
+.logo small{font-family:var(--sans);font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.nav{display:flex;gap:34px;font-size:.84rem;font-weight:500}
+.nav a{position:relative;padding:6px 0;opacity:.85;transition:opacity .3s}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nav a:hover{opacity:1}.nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.hd .btn{padding:11px 20px;font-size:.82rem}
+.burger{display:none;width:44px;height:44px;border:1px solid rgba(239,229,208,.3);border-radius:50%;background:none;color:inherit;cursor:pointer;position:relative}
+.burger i{position:absolute;left:13px;right:13px;height:1.5px;background:currentColor;transition:transform .4s var(--ease)}
+.burger i:first-child{top:18px}.burger i:last-child{top:25px}
+.nav-open .burger i:first-child{transform:translateY(3.5px) rotate(45deg)}
+.nav-open .burger i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:55;background:var(--lagoon);display:flex;flex-direction:column;justify-content:center;padding:90px var(--pad) 40px;gap:6px;transform:translateY(-102%);transition:transform .7s var(--ease);visibility:hidden}
+.nav-open .menu{transform:none;visibility:visible}
+.menu a.m{font-family:var(--serif);font-size:2.6rem;font-weight:300;padding:8px 0;border-bottom:1px solid rgba(239,229,208,.12)}
+.menu .btn{margin-top:26px;align-self:flex-start}
+.menu p{margin-top:18px;font-size:.85rem;opacity:.7}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px var(--pad) 0;overflow:hidden;isolation:isolate}
+.sky{position:absolute;inset:-10% 0 0;z-index:-5;background:linear-gradient(180deg,#051416 0%,#0a2a2c 38%,#165049 62%,#7a6a45 82%,#d18a52 100%)}
+.sun{position:absolute;left:50%;bottom:9%;width:min(62vw,560px);aspect-ratio:1;margin-left:calc(min(62vw,560px)/-2 + 14vw);border-radius:50%;z-index:-4;background:radial-gradient(circle at 50% 40%,#ffd9a0 0%,#f2a765 38%,#e56f4a 70%,rgba(229,111,74,0) 71%);animation:rise 2.6s var(--ease) both}
+.sun::after{content:"";position:absolute;inset:-35%;border-radius:50%;background:radial-gradient(circle,rgba(242,167,101,.35),rgba(242,167,101,0) 62%)}
+@keyframes rise{from{transform:translateY(38%);opacity:0}to{transform:none;opacity:1}}
+.palm{position:absolute;z-index:-2;color:#041012;width:min(78vw,640px);will-change:transform}
+.palm.l{left:-14%;top:-6%}
+.palm.r{right:-16%;top:6%;transform:scaleX(-1);color:#06181a;width:min(64vw,520px)}
+.palm svg{width:100%;height:auto;overflow:visible;animation:sway 9s ease-in-out infinite alternate;transform-origin:10% 10%}
+.palm.r svg{animation-duration:11s}
+@keyframes sway{from{transform:rotate(-2.5deg)}to{transform:rotate(3deg)}}
+.waves{position:absolute;left:0;right:0;bottom:0;height:22vh;min-height:130px;z-index:-3}
+.wave{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:drift 22s linear infinite}
+.wave svg{width:100%;height:100%}
+.wave.b{animation-duration:34s;animation-direction:reverse;bottom:14%;opacity:.7}
+.wave.c{animation-duration:16s;bottom:-18%}
+@keyframes drift{to{transform:translateX(-50%)}}
+.hero-in{position:relative;max-width:1100px;padding-bottom:clamp(120px,20vh,200px)}
+.hero h1{font-size:clamp(3.4rem,13.2vw,10.5rem);margin:22px 0 26px;color:var(--paper)}
+.ln{display:block;overflow:hidden;padding-bottom:.08em}
+.ln>span{display:block}
+.js .ln>span{transform:translateY(112%);animation:up 1.2s var(--ease) forwards}
+.js .ln:nth-child(2)>span{animation-delay:.14s}
+.js .fade{opacity:0;animation:fade 1s ease forwards .7s}
+.js .fade.d2{animation-delay:.9s}
+@keyframes up{to{transform:none}}
+@keyframes fade{to{opacity:1}}
+.hero p.lead{max-width:30em;font-size:clamp(1rem,1.5vw,1.2rem);color:rgba(247,240,225,.86);margin-bottom:30px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero-strip{position:absolute;left:var(--pad);right:var(--pad);bottom:22px;display:flex;justify-content:space-between;gap:16px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,240,225,.9);font-weight:600}
+.hero-strip span:last-child{text-align:right}
+
+/* marquee */
+.mq{background:var(--brass);color:var(--ink);overflow:hidden;padding:16px 0;border-block:1px solid rgba(7,26,28,.2)}
+.mq-t{display:flex;width:max-content;animation:drift 30s linear infinite}
+.mq-t span{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.4vw,1.8rem);padding:0 26px;display:flex;align-items:center;gap:52px;white-space:nowrap}
+.mq-t span::after{content:"";width:9px;height:9px;background:var(--ink);transform:rotate(45deg)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.1s}.js .rv.d2{transition-delay:.2s}.js .rv.d3{transition-delay:.3s}
+
+section{position:relative}
+.wrap{padding:clamp(80px,12vw,160px) var(--pad)}
+
+/* story */
+.story{background:var(--paper);color:var(--ink)}
+.story .eyebrow{color:#96702a}
+.story-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(30px,6vw,90px);align-items:end;margin-top:28px}
+.story h2{font-size:clamp(2rem,5.2vw,4.3rem);line-height:1.08}
+.story h2 em{color:var(--coral)}
+.story-side p{font-size:1.02rem;color:#2a3f3f;margin-bottom:22px;max-width:30em}
+.fish{width:min(100%,360px);color:var(--palm);margin-bottom:28px}
+.fish path,.fish circle{fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.6s var(--ease) .2s}
+.in .fish path,.in .fish circle,.fish.in path,.fish.in circle{stroke-dashoffset:0}
+html:not(.js) .fish path,html:not(.js) .fish circle{stroke-dashoffset:0}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(50px,8vw,100px);border-top:1px solid rgba(7,26,28,.18)}
+.facts div{padding:24px 20px 0 0}
+.facts div+div{padding-left:24px;border-left:1px solid rgba(7,26,28,.18)}
+.facts b{font-family:var(--serif);font-weight:400;font-size:clamp(1.3rem,2.4vw,1.9rem);display:block;margin-bottom:6px}
+.facts span{font-size:.9rem;color:#3a4f4f}
+
+/* horizontal rooms */
+.hs{background:var(--lagoon)}
+.hs-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
+.hs-track{display:flex;gap:clamp(18px,2.4vw,36px);padding:0 var(--pad);will-change:transform}
+.hs-intro{flex:none;width:min(80vw,440px);display:flex;flex-direction:column;justify-content:center;gap:22px}
+.hs-intro p:not(.eyebrow){color:rgba(239,229,208,.75);max-width:24em}
+.hint{display:flex;align-items:center;gap:12px;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.hint svg{width:42px;animation:nudge 1.6s ease-in-out infinite alternate}
+@keyframes nudge{to{transform:translateX(10px)}}
+.room{flex:none;width:min(78vw,620px);height:min(70vh,620px);border-radius:28px;position:relative;overflow:hidden;padding:clamp(22px,3vw,38px);display:flex;flex-direction:column;justify-content:space-between;isolation:isolate;border:1px solid rgba(239,229,208,.12)}
+.room::before{content:"";position:absolute;inset:0;z-index:-2;transition:transform 1.2s var(--ease)}
+.room:hover::before{transform:scale(1.07)}
+.room.r1::before{background:radial-gradient(120% 80% at 80% 110%,#e56f4a 0%,rgba(229,111,74,0) 55%),radial-gradient(90% 70% at 10% 0%,#1d6a5f 0%,rgba(29,106,95,0) 60%),#0a2325}
+.room.r2::before{background:radial-gradient(100% 80% at 15% 105%,#c9a35b 0%,rgba(201,163,91,0) 55%),radial-gradient(80% 60% at 95% 10%,#7b2d3a 0%,rgba(123,45,58,0) 60%),#11191f}
+.room.r3::before{background:radial-gradient(110% 80% at 85% 0%,#f2c078 0%,rgba(242,192,120,0) 50%),radial-gradient(100% 90% at 0% 100%,#2c8a6b 0%,rgba(44,138,107,0) 60%),#0e3a36}
+.room.r4::before{background:radial-gradient(100% 80% at 50% 115%,#a8372c 0%,rgba(168,55,44,0) 58%),radial-gradient(80% 60% at 0% 0%,#3b2a20 0%,rgba(59,42,32,0) 70%),#150f0d}
+.room .no{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--brass)}
+.room .art{position:absolute;right:-4%;top:6%;width:62%;max-width:360px;color:rgba(247,240,225,.5);z-index:-1;transition:transform 1.2s var(--ease)}
+.room:hover .art{transform:translateY(-10px) rotate(-3deg)}
+.room .art *{fill:none;stroke:currentColor;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+.room h3{font-size:clamp(2.2rem,4.6vw,3.8rem);margin-bottom:12px;color:var(--paper)}
+.room p{max-width:26em;color:rgba(247,240,225,.82);font-size:.98rem}
+
+/* menu */
+.menu-sec{background:var(--ink)}
+.menu-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(36px,6vw,70px)}
+.menu-head h2{margin-top:22px}
+.menu-head>p{max-width:24em;color:rgba(239,229,208,.7)}
+.dish{position:relative;display:grid;grid-template-columns:70px 1.1fr 1fr 40px;gap:20px;align-items:center;padding:clamp(22px,3vw,36px) 0;border-top:1px solid rgba(239,229,208,.16);overflow:hidden}
+.dish:last-of-type{border-bottom:1px solid rgba(239,229,208,.16)}
+.dish::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(201,163,91,.14),rgba(201,163,91,0) 70%);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
+.dish:hover::before{transform:none}
+.dish>*{position:relative;transition:transform .6s var(--ease)}
+.dish:hover>*{transform:translateX(14px)}
+.dish i{font-family:var(--serif);color:var(--brass);font-size:1rem}
+.dish h3{font-size:clamp(1.7rem,4vw,3.2rem)}
+.dish h3 small{display:inline-block;vertical-align:middle;margin-left:12px;font-family:var(--sans);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--ink);background:var(--coral);padding:5px 10px;border-radius:999px}
+.dish p{color:rgba(239,229,208,.72);font-size:.98rem;max-width:28em}
+.dish svg{width:26px;color:var(--brass);opacity:0;transition:opacity .4s}
+.dish:hover svg{opacity:1}
+.note{margin-top:26px;font-size:.88rem;color:rgba(239,229,208,.6)}
+.note a{color:var(--brass);border-bottom:1px solid currentColor}
+
+/* brunch */
+.brunch{background:var(--coral);color:var(--ink);overflow:hidden}
+.brunch .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.brunch .eyebrow{color:var(--ink)}
+.brunch h2{font-size:clamp(3rem,10vw,8.5rem);margin:20px 0;line-height:.92}
+.brunch h2 em{color:var(--paper)}
+.brunch p:not(.eyebrow){max-width:28em;font-size:1.05rem;margin-bottom:26px;font-weight:500}
+.brunch .btn-solid{background:var(--ink);color:var(--paper)}
+.brunch .btn-solid::before{background:var(--paper)}
+.brunch .btn-solid:hover{color:var(--ink)}
+.badge{width:clamp(170px,24vw,300px);aspect-ratio:1;position:relative}
+.badge svg.ring{width:100%;height:100%;animation:spin 26s linear infinite}
+.badge text{font-family:var(--sans);font-size:11.5px;letter-spacing:.34em;font-weight:700;fill:var(--ink);text-transform:uppercase}
+.badge .core{position:absolute;inset:27%;border-radius:50%;background:var(--paper);display:grid;place-items:center}
+.badge .core svg{width:52%;color:var(--coral)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* rating */
+.rate{background:var(--paper);color:var(--ink)}
+.rate-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(30px,7vw,110px);align-items:center}
+.score{font-family:var(--serif);font-weight:300;font-size:clamp(7rem,24vw,17rem);line-height:.8;letter-spacing:-.05em;color:var(--palm)}
+.stars{position:relative;display:inline-flex;margin-bottom:22px}
+.stars svg{width:30px;height:30px;flex:none}
+.stars .off{display:flex;color:rgba(7,26,28,.16)}
+.stars .on{position:absolute;inset:0;display:flex;overflow:hidden;color:#c58a1d;width:88%}
+.rate h2{font-size:clamp(1.8rem,4vw,3.2rem);line-height:1.1;margin-bottom:14px}
+.rate p{color:#3a4f4f;max-width:32em}
+.rate b{font-weight:700;color:var(--ink)}
+
+/* visit */
+.visit{background:var(--lagoon)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:stretch;margin-top:40px}
+.info dl{display:grid;gap:0}
+.info dl>div{padding:22px 0;border-top:1px solid rgba(239,229,208,.16);display:grid;grid-template-columns:120px 1fr;gap:16px}
+.info dt{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:700;padding-top:6px}
+.info dd{font-family:var(--serif);font-size:clamp(1.2rem,2vw,1.55rem);font-weight:300;line-height:1.3}
+.info dd small{display:block;font-family:var(--sans);font-size:.88rem;color:rgba(239,229,208,.65);margin-top:6px}
+.info dd a{border-bottom:1px solid rgba(201,163,91,.6)}
+.info .cta-row{margin-top:26px}
+.mapart{position:relative;border-radius:28px;overflow:hidden;min-height:380px;background:#0a2325;border:1px solid rgba(239,229,208,.12)}
+.mapart svg.m{position:absolute;inset:0;width:100%;height:100%}
+.pin{position:absolute;left:54%;top:46%;width:18px;height:18px;margin:-9px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 4px rgba(7,26,28,.6)}
+.pin::before,.pin::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid var(--coral);animation:ping 2.6s ease-out infinite}
+.pin::after{animation-delay:1.3s}
+@keyframes ping{from{transform:scale(1);opacity:.9}to{transform:scale(5.5);opacity:0}}
+.maptag{position:absolute;left:20px;bottom:20px;right:20px;background:rgba(7,26,28,.8);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-radius:16px;padding:16px 18px;font-size:.88rem;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.maptag b{font-family:var(--serif);font-weight:400;font-size:1.15rem;display:block}
+.maptag a{color:var(--brass);font-weight:600;white-space:nowrap;font-size:.82rem}
+
+/* final */
+.final{background:var(--ink);text-align:left;overflow:hidden}
+.final .wrap{padding-bottom:clamp(60px,8vw,100px)}
+.final h2{font-size:clamp(3.2rem,12.5vw,11rem);line-height:.9;margin:24px 0 34px}
+.final .tel{font-family:var(--serif);font-size:clamp(1.3rem,3vw,2.2rem);font-weight:300;color:var(--brass)}
+.final .glow{position:absolute;width:70vw;height:70vw;max-width:900px;max-height:900px;right:-20%;bottom:-50%;border-radius:50%;background:radial-gradient(circle,rgba(229,111,74,.34),rgba(229,111,74,0) 65%);pointer-events:none}
+footer{background:var(--ink);border-top:1px solid rgba(239,229,208,.14);padding:30px var(--pad) 84px;display:flex;flex-wrap:wrap;gap:14px 40px;justify-content:space-between;font-size:.82rem;color:rgba(239,229,208,.6)}
+footer b{color:var(--sand);font-family:var(--serif);font-weight:400;font-size:1.1rem}
+
+.preview{position:fixed;left:12px;bottom:12px;z-index:80;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:7px 12px;border-radius:999px;background:rgba(7,26,28,.78);color:rgba(239,229,208,.85);border:1px solid rgba(239,229,208,.22);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);pointer-events:none}
+.fab{position:fixed;right:14px;bottom:14px;z-index:80;width:54px;height:54px;border-radius:50%;background:var(--brass);color:var(--ink);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.4);transform:translateY(90px);transition:transform .6s var(--ease)}
+.fab.show{transform:none}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:24px;height:24px}
+
+@media (max-width:860px){
+.nav,.hd>.btn{display:none}.burger{display:block}
+.story-grid,.visit-grid,.rate-grid,.brunch .wrap{grid-template-columns:1fr}
+.facts{grid-template-columns:1fr}.facts div+div{padding-left:0;border-left:0;border-top:1px solid rgba(7,26,28,.18);margin-top:24px}
+.hs-pin{position:static;height:auto;display:block;padding:80px 0}
+.hs-track{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:18px;scrollbar-width:none}
+.hs-track::-webkit-scrollbar{display:none}
+.hs-intro,.room{scroll-snap-align:center}
+.hs-intro{width:78vw}
+.room{width:82vw;height:440px}
+.dish{grid-template-columns:36px 1fr;gap:6px 12px}
+.dish p{grid-column:2}.dish svg{display:none}
+.dish h3 small{display:table;margin:10px 0 0}
+.badge{justify-self:start}
+.info dl>div{grid-template-columns:1fr;gap:6px}
+.mapart{min-height:320px}
+.hero-strip span:last-child{display:none}
+.hero-strip{bottom:50px}
+.hero-in{padding-bottom:clamp(150px,24vh,220px)}
+.sun{margin-left:calc(min(62vw,560px)/-2 + 22vw);bottom:12%}
+.maptag{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.js .ln>span{transform:none}.js .fade{opacity:1}.js .rv{opacity:1;transform:none}
+.fish path,.fish circle{stroke-dashoffset:0}.fab{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 1.8a8.2 8.2 0 1 1-4.2 15.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 0 1 12 3.8Zm-3.3 3.9c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.300s1 2.700 1.200 2.900c.1.2 2 3.200 5 4.400 2.500 1 3 .8 3.500.7.600-.1 1.700-.7 2-1.400.2-.7.2-1.200.2-1.400-.1-.1-.3-.2-.6-.4l-2-1c-.3-.1-.5-.1-.7.2l-.9 1.100c-.2.2-.3.2-.6.1-.3-.2-1.300-.5-2.400-1.500-.9-.8-1.500-1.800-1.700-2.100-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.200c-.2-.5-.5-.5-.7-.5h-.6Z"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.800 21 7 14.200l-5-4.900 6.900-1z"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="frond" viewBox="0 0 600 520"><g fill="currentColor"><path id="bl" d="M0 0C70-26 210-22 300 0 210 14 70 14 0 0Z"/><use href="#bl" transform="rotate(8) scale(1.5)"/><use href="#bl" transform="rotate(22) scale(1.75)"/><use href="#bl" transform="rotate(36) scale(1.85)"/><use href="#bl" transform="rotate(50) scale(1.8)"/><use href="#bl" transform="rotate(64) scale(1.6)"/><use href="#bl" transform="rotate(78) scale(1.35)"/><use href="#bl" transform="rotate(92) scale(1.05)"/><use href="#bl" transform="rotate(-6) scale(1.1)"/></g></symbol>
+</svg>
+
+<header class="hd" id="hd">
+  <a href="#top" class="logo" aria-label="Quays Lagos home">Quays <small>Lagos</small></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#story">The house</a><a href="#rooms">Rooms</a><a href="#menu-sec">Kitchen</a><a href="#brunch">Sunday brunch</a><a href="#visit">Visit</a>
+  </nav>
+  <a class="btn btn-solid mag" href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20reserve%20a%20table"><svg><use href="#wa"/></svg>Reserve</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+</header>
+<div class="menu" id="menu">
+  <a class="m" href="#story">The house</a><a class="m" href="#rooms">Rooms</a><a class="m" href="#menu-sec">Kitchen</a><a class="m" href="#brunch">Sunday brunch</a><a class="m" href="#visit">Visit</a>
+  <a class="btn btn-solid" href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20reserve%20a%20table"><svg><use href="#wa"/></svg>Reserve a table</a>
+  <p>+234 916 675 6582 &middot; 3 Tokunbo Omisore St, Lekki Phase 1</p>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="sky" data-par="0.12"></div>
+  <div class="sun" aria-hidden="true"></div>
+  <div class="palm l" data-par="-0.22" aria-hidden="true"><svg viewBox="0 0 600 520"><use href="#frond"/></svg></div>
+  <div class="palm r" data-par="-0.34" aria-hidden="true"><svg viewBox="0 0 600 520"><use href="#frond"/></svg></div>
+  <div class="waves" aria-hidden="true">
+    <div class="wave b"><svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path fill="#0f4a45" d="M0 40Q150 10 300 40T600 40T900 40T1200 40T1500 40T1800 40T2100 40T2400 40V120H0Z"/></svg></div>
+    <div class="wave"><svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path fill="#0b3332" d="M0 44Q150 4 300 44T600 44T900 44T1200 44T1500 44T1800 44T2100 44T2400 44V120H0Z"/></svg></div>
+    <div class="wave c"><svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path fill="#071a1c" d="M0 50Q150 24 300 50T600 50T900 50T1200 50T1500 50T1800 50T2100 50T2400 50V120H0Z"/></svg></div>
+  </div>
+  <div class="hero-in">
+    <p class="eyebrow fade">Restaurant &middot; Lounge &middot; Butchery</p>
+    <h1><span class="ln"><span>Lekki&rsquo;s</span></span><span class="ln"><span><em>tropical</em> table.</span></span></h1>
+    <p class="lead fade">Fine dining, slow cocktails and long Sunday brunches, served in the heart of Lekki Phase 1.</p>
+    <div class="cta-row fade d2">
+      <a class="btn btn-solid mag" href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20reserve%20a%20table"><svg><use href="#wa"/></svg>Reserve a table<svg class="arr"><use href="#arrow"/></svg></a>
+      <a class="btn btn-line" href="#menu-sec">See the kitchen</a>
+    </div>
+  </div>
+  <div class="hero-strip fade d2"><span>3 Tokunbo Omisore St, Lekki Phase 1</span><span>4.4 on Google &middot; 252 reviews</span></div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mq-t">
+  <span>Fine dining</span><span>Cocktails</span><span>Sunday brunch</span><span>Outdoor seating</span><span>Catch of the day</span><span>The butchery</span>
+  <span>Fine dining</span><span>Cocktails</span><span>Sunday brunch</span><span>Outdoor seating</span><span>Catch of the day</span><span>The butchery</span>
+</div></div>
+
+<section class="story" id="story"><div class="wrap">
+  <p class="eyebrow rv">The house</p>
+  <div class="story-grid">
+    <h2 class="rv">A restaurant, a lounge and a butchery, <em>under one tropical roof.</em></h2>
+    <div class="story-side rv d1">
+      <svg class="fish rv" viewBox="0 0 260 120" aria-hidden="true"><path pathLength="1" d="M18 60C58 8 150 8 204 60 150 112 58 112 18 60Z"/><path pathLength="1" d="M204 60l40-32-9 32 9 32z"/><path pathLength="1" d="M70 38c10 14 10 30 0 44"/><path pathLength="1" d="M104 26c14-12 34-12 52 0M112 96c12 8 28 8 40 0"/><path pathLength="1" d="M96 60h56M104 72h40M104 48h40"/><circle pathLength="1" cx="46" cy="54" r="4"/></svg>
+      <p>Quays is where Lekki comes to slow down. Greenery overhead, open air at your shoulder, and a kitchen that takes seafood seriously.</p>
+      <p>Come for dinner, stay for the lounge, and plan your Sunday around brunch.</p>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="rv"><b>Fine dining</b><span>A full kitchen with seafood at its centre.</span></div>
+    <div class="rv d1"><b>Cocktails and lounge</b><span>For the hours after the plates are cleared.</span></div>
+    <div class="rv d2"><b>Outdoor space</b><span>Tropical design, made for warm evenings.</span></div>
+  </div>
+</div></section>
+
+<section class="hs" id="rooms"><div class="hs-pin"><div class="hs-track" id="track">
+  <div class="hs-intro">
+    <p class="eyebrow">Rooms</p>
+    <h2>Four ways to <em>spend an evening.</em></h2>
+    <p>One address, several moods. Tell us the occasion and we will seat you in the right one.</p>
+    <span class="hint">Keep going <svg viewBox="0 0 42 12"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M1 6h39m-5-5 5 5-5 5"/></svg></span>
+  </div>
+  <article class="room r1">
+    <span class="no">01</span>
+    <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="46"/><path d="M22 40v54m-8-54v20c0 8 16 8 16 0V40M22 94v66M178 40c-12 10-14 40-6 56h6zm0 56v64"/></svg>
+    <div><h3>The Restaurant</h3><p>Fine dining without the stiffness. Tables set for long conversations and plates worth lingering over.</p></div>
+  </article>
+  <article class="room r2">
+    <span class="no">02</span>
+    <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><path d="M40 40h120l-60 70zM100 110v60M66 170h68M62 66h76"/><circle cx="128" cy="34" r="12"/><path d="M120 44 96 96"/></svg>
+    <div><h3>The Lounge</h3><p>Low light, good glassware and cocktails made properly. The natural second act to dinner.</p></div>
+  </article>
+  <article class="room r3">
+    <span class="no">03</span>
+    <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 190V70M100 70C70 60 44 34 40 10c30 4 54 28 60 60ZM100 100c26-10 50-34 56-60-28 6-50 30-56 60ZM100 140c-24-6-44-24-50-46 24 4 44 22 50 46ZM100 160c20-6 36-20 42-40-20 4-36 18-42 40Z"/></svg>
+    <div><h3>The Outdoors</h3><p>Open air and greenery all around. The best seats in the house when the evening cools.</p></div>
+  </article>
+  <article class="room r4">
+    <span class="no">04</span>
+    <svg class="art" viewBox="0 0 200 200" aria-hidden="true"><path d="M30 50h120c14 0 22 10 22 24v36H50c-12 0-20-8-20-20zM172 96l-4 14M50 110v0M150 50l-10-22h-16l6 22"/><circle cx="150" cy="70" r="5"/><path d="M40 150h130M40 164h130"/></svg>
+    <div><h3>The Butchery</h3><p>A butchery as part of the house, for people who care where their cuts come from.</p></div>
+  </article>
+</div></div></section>
+
+<section class="menu-sec" id="menu-sec"><div class="wrap" id="menu-anchor">
+  <div class="menu-head">
+    <div><p class="eyebrow rv">From the kitchen</p><h2 class="rv">What guests <em>come back for.</em></h2></div>
+    <p class="rv d1">A few of the things Quays is known for. Ask on WhatsApp for the current menu.</p>
+  </div>
+  <div class="dish rv"><i>01</i><h3>Mixed seafood pasta <small>Signature</small></h3><p>Pasta loaded with a generous mix of seafood. The dish people mention first.</p><svg><use href="#arrow"/></svg></div>
+  <div class="dish rv"><i>02</i><h3>Catch of the day <small>Signature</small></h3><p>It changes, which is the point. Ask your server what came in today.</p><svg><use href="#arrow"/></svg></div>
+  <div class="dish rv"><i>03</i><h3>Cocktails</h3><p>Classics and house creations from the lounge bar, before dinner or long after.</p><svg><use href="#arrow"/></svg></div>
+  <div class="dish rv"><i>04</i><h3>Sunday brunch</h3><p>The unhurried kind. Bring the family, bring friends, take your time.</p><svg><use href="#arrow"/></svg></div>
+  <div class="dish rv"><i>05</i><h3>From the butchery</h3><p>Quality cuts from our butchery.</p><svg><use href="#arrow"/></svg></div>
+  <p class="note rv">Dietary needs or a special occasion? <a href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20could%20you%20send%20me%20the%20current%20menu%3F">Message us and we will sort it out.</a></p>
+</div></section>
+
+<section class="brunch" id="brunch"><div class="wrap">
+  <div>
+    <p class="eyebrow rv">Every Sunday</p>
+    <h2 class="rv">Sunday <em>brunch,</em><br>done slowly.</h2>
+    <p class="rv d1">Good food, something cold in your glass and nowhere else to be. Message ahead and we will hold your table.</p>
+    <a class="btn btn-solid mag rv d2" href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20book%20a%20table%20for%20Sunday%20brunch"><svg><use href="#wa"/></svg>Book Sunday brunch</a>
+  </div>
+  <div class="badge rv" aria-hidden="true">
+    <svg class="ring" viewBox="0 0 200 200"><defs><path id="circ" d="M100 100m-82 0a82 82 0 1 1 164 0a82 82 0 1 1-164 0"/></defs><text><textPath href="#circ" textLength="508">Sunday brunch &#8226; Quays Lagos &#8226; Lekki Phase 1 &#8226;</textPath></text></svg>
+    <div class="core"><svg viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="24" cy="24" r="8"/><path d="M24 4v6m0 28v6M4 24h6m28 0h6M10 10l4 4m20 20 4 4m0-28-4 4M14 34l-4 4"/></g></svg></div>
+  </div>
+</div></section>
+
+<section class="rate" id="reviews"><div class="wrap rate-grid">
+  <div class="score rv"><span data-to="4.4" data-dec="1">4.4</span></div>
+  <div class="rv d1">
+    <div class="stars" role="img" aria-label="Rated 4.4 out of 5">
+      <div class="off"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+      <div class="on"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+    </div>
+    <h2>Rated 4.4 by <span data-to="252">252</span> guests on Google.</h2>
+    <p>That is <b>252 public reviews</b> from people who have eaten, toasted and brunched here. Come and add your own.</p>
+  </div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap">
+  <p class="eyebrow rv">Visit</p>
+  <h2 class="rv" style="margin-top:22px">Find us in <em>Lekki Phase 1.</em></h2>
+  <div class="visit-grid">
+    <div class="info rv">
+      <dl>
+        <div><dt>Address</dt><dd>3 Tokunbo Omisore Street<small>Lekki Phase 1, Lagos, Nigeria</small></dd></div>
+        <div><dt>Reservations</dt><dd><a href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20reserve%20a%20table">+234 916 675 6582</a><small>WhatsApp or call</small></dd></div>
+        <div><dt>Hours</dt><dd>Message us for today&rsquo;s hours<small>We reply on WhatsApp with opening times and table availability.</small></dd></div>
+        <div><dt>Good for</dt><dd>Dinner, drinks, Sunday brunch<small>Outdoor space</small></dd></div>
+      </dl>
+      <div class="cta-row"><a class="btn btn-solid mag" href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20reserve%20a%20table"><svg><use href="#wa"/></svg>Reserve on WhatsApp</a></div>
+    </div>
+    <div class="mapart rv d1">
+      <svg class="m" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path fill="#0f4a45" d="M0 0h600v110C480 150 380 90 250 120S80 170 0 140Z"/>
+        <g fill="none" stroke="#16605a" stroke-width="1"><path d="M0 60c120 30 220-20 340 0s180 20 260 0M0 90c120 30 220-20 340 0s180 20 260 0"/></g>
+        <g fill="none" stroke="rgba(239,229,208,.16)" stroke-width="10" stroke-linecap="round"><path d="M-20 260 620 200M324 130V520M120 180l60 340M470 150l40 370M-20 400l640-50"/></g>
+        <g fill="none" stroke="rgba(239,229,208,.08)" stroke-width="4"><path d="M220 170l30 350M400 140l20 380M-20 330l640-50M-20 470l640-40"/></g>
+        <text x="30" y="46" fill="rgba(239,229,208,.5)" font-family="Manrope,sans-serif" font-size="12" letter-spacing="5">LAGOS</text>
+        <text x="352" y="286" fill="rgba(239,229,208,.55)" font-family="Manrope,sans-serif" font-size="11" letter-spacing="3">TOKUNBO OMISORE ST</text>
+      </svg>
+      <span class="pin" aria-hidden="true"></span>
+      <div class="maptag"><span><b>Quays Lagos</b>3 Tokunbo Omisore St, Lekki Phase 1</span><a href="https://www.google.com/maps/search/?api=1&query=Quays+Lagos+3+Tokunbo+Omisore+St+Lekki+Phase+1" target="_blank" rel="noopener">Get directions</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="final"><div class="glow" aria-hidden="true"></div><div class="wrap">
+  <p class="eyebrow rv">Your table</p>
+  <h2 class="rv">Tonight, <em>at Quays?</em></h2>
+  <div class="cta-row rv d1">
+    <a class="btn btn-solid mag" href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20reserve%20a%20table"><svg><use href="#wa"/></svg>Reserve a table<svg class="arr"><use href="#arrow"/></svg></a>
+    <span class="tel">+234 916 675 6582</span>
+  </div>
+</div></section>
+</main>
+
+<footer>
+  <span><b>Quays Lagos</b><br>Restaurant, lounge and butchery</span>
+  <span>3 Tokunbo Omisore St, Lekki Phase 1, Lagos<br>WhatsApp +234 916 675 6582</span>
+  <span>Concept design preview.<br>Not the official website.</span>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/2349166756582?text=Hi%20Quays%2C%20I%27d%20like%20to%20reserve%20a%20table" aria-label="Reserve on WhatsApp"><svg><use href="#wa"/></svg></a>
+<div class="preview">Preview concept</div>
+
+<script>
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var small=window.matchMedia('(max-width: 860px)');
+  var fine=window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var hd=document.getElementById('hd'),fab=document.getElementById('fab');
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+
+  function closeNav(){document.body.classList.remove('nav-open');burger.setAttribute('aria-expanded','false');}
+  burger.addEventListener('click',function(){
+    var o=document.body.classList.toggle('nav-open');
+    burger.setAttribute('aria-expanded',o?'true':'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeNav);});
+
+  // reveals + counters
+  function count(el){
+    var to=parseFloat(el.getAttribute('data-to')),dec=parseInt(el.getAttribute('data-dec')||'0',10),s=null;
+    if(rm){el.textContent=to.toFixed(dec);return;}
+    function step(t){if(!s)s=t;var p=Math.min((t-s)/1700,1),e=1-Math.pow(1-p,3);el.textContent=(to*e).toFixed(dec);if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('[data-to]').forEach(count);
+      io.unobserve(e.target);
+    });},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+
+  // scroll: header, parallax, horizontal rooms
+  var pars=[].slice.call(document.querySelectorAll('[data-par]'));
+  var hs=document.getElementById('rooms'),track=document.getElementById('track'),max=0,tick=false;
+  function size(){
+    if(small.matches||rm){max=0;hs.style.height='';track.style.transform='';return;}
+    max=Math.max(track.scrollWidth-window.innerWidth,0);
+    hs.style.height=(window.innerHeight+max)+'px';
+  }
+  function frame(){
+    tick=false;
+    var y=window.pageYOffset;
+    hd.classList.toggle('scrolled',y>40);
+    fab.classList.toggle('show',y>window.innerHeight*.6);
+    if(!rm&&y<window.innerHeight*1.2){
+      for(var i=0;i<pars.length;i++){
+        var f=parseFloat(pars[i].getAttribute('data-par'));
+        var flip=pars[i].classList.contains('r')?' scaleX(-1)':'';
+        pars[i].style.transform='translate3d(0,'+(y*f).toFixed(1)+'px,0)'+flip;
+      }
+    }
+    if(max){
+      var top=hs.getBoundingClientRect().top;
+      var p=Math.min(Math.max(-top,0),max);
+      track.style.transform='translate3d('+(-p).toFixed(1)+'px,0,0)';
+    }
+  }
+  function onScroll(){if(!tick){tick=true;requestAnimationFrame(frame);}}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',function(){size();onScroll();});
+  window.addEventListener('load',function(){size();frame();});
+  size();frame();
+
+  // magnetic buttons
+  if(fine&&!rm){
+    document.querySelectorAll('.mag').forEach(function(b){
+      b.addEventListener('mousemove',function(e){
+        var r=b.getBoundingClientRect();
+        b.style.transform='translate('+((e.clientX-r.left-r.width/2)*.22).toFixed(1)+'px,'+((e.clientY-r.top-r.height/2)*.3).toFixed(1)+'px)';
+      });
+      b.addEventListener('mouseleave',function(){b.style.transform='';});
+    });
+  }
+})();
+</script>
+</body>
+</html>
